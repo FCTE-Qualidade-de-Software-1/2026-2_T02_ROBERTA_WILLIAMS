@@ -1,0 +1,55 @@
+name: Deploy do Docusaurus
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./website
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v7
+
+      - name: Configura o Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: ./website/package-lock.json
+
+      - name: Instala as dependências
+        run: npm ci
+
+      - name: Gera o site
+        run: npm run build
+
+      - name: Envia o artefato
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./website/build
+
+  deploy:
+    name: Publica no GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
