@@ -1,36 +1,139 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #1351b4;
+  --ifm-color-primary-dark: #114aa3;
+  --ifm-color-primary-darker: #1046a0;
+  --ifm-color-primary-darkest: #0d3a83;
+  --ifm-color-primary-light: #1659c6;
+  --ifm-color-primary-lighter: #175dce;
+  --ifm-color-primary-lightest: #2b73e6;
+
+  --ifm-font-family-base: 'Atkinson Hyperlegible', system-ui, -apple-system,
+    'Segoe UI', Roboto, sans-serif;
+  --ifm-font-size-base: 100%;
+  --ifm-line-height-base: 1.7;
+  --ifm-heading-font-weight: 700;
+  --ifm-background-color: #fff;
+  --ifm-heading-color: #1b1b1b;
+  --ifm-font-color-base: #2b2b2b;
+  --ifm-code-font-size: 92%;
+
+  --ifm-global-radius: 4px;
+  --ifm-global-shadow-lw: none;
+  --ifm-global-shadow-md: none;
+  --ifm-navbar-shadow: none;
+  --ifm-toc-border-color: #e3e5e8;
+
+  --note-background: #f6f6f6;
+  --note-border: #c9c9c9;
+  --ifm-alert-border-left-width: 3px;
+  --ifm-alert-shadow: none;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #8db4f5;
+  --ifm-color-primary-dark: #6f9ff2;
+  --ifm-color-primary-darker: #6195f0;
+  --ifm-color-primary-darkest: #3278eb;
+  --ifm-color-primary-light: #abc8f8;
+  --ifm-color-primary-lighter: #b9d1f9;
+  --ifm-color-primary-lightest: #dbe8fc;
+
+  --ifm-background-color: #151618;
+  --ifm-background-surface-color: #151618;
+  --ifm-heading-color: #f2f3f5;
+  --ifm-font-color-base: #d9dce1;
+  --ifm-toc-border-color: #2e3033;
+  --note-background: #1c1d20;
+  --note-border: #4a4c52;
 }
 
-/* Tabelas dos documentos ocupam toda a largura do conteúdo. */
+[data-theme='dark'] .button--primary:not(.button--outline) {
+  --ifm-button-color: #10203d;
+}
+
+[data-theme='dark'] .button--outline.button--primary:hover {
+  color: #10203d;
+}
+
+/* Barra superior */
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar__title {
+  font-weight: 700;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+/* Sidebar */
+.menu__link {
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.menu__link:hover {
+  background: transparent;
+  color: var(--ifm-heading-color);
+}
+
+.menu__link--active {
+  background: transparent;
+  color: var(--ifm-heading-color);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+}
+
+.menu__list-item-collapsible > .menu__link--sublist {
+  font-weight: 700;
+}
+
+/* Breadcrumb */
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  font-weight: 700;
+  padding: 0;
+}
+
+/* Conteúdo */
+.markdown h1:first-child {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown h2 {
+  margin-top: 2.5rem;
+}
+
+/* Tabelas ocupam toda a largura do conteúdo. */
 .markdown table {
   display: table;
   width: 100%;
+}
+
+/* Avisos */
+.alert {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left-color: var(--note-border);
+  background: var(--note-background);
+  color: inherit;
+}
+
+.alert .admonition-heading {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Rodapé de navegação entre páginas */
+.pagination-nav__link {
+  box-shadow: none;
 }
