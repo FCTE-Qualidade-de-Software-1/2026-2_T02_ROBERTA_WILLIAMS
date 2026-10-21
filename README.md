@@ -19,14 +19,17 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 - **Artigo Científico (PDF):** [Acessar versão atual](https://LINK-PARA-O-PDF-NO-REPOSITORIO)
 - **Releases:** [Entrega 1 (Fase 1 e Fase 2)](https://github.com/ORGANIZACAO/REPOSITORIO/releases)
 - **Dados e Evidências:** [Diretório de coleta e consolidação](./dados)
+-->
 
 ## Estrutura da Avaliação
 
-- **[Fase 1 - Requisitos da Avaliação](./docs/fase1.md):** Definição do propósito, escopo, partes interessadas, adaptação do modelo de qualidade (ISO/IEC 25010) e priorização das características.
-- **[Fase 2 - Especificação da Avaliação](./docs/fase2.md):** Definição dos objetivos de medição (GQM), questões, hipóteses, *Abstraction Sheets*, métricas e critérios de julgamento.
-- **Fase 3 - Projeto da Avaliação:** *(Em andamento)*
-- **Fase 4 - Execução da Avaliação:** *(Em andamento)*
+- **[Fase 1 - Requisitos da Avaliação](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-1):** Definição do propósito, escopo, partes interessadas, adaptação do modelo de qualidade (ISO/IEC 25010) e priorização das características.
+- **[Fase 2 - Especificação da Avaliação](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-2):** Definição dos objetivos de medição (GQM), questões, hipóteses, *Abstraction Sheets*, métricas e critérios de julgamento.
+<!-- 
+- **Fase 3 - Projeto da Avaliação:** *(Entrega 2)*
+- **Fase 4 - Execução da Avaliação:** *(Entrega 2)*
 -->
+- **[Gestão do Projeto (PSM/CID)](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/gestao):** Indicadores de Calendário e Progresso, Recursos e Custos e Desempenho dos Processos.
 
 ## Equipe
 
@@ -66,4 +69,4 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 </table>
 
 ---
-*Versão 1.0 - Última atualização: Outubro de 2026*
+*Versão 1.0 - Última atualização: 20/10/2026*
