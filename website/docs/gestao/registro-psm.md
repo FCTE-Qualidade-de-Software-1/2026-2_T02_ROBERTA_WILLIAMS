@@ -15,7 +15,7 @@ O resumo de cada iteração também é publicado como *status update* no GitHub 
 | -------- | ------- | ----- |
 | Iteração 0 | 12/10/2026 a 18/10/2026 | Cadastrada retroativamente |
 | Iteração 1 | 19/10/2026 a 25/10/2026 | Entrega 1 em 26/10/2026 |
-| Iteração 2 | 26/10/2026 a 01/11/2026 | — |
+| Iteração 2 | 26/10/2026 a 01/11/2026 | - |
 
 ## Iteração 0 (12/10 a 18/10/2026)
 
@@ -30,7 +30,7 @@ A Iteração 0 foi cadastrada no GitHub Projects depois de terminada, portanto d
 | 3 | Precisão da estimativa | Não se aplica | Não houve estimativa feita antes da execução; a razão real ÷ estimado não tem significado | Estimar as horas na criação de cada item a partir da Iteração 1 |
 | 4 | Esforço por membro | | | |
 | 5 | *Cycle time* médio | | | |
-| 6 | Fluxo cumulativo | Não se aplica | A contagem por coluna começa na Iteração 1 | — |
+| 6 | Fluxo cumulativo | Não se aplica | A contagem por coluna começa na Iteração 1 | - |
 
 ## Iteração 1 (19/10 a 25/10/2026)
 
