@@ -8,6 +8,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const REPO_URL =
+  'https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS';
+
+// Atualizar a cada entrega (critério F2-C10: versão e data no rodapé).
+const SITE_VERSION = '1.0';
+const LAST_UPDATE = '20/10/2026';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Roberta Williams',
@@ -51,26 +58,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/tree/main/website/',
+          editUrl: `${REPO_URL}/tree/main/website/`,
+          showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/tree/main/website/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -94,11 +85,39 @@ const config = {
             label: 'Documentação',
           },
           {
-            href: 'https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS',
+            href: REPO_URL,
             label: 'GitHub',
             position: 'right',
           },
         ],
+      },
+      footer: {
+        style: 'light',
+        links: [
+          {
+            title: 'Avaliação',
+            items: [
+              {label: 'Fase 1 – Requisitos', to: '/docs/fase-1'},
+              {label: 'Fase 2 – Especificação (GQM)', to: '/docs/fase-2'},
+            ],
+          },
+          {
+            title: 'Projeto',
+            items: [
+              {label: 'Gestão (PSM/CID)', to: '/docs/gestao'},
+              {label: 'Entrega 1', to: '/docs/sobre/entregas/entrega-1'},
+              {label: 'Tabela de contribuição', to: '/docs/sobre/tabela-de-contribuicao'},
+            ],
+          },
+          {
+            title: 'Repositório',
+            items: [
+              {label: 'GitHub', href: REPO_URL},
+              {label: 'Releases', href: `${REPO_URL}/releases`},
+            ],
+          },
+        ],
+        copyright: `Equipe Roberta Williams · FGA0315 Qualidade de Software 1 · UnB · Versão ${SITE_VERSION} · Atualizado em ${LAST_UPDATE}`,
       },
       prism: {
         theme: prismThemes.github,

@@ -24,9 +24,25 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 
 <div style={{clear: 'both'}} />
 
+## Como a avaliação está organizada
+
+A avaliação segue as quatro fases do processo de avaliação de produto (Aula A07, slide 4):
+
+| Fase | O que é feito | Situação |
+| ---- | ------------- | -------- |
+| [Fase 1 – Estabelecer requisitos](./fase-1/index.md) | Propósito, tipo de produto, modelo de qualidade e características priorizadas | Entrega 1 |
+| [Fase 2 – Especificar a avaliação](./fase-2/index.md) | Objetivos GQM, questões, hipóteses, métricas, níveis de pontuação e critérios de julgamento | Entrega 1 |
+| Fase 3 – Projetar a avaliação | Plano de avaliação: método, recursos e cronograma | Entrega 2 |
+| Fase 4 – Executar a avaliação | Obtenção das medidas, comparação com critérios e julgamento | Entrega 2 |
+
+A execução do trabalho é acompanhada com métricas PSM/CID, descritas em [Gestão do projeto](./gestao/index.md).
+
 ## Links rápidos
 
 - **Repositório:** [FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS)
+- **Releases:** [versões entregues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/releases)
+- **Entregas:** [Entrega 1](./sobre/entregas/entrega-1.md)
+- **Equipe:** [Tabela de contribuição](./sobre/tabela-de-contribuicao.md) · [Uso de IA](./sobre/uso-de-ia.md)
 
 ## Equipe
 
@@ -64,4 +80,4 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 </div>
 
 ---
-*Versão 1.0 - Última atualização: Outubro de 2026*
+*Versão 1.0 - Última atualização: 20/10/2026*
