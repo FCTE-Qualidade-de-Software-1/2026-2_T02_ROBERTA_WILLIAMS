@@ -78,7 +78,7 @@ O acompanhamento é feito no GitHub Projects do repositório da equipe.
 
 - [Indicadores](./indicadores.md): os seis indicadores descritos pelo modelo de informação.
 - [Registro de medições](./registro-psm.md): valores por iteração, interpretação e decisões.
-- [Atas de reunião](./atas/index.md): registro das reuniões da equipe (premissa 4).
+- [Atas de reunião](./atas/index.md): registro das reuniões da equipe.
 
 ## Referências
 
