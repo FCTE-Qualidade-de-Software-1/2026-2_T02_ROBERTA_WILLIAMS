@@ -26,7 +26,7 @@ Com o brainstorming realizado foi possível elencar alguns problemas que podem c
 - os erros de interação com o software não são transparentes para o usuário;
 - a tradução demora ou atrasa em cenários de internet lenta.
 
-[*Link para o Brainstorming*]()
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVEZJnItA=/?embedMode=view_only_without_ui&moveToViewport=-7569,-4842,22668,10888&embedId=678904142013" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
 
 ### 1.2. Objetivo da avaliação
 
