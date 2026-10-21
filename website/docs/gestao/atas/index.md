@@ -9,9 +9,12 @@ sidebar_label: Atas de reunião
 
 | Data | Assunto principal | Ata |
 | ---- | ----------------- | --- |
-| | | |
-
-{/* Adicionar uma linha por ata. Exemplo: | 21/10/2026 | Planejamento da Iteração 1 | [Ata](./2026-10-21.md) | */}
+| 26/08/2026 | Organização do GitHub | [Ata](./2026-08-26.md) |
+| 05/10/2026 | Organização do GitHub | [Ata](./2026-10-05.md) |
+| 14/10/2026 | Organização do GitHub | [Ata](./2026-10-14.md) |
+| 15/10/2026 | Organização do GitHub | [Ata](./2026-10-15.md) |
+| 16/10/2026 | Organização do GitHub | [Ata](./2026-10-16.md) |
+| 20/10/2026 | Organização do GitHub | [Ata](./2026-10-20.md) |
 
 ## Modelo de ata
 
@@ -62,4 +65,5 @@ As decisões de gestão tomadas a partir dos indicadores também são copiadas p
 
 | Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
 | ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 20/10/2026 | Página de atas e modelo de ata | Geovane S. Freitas | |
+| 0.1 | 20/10/2026 | Página de atas e modelo de ata | Geovane S. Freitas | Ludmila O. Nunes |
+| 0.2 | 20/10/2026 | Adição das atas até o dia 20/10/2026 | Ludmila O. Nunes | Geovane S. Freitas |
