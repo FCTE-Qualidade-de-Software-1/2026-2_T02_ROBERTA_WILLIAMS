@@ -12,46 +12,7 @@ Esta seção apresenta a estrutura visual da árvore **Goal-Question-Metric** (G
 
 A estrutura a seguir ilustra a rastreabilidade completa entre o objetivo estratégico, os objetivos específicos por característica da **ISO/IEC 25010:2023** [ISO and IEC 2005], as questões de pesquisa e as métricas quantitativas associadas:
 
-```mermaid
-graph TD
-    OBJ[Objetivo Geral: Garantir acesso e autonomia de pessoas surdas a serviços digitais]
-
-    %% Características ISO 25010:2023
-    OBJ --> CI[Capacidade de Interação]
-    OBJ --> ED[Eficiência de Desempenho]
-    OBJ --> FL[Flexibilidade]
-    OBJ --> MN[Manutenibilidade]
-
-    %% Capacidade de Interação
-    CI --> Q1I[Q1-I: Autonomia de Uso]
-    CI --> Q2I[Q2-I: Feedback de Erros]
-    CI --> Q3I[Q3-I: Contraste e Seleção]
-    Q1I --> MI11[MI1.1: Taxa de Conclusão]
-    Q2I --> MI21[MI2.1: Mensagens em Texto]
-    Q3I --> MI31[MI3.1: Contraste/Seleção]
-
-    %% Eficiência de Desempenho
-    ED --> Q1E[Q1-E: Tempo de Resposta]
-    ED --> Q2E[Q2-E: Consumo de CPU]
-    ED --> Q3E[Q3-E: Tráfego e Cache]
-    Q1E --> ME11[ME1.1: Tempo de Tradução]
-    Q2E --> ME21[ME2.1: Uso de CPU]
-    Q3E --> ME31[ME3.1: Taxa de Cache]
-
-    %% Flexibilidade
-    FL --> Q1F[Q1-F: Multiplataforma]
-    FL --> Q2F[Q2-F: Instalabilidade]
-    Q1F --> MF11[MF1.1: Adaptabilidade]
-    Q2F --> MF21[MF2.1: Integração Direta]
-
-    %% Manutenibilidade
-    MN --> Q1M[Q1-M: Design System]
-    MN --> Q2M[Q2-M: Modularidade]
-    MN --> Q3M[Q3-M: Tempo de Correção]
-    Q1M --> MM11[MM1.1: Reuso de Componentes]
-    Q2M --> MM21[MM2.1: Módulos Afetados]
-    Q3M --> MM31[MM3.1: Tempo de Merge]
-```
+![Árvore GQM VLibras](website\img\arvore_gqm_vlibras.png)
 
 ---
 
