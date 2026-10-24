@@ -45,14 +45,14 @@ A tabela a seguir apresenta os limites numéricos para atribuição da pontuaç�
 
 ## 3. Método de Agregação e Pontuação por Característica
 
-A pontuação final de cada característica de qualidade ($P_C$) é calculada através da média aritmética simples das notas obtidas pelas suas métricas associadas:
+A pontuação final de cada característica de qualidade é calculada através da média aritmética simples das notas obtidas pelas suas métricas associadas:
 
 `P_C = (Soma das pontuações das métricas) / n`
 
 Onde:
-* $P_C$: Pontuação da Característica de Qualidade (de 1.0 a 5.0)
-* $P_{M_i}$: Pontuação individual da métrica $i$
-* $n$: Número total de métricas da característica
+* `P_C`: Pontuação da Característica de Qualidade (de 1.0 a 5.0)
+* `P_M`: Pontuação individual de cada métrica da característica
+* `n`: Número total de métricas da característica
 
 ---
 
@@ -60,7 +60,7 @@ Onde:
 
 O software **VLibras (versão plugin)** é considerado **Aprovado na Avaliação de Qualidade** se atingir os dois critérios de aceite globais:
 
-1. **Pontuação Geral do Produto ($P_G$):** Média global das 4 características igual ou superior a **3.5 pontos**.
+1. **Pontuação Geral do Produto:** Média global das 4 características igual ou superior a **3.5 pontos**.
 2. **Ausência de Bloqueio Crítico:** Nenhum indicador individual pode obter pontuação igual a **1 (Crítico)**.
 
 ### Faixas de Classificação do Produto
