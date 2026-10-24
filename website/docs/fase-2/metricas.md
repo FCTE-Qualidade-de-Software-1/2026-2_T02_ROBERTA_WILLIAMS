@@ -16,7 +16,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção das tarefas de vídeo (repetir trecho, alterar velocidade) e dicionário/regionalismo concluídas pelo usuário sem ajuda externa e sem depender de leitura em português.
 * **Unidade:** Percentual (%)
 * **Coleta:** Teste de usabilidade com no mínimo 8 participantes surdos. Instrução da tarefa em Libras antes de começar; nenhuma ajuda durante a execução; tempo-limite de 3 minutos por tarefa. Gravação de tela.
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100`  
   * $A$ = tarefas concluídas sem assistência  
   * $B$ = total de tarefas tentadas
 * **Fonte de Dados:** Observação direta e gravação de tela do teste com usuários.
@@ -32,7 +32,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção das mensagens de erro e de status do widget exibidas somente em texto em português, sem sinalização do avatar nem ícone explicativo.
 * **Unidade:** Percentual (%)
 * **Coleta:** Inventariar todas as mensagens no código-fonte e provocar cada uma na interface (ex.: desligar rede para simular erro de carregamento; clicar fora de texto para gerar falha de seleção). Registrar o tipo de recurso de comunicação exibido.
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100` 
   * $A$ = mensagens exibidas exclusivamente em texto  
   * $B$ = total de mensagens de erro/status implementadas
 * **Fonte de Dados:** Código-fonte (`src/widget/providers/toaster` e `src/widget/dialogs`) e inspeção manual da interface.
@@ -48,7 +48,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção de seleções de texto bem-sucedidas em páginas com diferentes layouts combinada à verificação de conformidade de contraste visual dos elementos do widget com a diretriz WCAG (nível AA, contraste mínimo de 4.5:1).
 * **Unidade:** Percentual (%)
 * **Coleta:** Testes de uso (mínimo 8 participantes) registrando o total de seleções tentadas e falhas de seleção, associados à inspeção automatizada de acessibilidade via *axe-core*/Lighthouse em 10 portais governamentais.
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100`  
   * $A$ = seleções de texto efetuadas com sucesso (sem erro de área ou feedback)  
   * $B$ = total de tentativas de seleção de texto executadas
 * **Fonte de Dados:** Ferramentas de verificação de acessibilidade e gravações de tela dos testes.
@@ -82,7 +82,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Percentual do tempo de CPU utilizado pelo processo do navegador enquanto o avatar sinaliza continuamente em um dispositivo com recursos de hardware limitados.
 * **Unidade:** Percentual (%)
 * **Coleta:** Sessões de 2 minutos de tradução contínua, repetidas 5 vezes, em um ambiente de hardware modesto sem outras aplicações abertas. Registrar a média e o pico de consumo.
-* **Cálculo:** $X = (B / A) \times 100$  
+* **Cálculo:** `X = (B / A) * 100`  
   * $A$ = tempo total de operação/tradução  
   * $B$ = tempo de CPU efetivamente consumido pelo processo
 * **Fonte de Dados:** Monitor de desempenho do navegador (*Performance Monitor*) ou do sistema operacional.
@@ -98,7 +98,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Quantidade de dados de rede transferidos durante interações repetidas (alteração de velocidade, repetição e dicionário) e percentual de requisições atendidas via cache local.
 * **Unidade:** Megabytes (MB) e Percentual (%)
 * **Coleta:** Executar um roteiro padrão na aba *Network* das ferramentas do desenvolvedor (reproduzir tradução, alterar velocidade 0.5x/2x, repetir e consultar 5 termos no dicionário) e reexecutar a mesma sequência.
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100`  
   * $A$ = requisições atendidas pelo cache local (status 304 / *from cache*) na reexecução  
   * $B$ = total de requisições disparadas pelas ações
 * **Fonte de Dados:** Aba *Network* (*DevTools*) e relatórios do *Service Worker/Local Storage*.
@@ -116,7 +116,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção das funcionalidades do escopo (tradutor, dicionário, velocidade, repetição, regionalismo) que funcionam perfeitamente em cada navegador avaliado.
 * **Unidade:** Percentual (%)
 * **Coleta:** Roteiro fixo de testes executado nos navegadores Chrome, Firefox, Edge e Safari, em ambientes *desktop* e *mobile*. Uma execução completa por função e ambiente com captura de evidências.
-* **Cálculo:** $X = (1 - (A / B)) \times 100$  
+* **Cálculo:** `X = (1 - (A / B)) * 100`  
   * $A$ = quantidade de funções que apresentaram falha  
   * $B$ = total de funções testadas
 * **Fonte de Dados:** Checklist de execução por navegador com capturas de tela e logs de erro.
@@ -132,7 +132,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção de portais web em que a instalação padrão do widget funciona imediatamente, sem a necessidade de correções manuais de CSS ou scripts.
 * **Unidade:** Percentual (%)
 * **Coleta:** Amostra de no mínimo 10 portais do Governo Federal. Injetar o widget com o código padrão de instalação e registrar os conflitos encontrados (ex.: sobreposição de *z-index*, bloqueio de scripts).
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100`  
   * $A$ = portais que não precisaram de nenhum ajuste manual  
   * $B$ = total de portais testados
 * **Fonte de Dados:** Ficha de registro de integração por portal com capturas de tela.
@@ -150,7 +150,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Proporção de componentes da interface gráfica do widget que reutilizam diretamente as definições padronizadas do *Design System* do projeto.
 * **Unidade:** Percentual (%)
 * **Coleta:** Mapeamento do código-fonte do widget (diretório `src/widget/components/`). Mapear todos os elementos visuais (botões, sliders, modais) e verificar o reuso das definições padronizadas vs. código customizado/duplicado.
-* **Cálculo:** $X = (A / B) \times 100$  
+* **Cálculo:** `X = (A / B) * 100`  
   * $A$ = componentes de UI que reutilizam o Design System  
   * $B$ = total de componentes de UI mapeados no widget
 * **Fonte de Dados:** Análise estática do código-fonte no repositório oficial do projeto.
@@ -180,7 +180,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Tempo médio decorrido entre a abertura de uma *issue* crítica de incompatibilidade e a realização do *merge* da solução no repositório oficial.
 * **Unidade:** Dias
 * **Coleta:** Selecionar as *issues* fechadas por *merge* relacionadas à quebra de funcionamento em navegadores ou portais e calcular a diferença entre as datas.
-* **Cálculo:** $X = \sum (\text{data do merge} - \text{data de abertura}) / \text{número de issues corrigidas}$
+* **Cálculo:** `X = (Soma dos módulos distintos alterados) / (Número de alterações analisadas)`
 * **Fonte de Dados:** *Issues* e *Pull Requests* do repositório oficial no GitHub.
 * **Interpretação:**  
   * **Baixo (≤ 7 dias):** Correções rápidas; a comunidade passa pouco tempo desassistida.  
