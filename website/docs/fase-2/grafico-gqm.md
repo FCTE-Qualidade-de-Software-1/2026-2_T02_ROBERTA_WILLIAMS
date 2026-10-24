@@ -12,7 +12,7 @@ Esta seção apresenta a estrutura visual da árvore **Goal-Question-Metric** (G
 
 A estrutura a seguir ilustra a rastreabilidade completa entre o objetivo estratégico, os objetivos específicos por característica da **ISO/IEC 25010:2023** [ISO and IEC 2005], as questões de pesquisa e as métricas quantitativas associadas:
 
-![Árvore GQM VLibras](website\img\arvore_gqm_vlibras.png)
+![Árvore GQM VLibras](../../img/arvore_gqm_vlibras.png)
 
 ---
 
