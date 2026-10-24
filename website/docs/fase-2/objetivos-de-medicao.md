@@ -65,4 +65,4 @@ Abaixo estão definidos os objetivos de avaliação para cada característica se
 
 | Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
 | ------ | ---------- | ----------------------------------------- | -------- | ---------- |
-| 0.1 | 23/10/2026 | Adicionando objetivos | Mariana Pereira | ---------- |
+| 0.1 | 23/10/2026 | Adicionando objetivos | Mariana Pereira |  |
