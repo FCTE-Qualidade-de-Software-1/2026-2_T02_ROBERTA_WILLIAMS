@@ -66,7 +66,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Tempo decorrido entre a seleção do texto pelo usuário e o início da exibição do primeiro sinal do avatar, estando o motor 3D já carregado.
 * **Unidade:** Segundos (s)
 * **Coleta:** Execução de 10 frases padronizadas em dois perfis de rede simulados (Banda Larga e 3G via *DevTools* do navegador). Registrar a média, o tempo máximo e o desvio padrão.
-* **Cálculo:** $X = B - A$  
+* **Cálculo:** `X = B - A`  
   * $A$ = instante da seleção do texto  
   * $B$ = instante da exibição do primeiro sinal em Libras
 * **Fonte de Dados:** Linha do tempo (*Network/Performance*) do *Developer Tools* do navegador e gravação de tela.
