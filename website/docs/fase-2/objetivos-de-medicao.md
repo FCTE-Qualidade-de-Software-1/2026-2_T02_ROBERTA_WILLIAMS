@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: Objetivos
+sidebar_label: Objetivos da Avaliação (GQM)
 ---
 
 # 1. Objetivos da Avaliação (GQM)

@@ -2,13 +2,13 @@
 sidebar_position: 2
 ---
 
-# 2. Questões de Pesquisa, Hipóteses e Métricas (GQM)
+# Questões de Pesquisa (GQM)
 
 Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IEC 2023, Washizaki and Olszewska 2024], os objetivos da avaliação foram desdobrados em questões de pesquisa e hipóteses operacionais no método GQM.
 
 ---
 
-## 2.1. Capacidade de Interação (*Interaction Capability*)
+## 1. Capacidade de Interação (*Interaction Capability*)
 
 * **Q1-I (Operabilidade e Autonomia):**  
   Qual é o grau de autonomia de usuários surdos não alfabetizados em português para utilizar as funcionalidades de vídeo (velocidade, repetição, escolha de regionalismo) e o dicionário guiando-se apenas pela interface visual?
@@ -21,7 +21,7 @@ Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IE
 
 ---
 
-## 2.2. Eficiência de Desempenho (*Performance Efficiency*)
+## 2. Eficiência de Desempenho (*Performance Efficiency*)
 
 * **Q1-E (Comportamento Temporal):**  
   Qual é o tempo de resposta entre a seleção de um texto pelo usuário e o início da reprodução da tradução em Libras sob diferentes condições de rede (banda larga vs. conexões móveis limitadas como 3G)?
@@ -34,7 +34,7 @@ Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IE
 
 ---
 
-## 2.3. Flexibilidade (*Flexibility*)
+## 3. Flexibilidade (*Flexibility*)
 
 * **Q1-F (Adaptabilidade entre Multiplataformas):**  
   Qual é a proporção de funcionalidades do escopo (tradutor, dicionário, controles de velocidade/repetição e regionalismo) que operam sem falhas nos principais navegadores (Chrome, Firefox, Edge, Safari) em ambientes desktop e mobile?
@@ -44,7 +44,7 @@ Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IE
 
 ---
 
-## 2.4. Manutenibilidade (*Maintainability*)
+## 4. Manutenibilidade (*Maintainability*)
 
 * **Q1-M (Reuso do Design System):**  
   Qual é o percentual de componentes de interface do widget que reutilizam diretamente os elementos padronizados no Design System do projeto?

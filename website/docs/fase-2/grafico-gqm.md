@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Gráficos e Representações Visuais (GQM)
+# Gráficos (GQM)
 
 Esta seção apresenta a estrutura visual da árvore **Goal-Question-Metric** (GQM) [FanJiang and Wu 2009] e o modelo de consolidação dos resultados de qualidade para a extensão web do **VLibras** [ISO and IEC 2005].
 
@@ -52,30 +52,6 @@ graph TD
     Q2M --> MM21[MM2.1: Módulos Afetados]
     Q3M --> MM31[MM3.1: Tempo de Merge]
 ```
-
----
-
-## 2. Consolidação de Resultados: Diagrama de Radar (Kiviat)
-
-Para a visualização do perfil de qualidade global do software, os resultados consolidados das 4 características são plotados num **Diagrama de Radar** (escala de 1.0 a 5.0 pontos):
-
-```
-                       Capacidade de Interação
-                                5.0
-                                 |
-                                4.0
-                                 |
-     Manutenibilidade ----------+---------- Eficiência de Desempenho
-                                 |
-                                2.0
-                                 |
-                                1.0
-                               Flexibilidade
-```
-
-### Critérios de Interpretação Visual:
-* **Área de Cobertura Ampla (≥ 3.5 em todos os eixos):** Perfil equilibrado de qualidade; o software atende aos critérios de usabilidade, desempenho, portabilidade e arquitetura.
-* **Vértice Recuado (< 2.5 num eixo):** Indica um gargalo específico de qualidade que exige intervenção prioritária da equipe de desenvolvimento (ex.: baixa manutenibilidade ou falhas de eficiência em redes 3G).
 
 ---
 
