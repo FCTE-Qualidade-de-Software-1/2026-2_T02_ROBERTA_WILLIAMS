@@ -57,8 +57,12 @@ Abaixo estão definidos os objetivos de avaliação para cada característica se
 | **Do ponto de vista do(a)** | Equipe de desenvolvimento e manutenção do software |
 | **No contexto de** | Ambiente de desenvolvimento (repositório Git/GitHub) e ferramentas de compilação/*build* do projeto |
 
+## Referências
+
+> ISO/IEC. **ISO/IEC 25040:2023**: systems and software engineering: systems and software quality requirements and evaluation (SQuaRE): evaluation process. Geneva: ISO/IEC, 2023.
+
 ## Histórico de Versões
 
 | Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
+| ------ | ---------- | ----------------------------------------- | -------- | ---------- |
 | 0.1 | 23/10/2026 | Adicionando objetivos | Mariana Pereira | ---------- |
-|        |      |                        |          |            |
