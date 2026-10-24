@@ -62,8 +62,6 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: `${REPO_URL}/tree/main/website/`,
           showLastUpdateTime: true,
-          remarkPlugins: [remarkMath],
-          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {

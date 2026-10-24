@@ -166,7 +166,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Definição Operacional:** Número médio de módulos distintos do código-fonte que precisam ser alterados a cada modificação nos controles do player de vídeo.
 * **Unidade:** Quantidade de módulos por alteração (módulos/alteração)
 * **Coleta:** Filtrar o histórico do Git pelos caminhos dos controles do player e listar os arquivos e módulos modificados em cada *commit* ou *Pull Request*.
-* **Cálculo:** $X = \sum \text{módulos distintos alterados} / \text{número de alterações analisadas}$
+* **Cálculo:** `X = (Soma dos módulos distintos alterados) / (Número de alterações analisadas)`
 * **Fonte de Dados:** Histórico de *commits* e *Pull Requests* do repositório oficial.
 * **Interpretação:**  
   * **Baixo (≤ 2):** Alto desacoplamento; modificações são isoladas e seguras.  

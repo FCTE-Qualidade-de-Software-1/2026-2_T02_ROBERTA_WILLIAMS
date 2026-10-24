@@ -47,7 +47,7 @@ A tabela a seguir apresenta os limites numéricos para atribuição da pontuaç�
 
 A pontuação final de cada característica de qualidade ($P_C$) é calculada através da média aritmética simples das notas obtidas pelas suas métricas associadas:
 
-$$P_C = \frac{\sum_{i=1}^{n} P_{M_i}}{n}$$
+`P_C = (Soma das pontuações das métricas) / n`
 
 Onde:
 * $P_C$: Pontuação da Característica de Qualidade (de 1.0 a 5.0)
