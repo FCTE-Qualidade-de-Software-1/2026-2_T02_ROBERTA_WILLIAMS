@@ -5,6 +5,8 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -13,7 +15,7 @@ const REPO_URL =
 
 // Atualizar a cada entrega (critério F2-C10: versão e data no rodapé).
 const SITE_VERSION = '1.0';
-const LAST_UPDATE = '20/10/2026';
+const LAST_UPDATE = '24/10/2026';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -60,6 +62,8 @@ const config = {
           sidebarPath: './sidebars.js',
           editUrl: `${REPO_URL}/tree/main/website/`,
           showLastUpdateTime: true,
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {
