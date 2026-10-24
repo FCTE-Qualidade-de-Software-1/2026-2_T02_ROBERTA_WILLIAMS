@@ -32,14 +32,14 @@ Com o brainstorming realizado foi possível elencar alguns problemas que podem c
 
 O processo de avaliação da ISO/IEC 25040 começa pelo estabelecimento dos requisitos da avaliação, e o primeiro deles é o propósito (ISO/IEC, 2011). Para este trabalho, o propósito é:
 
-> Indicar pontos de melhoria do widget e da extensão do VLibras para navegadores web em quatro características de qualidade (usabilidade, eficiência de desempenho, manutenibilidade e portabilidade) e fornecer à equipe responsável um diagnóstico técnico que apoie a priorização de correções e evoluções.
+> Indicar pontos de melhoria do widget e da extensão do VLibras para navegadores web em quatro características de qualidade (capacidade de interação, eficiência de desempenho, manutenibilidade e flexibilidade) e fornecer à equipe responsável um diagnóstico técnico que apoie a priorização de correções e evoluções.
 
 Definimos um objetivo de melhoria para cada característica:
 
-- **Usabilidade:** os usuários utilizam a ferramenta sozinhos, são avisados sobre erros e recebem informações com contraste adequado.
+- **Capacidade de interação:** os usuários utilizam a ferramenta sozinhos, são avisados sobre erros e recebem informações com contraste adequado.
 - **Eficiência de desempenho:** o consumo de processamento e de rede é otimizado.
 - **Manutenibilidade:** as novas funcionalidades aplicam componentes já definidos no Design System.
-- **Portabilidade:** o widget e a extensão são compatíveis com os principais navegadores, sistemas operacionais e dispositivos, com menos adaptações específicas para cada ambiente.
+- **Flexibilidade:** o widget e a extensão são compatíveis com os principais navegadores, sistemas operacionais e dispositivos, com menos adaptações específicas para cada ambiente.
 
 ## 2. Para quem
 
@@ -65,12 +65,12 @@ As decisões da Tabela 1 derivam dos objetivos de melhoria da Seção 1.2. Para 
 
 | ID | Decisão | Quem decide | Característica relacionada | Componente |
 | -- | ------- | ----------- | -------------------------- | ---------- |
-| D1 | Priorizar ajustes na indicação do que pode ser traduzido (hover, diferenciação visual) e no aviso de erros ao usuário | Equipe de desenvolvimento e manutenção | Usabilidade | Widget e extensões |
-| D2 | Definir ajustes de contraste e de interface para que o usuário use a ferramenta sozinho | Equipe de desenvolvimento e manutenção | Usabilidade | Widget e extensões |
+| D1 | Priorizar ajustes na indicação do que pode ser traduzido (hover, diferenciação visual) e no aviso de erros ao usuário | Equipe de desenvolvimento e manutenção | Capacidade de interação | Widget e extensões |
+| D2 | Definir ajustes de contraste e de interface para que o usuário use a ferramenta sozinho | Equipe de desenvolvimento e manutenção | Capacidade de interação | Widget e extensões |
 | D3 | Definir ações para reduzir o uso de processamento e de rede, em especial com internet lenta | Equipe de desenvolvimento e manutenção | Eficiência de desempenho | Widget e extensões |
 | D4 | Definir onde as novas funcionalidades devem passar a usar os componentes do Design System | Equipe de desenvolvimento e manutenção | Manutenibilidade | Widget e extensões |
-| D5 | Definir quais navegadores, sistemas e dispositivos terão suporte prioritário | Equipe de desenvolvimento e manutenção | Portabilidade | Widget e extensões |
-| D6 | Decidir se e com quais ajustes integrar o widget a um portal | Desenvolvedores responsáveis pela integração | Portabilidade e eficiência de desempenho | Widget |
+| D5 | Definir quais navegadores, sistemas e dispositivos terão suporte prioritário | Equipe de desenvolvimento e manutenção | Flexibilidade | Widget e extensões |
+| D6 | Decidir se e com quais ajustes integrar o widget a um portal | Desenvolvedores responsáveis pela integração | Flexibilidade e eficiência de desempenho | Widget |
 
 ## Referências
 
