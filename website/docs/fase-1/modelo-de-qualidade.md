@@ -59,9 +59,9 @@ Em cada característica, ficaram as subcaracterísticas ligadas às decisões e 
 
 ## Representação gráfica
 
-:::note
-O diagrama do modelo adaptado entra aqui, ligando cada característica as subcaracterísticas.
-:::
+![Modelo de qualidade do produto adaptado](../../img/modelo-qualidade-adaptado.png)
+
+**Figura 1.** Adaptação do modelo de qualidade do produto. Fonte: Elaborado pelos autores.
 
 ## Referências
 
