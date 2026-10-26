@@ -111,6 +111,6 @@ Com base na classificação, o grupo selecionou Capacidade de Interação, Efici
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                   | Autor(a)         | Revisor(a) |
-| ------ | ---------- | ---------------------------------------- | ---------------- | ---------- |
-| 1.0    | 26/10/2026 | Adição das características e priorização | Ludmila O. Nunes |            |
+| Versão | Data       | Descrição da alteração                   | Autor(a)         | Revisor(a)       |
+| ------ | ---------- | ---------------------------------------- | ---------------- | ---------------- |
+| 1.0    | 26/10/2026 | Adição das características e priorização | Ludmila O. Nunes | Rafael W. Schadt |
