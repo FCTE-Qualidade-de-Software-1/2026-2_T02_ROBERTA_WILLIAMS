@@ -14,7 +14,7 @@ O percentual pode ser calculado a partir do [indicador 4 – Esforço por membro
 | Membro             | Matrícula | Principais responsabilidades e tarefas | Esforço (h) | Contribuição (%) |
 | ------------------ | --------- | -------------------------------------- | ----------: | ---------------: |
 | Amanda C. Lima     | 231027023 | Estruturação e automatização do deploy do GitHub Pages, participação da dinâmica de brainstorming e atualização da documentação | 16 |                  |
-| Geovane S. Freitas | 211031708 |                                        |             |                  |
+| Geovane S. Freitas | 211031708 | Configuração do Projects (Estruturação de Entregas, Atividades, Kanban, Insights, etc.), participação da dinâmica de brainstorming, definição de métricas para questões e hipóteses e atualização da documentação | 13 |                  |
 | Ludmila O. Nunes   | 231026750 | Estruturação do Overleaf, redação do referencial teórico, organização e participação da dinâmica de brainstorming, definição de métricas e atualização da documentação | 17 |                  |
 | Mariana P. Silva   | 232029210 |                                        |             |                  |
 | Rafael W. Schadt   | 231011800 |                                        |             |                  |
@@ -30,3 +30,4 @@ O percentual pode ser calculado a partir do [indicador 4 – Esforço por membro
 | 0.1    | 20/10/2026 | Estrutura da tabela de contribuição | Geovane S. Freitas |            |
 | 1.0    | 26/10/2026 | Adição da contribuição de Ludmila   | Ludmila O. Nunes   |            |
 | 1.1    | 26/10/2026 | Adição da contribuição de Amanda    | Amanda C. Lima     |            |
+| 1.2    | 26/10/2026 | Adição da contribuição de Geovane   | Geovane S. Freitas |            |
