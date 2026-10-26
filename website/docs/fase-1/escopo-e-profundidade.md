@@ -72,7 +72,7 @@ Por fim, a avaliação do regionalismo será restrita ao Padrão Nacional, sem p
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                         | Autor(a)         | Revisor(a) |
-| ------ | ---------- | -------------------------------------------------------------- | ---------------- | ---------- |
-| 1.0    | 26/10/2026 | Adição do escopo, profundidade, objetos e limites da avaliação | Ludmila O. Nunes |            |
+| Versão | Data       | Descrição da alteração                                         | Autor(a)         | Revisor(a)       |
+| ------ | ---------- | -------------------------------------------------------------- | ---------------- | ---------------- |
+| 1.0    | 26/10/2026 | Adição do escopo, profundidade, objetos e limites da avaliação | Ludmila O. Nunes | Rafael W. Schadt |
 
