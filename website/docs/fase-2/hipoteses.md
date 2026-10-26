@@ -65,6 +65,6 @@ As hipóteses representam as suposições operacionais do nível analítico da a
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 23/10/2026 | Adicionando hipoteses | Mariana Pereira |            |
+| Versão | Data       | Descrição da alteração | Autor(a)        | Revisor(a) |
+| ------ | ---------- | ---------------------- | --------------- | ---------- |
+| 0.1    | 23/10/2026 | Adicionando hipoteses  | Mariana Pereira |            |

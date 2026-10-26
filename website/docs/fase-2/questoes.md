@@ -65,6 +65,6 @@ Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IE
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 23/10/2026 | Adicionado as questões | Mariana Pereira | |
+| Versão | Data       | Descrição da alteração | Autor(a)        | Revisor(a) |
+| ------ | ---------- | ---------------------- | --------------- | ---------- |
+| 0.1    | 23/10/2026 | Adicionado as questões | Mariana Pereira |            |

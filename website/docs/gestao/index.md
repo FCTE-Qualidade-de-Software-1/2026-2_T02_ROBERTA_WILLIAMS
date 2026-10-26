@@ -44,28 +44,28 @@ O acompanhamento é feito no GitHub Projects do repositório da equipe.
 
 ### Campos
 
-| Campo | Tipo | Uso |
-| ----- | ---- | --- |
-| Status | Seleção (colunas do quadro, de Backlog a Done) | Fluxo do trabalho; base do fluxo cumulativo |
-| Iteração | Iteração semanal (Iteração 0 de 12/10 a 18/10/2026, cadastrada retroativamente) | Agrupa o trabalho comprometido por semana |
-| Fase | Seleção (Fase 1 a Fase 4, Gestão do projeto, Artigo e GitPage) | Liga cada item à fase do processo de avaliação (Aula A07, slide 4) |
-| Esforço estimado (h) | Número | Indicador de precisão da estimativa |
-| Esforço real (h) | Número | Indicadores de esforço |
-| Início / Conclusão | Data | *Cycle time* e linha do tempo |
-| Priority | Seleção | Ordenação do *backlog* |
-| Milestone | Marco do repositório | E1 (26/10/2026) e E2 |
+| Campo                | Tipo                                                                            | Uso                                                                |
+| -------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Status               | Seleção (colunas do quadro, de Backlog a Done)                                  | Fluxo do trabalho; base do fluxo cumulativo                        |
+| Iteração             | Iteração semanal (Iteração 0 de 12/10 a 18/10/2026, cadastrada retroativamente) | Agrupa o trabalho comprometido por semana                          |
+| Fase                 | Seleção (Fase 1 a Fase 4, Gestão do projeto, Artigo e GitPage)                  | Liga cada item à fase do processo de avaliação (Aula A07, slide 4) |
+| Esforço estimado (h) | Número                                                                          | Indicador de precisão da estimativa                                |
+| Esforço real (h)     | Número                                                                          | Indicadores de esforço                                             |
+| Início / Conclusão   | Data                                                                            | *Cycle time* e linha do tempo                                      |
+| Priority             | Seleção                                                                         | Ordenação do *backlog*                                             |
+| Milestone            | Marco do repositório                                                            | E1 (26/10/2026) e E2                                               |
 
 {/* Conferir os nomes exatos das colunas de Status, dos campos e das visões com o GitHub Projects configurado. */}
 
 ### Visões
 
-| Visão | Layout | Para que serve |
-| ----- | ------ | -------------- |
-| Kanban | Quadro por Status | Acompanhamento diário |
-| Iteração atual | Quadro filtrado por `iteration:@current` | Trabalho comprometido na semana |
-| Recursos e Custos | Tabela agrupada por responsável, com soma das horas | Indicadores 3 e 4 |
-| Calendário e Progresso | *Roadmap* por Início e Conclusão, com *milestones*, agrupado por Fase | Indicadores 1 e 2 |
-| Desempenho do Processo | Tabela filtrada por `status:Done` | Indicador 5 (*cycle time*) |
+| Visão                  | Layout                                                                | Para que serve                  |
+| ---------------------- | --------------------------------------------------------------------- | ------------------------------- |
+| Kanban                 | Quadro por Status                                                     | Acompanhamento diário           |
+| Iteração atual         | Quadro filtrado por `iteration:@current`                              | Trabalho comprometido na semana |
+| Recursos e Custos      | Tabela agrupada por responsável, com soma das horas                   | Indicadores 3 e 4               |
+| Calendário e Progresso | *Roadmap* por Início e Conclusão, com *milestones*, agrupado por Fase | Indicadores 1 e 2               |
+| Desempenho do Processo | Tabela filtrada por `status:Done`                                     | Indicador 5 (*cycle time*)      |
 
 ### Regras de registro
 
@@ -89,6 +89,6 @@ O acompanhamento é feito no GitHub Projects do repositório da equipe.
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 20/10/2026 | Visão geral da gestão com PSM/CID e estrutura do GitHub Projects | Geovane S. Freitas | |
+| Versão | Data       | Descrição da alteração                                           | Autor(a)           | Revisor(a) |
+| ------ | ---------- | ---------------------------------------------------------------- | ------------------ | ---------- |
+| 0.1    | 20/10/2026 | Visão geral da gestão com PSM/CID e estrutura do GitHub Projects | Geovane S. Freitas |            |

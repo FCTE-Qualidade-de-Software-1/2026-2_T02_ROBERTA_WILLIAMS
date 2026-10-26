@@ -28,6 +28,6 @@ A própria equipe de avaliação é a requisitante: escolheu o VLibras e define 
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração | Autor(a)       | Revisor(a) |
-| ------ | ---------- | ---------------------- | -------------- | ---------- |
+| Versão | Data       | Descrição da alteração                                    | Autor(a)       | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------------- | -------------- | ---------- |
 | 1.0    | 24/10/2026 | Inserção do requisitante e do mapa de partes interessadas | Amanda C. Lima |            |

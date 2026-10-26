@@ -18,18 +18,18 @@ O resultado é a base para a Fase 2, em que as características escolhidas são 
 
 **Tabela 1.** Páginas da Fase 1 e conteúdo.
 
-| Página | Conteúdo |
-| ------ | -------- |
-| [Propósito da avaliação e uso pretendido](./proposito-da-avaliacao.md) | Por que avaliar, para quem e como os resultados serão usados, decisões apoiadas e responsáveis |
-| [Requisitante e partes interessadas](./requisitante-e-partes-interessadas.md) | Requisitante e stakeholders, seus papéis, necessidades e influência na avaliação |
+| Página                                                                             | Conteúdo                                                                                                 |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [Propósito da avaliação e uso pretendido](./proposito-da-avaliacao.md)             | Por que avaliar, para quem e como os resultados serão usados, decisões apoiadas e responsáveis           |
+| [Requisitante e partes interessadas](./requisitante-e-partes-interessadas.md)      | Requisitante e stakeholders, seus papéis, necessidades e influência na avaliação                         |
 | [Tipo de produto e descrição estruturada do software](./tipo-produto-descricao.md) | Identificação e categoria do produto, tarefas e usuários, módulos, interfaces, dependências e restrições |
-| [Modelo de qualidade](./modelo-de-qualidade.md) | Modelo escolhido, adaptações justificadas e diagrama com as subcaracterísticas |
-| [Seleção e priorização de características](./caracteristicas-e-priorizacao.md) | Características escolhidas e método de priorização |
-| [Escopo, profundidade e objetos de avaliação](./escopo-e-profundidade.md) | O que será avaliado agora, em qual profundidade, o que fica fora e por quê |
-| [ODS, metas e indicadores relacionados](./ods-relacionados.md) | ODS relevantes, metas, indicadores e justificativa |
+| [Modelo de qualidade](./modelo-de-qualidade.md)                                    | Modelo escolhido, adaptações justificadas e diagrama com as subcaracterísticas                           |
+| [Seleção e priorização de características](./caracteristicas-e-priorizacao.md)     | Características escolhidas e método de priorização                                                       |
+| [Escopo, profundidade e objetos de avaliação](./escopo-e-profundidade.md)          | O que será avaliado agora, em qual profundidade, o que fica fora e por quê                               |
+| [ODS, metas e indicadores relacionados](./ods-relacionados.md)                     | ODS relevantes, metas, indicadores e justificativa                                                       |
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração | Autor(a)       | Revisor(a) |
-| ------ | ---------- | ---------------------- | -------------- | ---------- |
+| Versão | Data       | Descrição da alteração                                                      | Autor(a)       | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------------------------------- | -------------- | ---------- |
 | 1.0    | 24/10/2026 | Inserção da apresentação da fase e da tabela de rastreabilidade das páginas | Amanda C. Lima |            |

@@ -25,6 +25,7 @@ O percentual pode ser calculado a partir do [indicador 4 – Esforço por membro
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 20/10/2026 | Estrutura da tabela de contribuição | Geovane S. Freitas | |
+| Versão | Data       | Descrição da alteração              | Autor(a)           | Revisor(a) |
+| ------ | ---------- | ----------------------------------- | ------------------ | ---------- |
+| 0.1    | 20/10/2026 | Estrutura da tabela de contribuição | Geovane S. Freitas |            |
+| 1.0    | 26/10/2026 | Adição da contribuição de Ludmila   | Ludmila O. Nunes   |            |

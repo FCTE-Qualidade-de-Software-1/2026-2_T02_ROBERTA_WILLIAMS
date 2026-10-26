@@ -71,14 +71,14 @@ As decisões da Tabela 4 derivam dos objetivos da Tabela 2.
 
 **Tabela 4.** Decisões apoiadas pela avaliação.
 
-| ID | Decisão | Quem decide | Característica | Componente |
-| -- | ------- | ----------- | -------------- | ---------- |
-| D1 | Priorizar ajustes na indicação do que pode ser traduzido (hover, diferenciação visual) e no aviso de erros ao usuário | Equipe de desenvolvimento e manutenção | Capacidade de interação | Widget e extensões |
-| D2 | Definir ajustes de contraste e de interface para que o usuário use a ferramenta sozinho | Equipe de desenvolvimento e manutenção | Capacidade de interação | Widget e extensões |
-| D3 | Definir ações para reduzir o tempo de resposta e o uso de processamento e de rede, em especial com internet lenta | Equipe de desenvolvimento e manutenção | Eficiência de desempenho | Widget e extensões |
-| D4 | Definir onde as novas funcionalidades devem passar a usar os componentes do Design System | Equipe de desenvolvimento e manutenção | Manutenibilidade | Widget e extensões |
-| D5 | Definir quais navegadores, sistemas e dispositivos terão suporte prioritário | Equipe de desenvolvimento e manutenção | Flexibilidade | Widget e extensões |
-| D6 | Decidir se e com quais ajustes integrar o widget a um portal | Desenvolvedores responsáveis pela integração | Flexibilidade | Widget |
+| ID  | Decisão                                                                                                               | Quem decide                                  | Característica           | Componente         |
+| --- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- | ------------------------ | ------------------ |
+| D1  | Priorizar ajustes na indicação do que pode ser traduzido (hover, diferenciação visual) e no aviso de erros ao usuário | Equipe de desenvolvimento e manutenção       | Capacidade de interação  | Widget e extensões |
+| D2  | Definir ajustes de contraste e de interface para que o usuário use a ferramenta sozinho                               | Equipe de desenvolvimento e manutenção       | Capacidade de interação  | Widget e extensões |
+| D3  | Definir ações para reduzir o tempo de resposta e o uso de processamento e de rede, em especial com internet lenta     | Equipe de desenvolvimento e manutenção       | Eficiência de desempenho | Widget e extensões |
+| D4  | Definir onde as novas funcionalidades devem passar a usar os componentes do Design System                             | Equipe de desenvolvimento e manutenção       | Manutenibilidade         | Widget e extensões |
+| D5  | Definir quais navegadores, sistemas e dispositivos terão suporte prioritário                                          | Equipe de desenvolvimento e manutenção       | Flexibilidade            | Widget e extensões |
+| D6  | Decidir se e com quais ajustes integrar o widget a um portal                                                          | Desenvolvedores responsáveis pela integração | Flexibilidade            | Widget             |
 
 ## Referências
 
@@ -94,7 +94,7 @@ As decisões da Tabela 4 derivam dos objetivos da Tabela 2.
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração | Autor(a)       | Revisor(a) |
-| ------ | ---------- | ---------------------- | -------------- | ---------- |
-| 0.1    | 20/10/2026 | Inserção do contexto, do problema e do objetivo da avaliação | Amanda C. Lima |            |
+| Versão | Data       | Descrição da alteração                                                | Autor(a)       | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------------------------- | -------------- | ---------- |
+| 0.1    | 20/10/2026 | Inserção do contexto, do problema e do objetivo da avaliação          | Amanda C. Lima |            |
 | 1.0    | 24/10/2026 | Inserção do resumo, de quem usa os resultados e das decisões apoiadas | Amanda C. Lima |            |

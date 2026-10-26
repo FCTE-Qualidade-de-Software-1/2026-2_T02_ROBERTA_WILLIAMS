@@ -197,6 +197,6 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 23/10/2026 | Adicionando métricas | Mariana Pereira |            |
+| Versão | Data       | Descrição da alteração | Autor(a)        | Revisor(a) |
+| ------ | ---------- | ---------------------- | --------------- | ---------- |
+| 0.1    | 23/10/2026 | Adicionando métricas   | Mariana Pereira |            |

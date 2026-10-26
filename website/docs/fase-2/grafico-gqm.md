@@ -24,6 +24,6 @@ A estrutura a seguir ilustra a rastreabilidade completa entre o objetivo estrat�
 * **Washizaki, H. and Olszewska, J. I., editors (2024).** *Guide to the Software Engineering Body of Knowledge (SWEBOK Guide)*, Version 4.0. IEEE Computer Society, Piscataway, New Jersey[cite: 19].
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 0.1 | 23/10/2026 | Adicionado o gráfico GQM | Mariana Pereira |
+| Versão | Data       | Descrição da alteração   | Autor(a)        | Revisor(a) |
+| ------ | ---------- | ------------------------ | --------------- | ---------- |
+| 0.1    | 23/10/2026 | Adicionado o gráfico GQM | Mariana Pereira |            |

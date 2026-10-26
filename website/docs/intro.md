@@ -28,12 +28,12 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 
 A avaliação segue as quatro fases do processo de avaliação de produto (Aula A07, slide 4):
 
-| Fase | O que é feito | Situação |
-| ---- | ------------- | -------- |
-| [Fase 1 – Estabelecer requisitos](./fase-1/index.md) | Propósito, tipo de produto, modelo de qualidade e características priorizadas | Entrega 1 |
+| Fase                                                  | O que é feito                                                                               | Situação  |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------- | --------- |
+| [Fase 1 – Estabelecer requisitos](./fase-1/index.md)  | Propósito, tipo de produto, modelo de qualidade e características priorizadas               | Entrega 1 |
 | [Fase 2 – Especificar a avaliação](./fase-2/index.md) | Objetivos GQM, questões, hipóteses, métricas, níveis de pontuação e critérios de julgamento | Entrega 1 |
-| Fase 3 – Projetar a avaliação | Plano de avaliação: método, recursos e cronograma | Entrega 2 |
-| Fase 4 – Executar a avaliação | Obtenção das medidas, comparação com critérios e julgamento | Entrega 2 |
+| Fase 3 – Projetar a avaliação                         | Plano de avaliação: método, recursos e cronograma                                           | Entrega 2 |
+| Fase 4 – Executar a avaliação                         | Obtenção das medidas, comparação com critérios e julgamento                                 | Entrega 2 |
 
 A execução do trabalho é acompanhada com métricas PSM/CID, descritas em [Gestão do projeto](./gestao/index.md).
 

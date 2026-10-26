@@ -53,12 +53,12 @@ A avaliação trata da qualidade que sustenta essa contribuição, e cada caract
 
 **Tabela 4.** Características avaliadas e as metas que elas sustentam.
 
-| Característica | Metas | Como sustenta |
-| -------------- | ----- | ------------- |
-| Capacidade de interação | 10.2 e 16.6 | A pessoa com deficiência auditiva usa o serviço sozinha, é avisada sobre erros e lê a informação com contraste adequado |
-| Eficiência de desempenho | 10.2 | Respostas rápidas, também com internet lenta ou hardware limitado, evitam que a conexão vire uma barreira de acesso |
-| Manutenibilidade | 16.6 | Correções rápidas mantêm a ferramenta funcionando quando navegadores e portais mudam |
-| Flexibilidade | 16.10 | O widget funciona em vários navegadores e portais e leva a informação a mais serviços |
+| Característica           | Metas       | Como sustenta                                                                                                           |
+| ------------------------ | ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Capacidade de interação  | 10.2 e 16.6 | A pessoa com deficiência auditiva usa o serviço sozinha, é avisada sobre erros e lê a informação com contraste adequado |
+| Eficiência de desempenho | 10.2        | Respostas rápidas, também com internet lenta ou hardware limitado, evitam que a conexão vire uma barreira de acesso     |
+| Manutenibilidade         | 16.6        | Correções rápidas mantêm a ferramenta funcionando quando navegadores e portais mudam                                    |
+| Flexibilidade            | 16.10       | O widget funciona em vários navegadores e portais e leva a informação a mais serviços                                   |
 
 ## Referências
 
@@ -68,6 +68,6 @@ A avaliação trata da qualidade que sustenta essa contribuição, e cada caract
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração | Autor(a)       | Revisor(a) |
-| ------ | ---------- | ---------------------- | -------------- | ---------- |
+| Versão | Data       | Descrição da alteração                                                                             | Autor(a)       | Revisor(a) |
+| ------ | ---------- | -------------------------------------------------------------------------------------------------- | -------------- | ---------- |
 | 1.0    | 24/10/2026 | Inserção dos ODS 10 e 16, das metas, dos indicadores e da relação com as características avaliadas | Amanda C. Lima |            |

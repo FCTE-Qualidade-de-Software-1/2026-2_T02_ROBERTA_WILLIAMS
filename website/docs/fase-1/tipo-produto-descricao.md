@@ -72,13 +72,13 @@ Estes são os pontos de contato do produto: o site que o integra, o usuário, o 
 
 **Tabela 5.** Interfaces do VLibras Web.
 
-| Interface | Como funciona |
-| --------- | ------------- |
-| Site e widget | O site carrega `vlibras-plugin.js` e chama `window.VLibras.Widget` com caminho, personalização, avatar e posição |
-| Usuário e produto | Widget: botão de acesso que abre um painel arrastável. Extensão: ícone da barra e menu de contexto, que abrem uma janela popup de 320x480 |
-| Widget e player | `postMessage` entre a página e o iframe do player |
-| Widget e serviços | Requisições HTTP com limite de 10 s: `POST` de tradução, `GET` de sinais e categorias, `POST` de revisão e consulta ao pt.wiktionary.org |
-| Widget e análise de uso | PostHog, só no widget e em produção; os eventos de uso exigem consentimento |
+| Interface               | Como funciona                                                                                                                             |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Site e widget           | O site carrega `vlibras-plugin.js` e chama `window.VLibras.Widget` com caminho, personalização, avatar e posição                          |
+| Usuário e produto       | Widget: botão de acesso que abre um painel arrastável. Extensão: ícone da barra e menu de contexto, que abrem uma janela popup de 320x480 |
+| Widget e player         | `postMessage` entre a página e o iframe do player                                                                                         |
+| Widget e serviços       | Requisições HTTP com limite de 10 s: `POST` de tradução, `GET` de sinais e categorias, `POST` de revisão e consulta ao pt.wiktionary.org  |
+| Widget e análise de uso | PostHog, só no widget e em produção; os eventos de uso exigem consentimento                                                               |
 
 ## Dependências e restrições
 
@@ -107,13 +107,13 @@ Esta lista parte do que a equipe consegue acessar hoje e do que isso permite med
 
 **Tabela 7.** Acesso aos objetos e implicações para a avaliação.
 
-| Objeto | Temos acesso? | Implicação |
-| ------ | ------------- | ---------- |
-| Código-fonte e testes automatizados | Sim, repositório público | A manutenibilidade pode ser medida por análise estática |
-| Widget e extensão em execução | Sim, pelo build local | A capacidade de interação, a flexibilidade e o consumo no cliente podem ser medidos |
-| Serviços remotos | Só como cliente | O tempo de resposta pode ser medido pelo navegador; o consumo no servidor, não |
-| Projeto de análise de uso (PostHog) | Não, o token não está no repositório | Não dá para medir o uso real do produto |
-| Treinamento dos modelos de tradução | Não, está fora do repositório | Fora do escopo da avaliação |
+| Objeto                              | Temos acesso?                        | Implicação                                                                          |
+| ----------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------- |
+| Código-fonte e testes automatizados | Sim, repositório público             | A manutenibilidade pode ser medida por análise estática                             |
+| Widget e extensão em execução       | Sim, pelo build local                | A capacidade de interação, a flexibilidade e o consumo no cliente podem ser medidos |
+| Serviços remotos                    | Só como cliente                      | O tempo de resposta pode ser medido pelo navegador; o consumo no servidor, não      |
+| Projeto de análise de uso (PostHog) | Não, o token não está no repositório | Não dá para medir o uso real do produto                                             |
+| Treinamento dos modelos de tradução | Não, está fora do repositório        | Fora do escopo da avaliação                                                         |
 
 ## Referências
 

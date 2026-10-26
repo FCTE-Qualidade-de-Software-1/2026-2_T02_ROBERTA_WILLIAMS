@@ -7,8 +7,8 @@ sidebar_label: Atas de reunião
 
 ## Atas registradas
 
-| Data | Assunto principal | Ata |
-| ---- | ----------------- | --- |
+| Data       | Assunto principal     | Ata                    |
+| ---------- | --------------------- | ---------------------- |
 | 26/08/2026 | Organização do GitHub | [Ata](./2026-08-26.md) |
 | 05/10/2026 | Organização do GitHub | [Ata](./2026-10-05.md) |
 | 14/10/2026 | Organização do GitHub | [Ata](./2026-10-14.md) |
