@@ -11,15 +11,15 @@ O percentual pode ser calculado a partir do [indicador 4 – Esforço por membro
 
 ## Entrega 1
 
-| Membro | Matrícula | Principais responsabilidades e tarefas | Esforço (h) | Contribuição (%) |
-| ------ | --------- | -------------------------------------- | ----------: | ---------------: |
-| Amanda C. Lima | 231027023 | | | |
-| Geovane S. Freitas | 211031708 | | | |
-| Ludmila O. Nunes | 231026750 | | | |
-| Mariana P. Silva | 232029210 | | | |
-| Rafael W. Schadt | 231011800 | | | |
-| Rodrigo F. Amaral | 231011810 | | | |
-| **Total** | | | | **100%** |
+| Membro             | Matrícula | Principais responsabilidades e tarefas | Esforço (h) | Contribuição (%) |
+| ------------------ | --------- | -------------------------------------- | ----------: | ---------------: |
+| Amanda C. Lima     | 231027023 |                                        |             |                  |
+| Geovane S. Freitas | 211031708 |                                        |             |                  |
+| Ludmila O. Nunes   | 231026750 | Estruturação do Overleaf, redação do referencial teórico, organização e participação da dinâmica de brainstorming e atualização da documentação | 17 |                  |
+| Mariana P. Silva   | 232029210 |                                        |             |                  |
+| Rafael W. Schadt   | 231011800 |                                        |             |                  |
+| Rodrigo F. Amaral  | 231011810 |                                        |             |                  |
+| **Total**          |           |                                        |             |         **100%** |
 
 {/* Preencher com as tarefas reais de cada membro (ex.: "Objetivos GQM de Usabilidade; questões Q1-U a Q3-U; revisão da Fase 1"). Conferir que a soma dá 100%. */}
 
