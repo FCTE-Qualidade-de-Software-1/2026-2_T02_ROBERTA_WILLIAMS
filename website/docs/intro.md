@@ -43,6 +43,7 @@ A execução do trabalho é acompanhada com métricas PSM/CID, descritas em [Ges
 - **Releases:** [versões entregues](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/releases)
 - **Entregas:** [Entrega 1](./sobre/entregas/entrega-1.md)
 - **Equipe:** [Tabela de contribuição](./sobre/tabela-de-contribuicao.md) · [Uso de IA](./sobre/uso-de-ia.md)
+- **Artigo:** [Artigo atualizado](https://www.overleaf.com/read/thpffydvwfcn#72d2f8)
 
 ## Equipe
 
