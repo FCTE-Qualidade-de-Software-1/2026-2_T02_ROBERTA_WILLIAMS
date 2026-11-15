@@ -36,7 +36,7 @@ Na **Eficiência de Desempenho**, serão observadas as operações selecionadas 
 
 ### Flexibilidade
 
-Na **Flexibilidade**, será verificado se o widget funciona em diferentes dispositivos, sistemas operacionais e navegadores. Para isso, o grupo realizará testes em computadores e dispositivos móveis, utilizando o Google Chrome e o Mozilla Firefox, conforme a disponibilidade dos ambientes. Os resultados serão válidos apenas para os ambientes efetivamente testados, sem garantir o mesmo funcionamento em dispositivos, sistemas operacionais e navegadores que não foram avaliados.
+Na **Flexibilidade**, será verificado se o widget funciona em diferentes dispositivos, sistemas operacionais e navegadores. Para isso, o grupo realizará testes em computadores e dispositivos móveis, utilizando o Google Chrome e o Mozilla Firefox, além do Microsoft Edge e Safari, conforme a disponibilidade dos ambientes. Os resultados serão válidos apenas para os ambientes efetivamente testados, sem garantir o mesmo funcionamento em dispositivos, sistemas operacionais e navegadores que não foram avaliados.
 
 ### Manutenibilidade
 

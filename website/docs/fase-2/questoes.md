@@ -27,7 +27,7 @@ Com base nas diretrizes de medição e qualidade de software [Galin 2018, ISO/IE
   Qual é o tempo de resposta entre a seleção de um texto pelo usuário e o início da reprodução da tradução em Libras sob diferentes condições de rede (banda larga vs. conexões móveis limitadas como 3G)?
 
 * **Q2-E (Utilização de Recursos de Hardware):**  
-  Qual é o consumo de processamento (CPU) e memória (RAM) do navegador durante a renderização contínua do avatar em dispositivos com recursos de hardware limitados?
+  Qual é o consumo de processamento (CPU) do navegador durante a renderização contínua do avatar em dispositivos com recursos de hardware limitados?
 
 * **Q3-E (Uso de Rede e Cache):**  
   Qual é o volume de dados de rede consumido ao utilizar os recursos de repetição de vídeo, alteração de velocidade e consulta ao dicionário?

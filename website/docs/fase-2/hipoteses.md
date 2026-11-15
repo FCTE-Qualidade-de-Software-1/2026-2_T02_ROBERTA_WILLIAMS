@@ -16,8 +16,11 @@ As hipóteses representam as suposições operacionais do nível analítico da a
 * **H2-I (Feedback Visual e Proteção contra Erros):**  
   Mais de 70% das mensagens de erro ou status do widget são exibidas apenas em texto em português (sem sinalização por avatar ou ícones explicativos), impedindo que cerca de 24,5% dos usuários surdos não alfabetizados compreendam a causa da falha.
 
-* **H3-I (Acessibilidade e Seleção de Texto):**  
-  O widget mantém conformidade de contraste visual (nível AA da WCAG) em 90% de sua interface própria, mas em 30% das tentativas de uso o usuário comete erros ao selecionar blocos de texto na página web devido à ausência de feedback visual claro do modo de seleção.
+* **H3-I (Inclusividade e Contraste Visual):**  
+  O widget mantém conformidade de contraste visual (nível AA da WCAG) em pelo menos 90% dos elementos de sua interface própria, avaliados nos portais governamentais da amostra.
+
+* **H4-I (Operabilidade e Seleção de Texto):**  
+  Em cerca de 30% das tentativas de uso, o usuário comete erros ao selecionar blocos de texto na página web, devido à ausência de feedback visual claro do modo de seleção.
 
 ---
 
@@ -30,7 +33,7 @@ As hipóteses representam as suposições operacionais do nível analítico da a
   Em dispositivos de entrada (*hardware* modesto), a renderização gráfica contínua do avatar reduz a taxa de quadros para menos de 20 FPS e eleva o uso de CPU do navegador para valores acima de 50%, prejudicando a fluidez da animação.
 
 * **H3-E (Uso de Rede e Cache):**  
-  As ações de repetição e alteração de velocidade de um trecho de texto já traduzido reutilizam o cache local em 100% dos casos, não gerando tráfego de dados adicional na rede.
+  As ações de repetição e alteração de velocidade de um trecho de texto já traduzido reutilizam o cache local em 95% dos casos, não gerando tráfego de dados adicional na rede.
 
 ---
 

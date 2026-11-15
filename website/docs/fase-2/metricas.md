@@ -42,19 +42,38 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 
 ---
 
-### **MI3.1: Taxa de Conformidade de Contraste e Eficácia de Seleção**
-* **Característica:** Capacidade de Interação (ISO/IEC 25010:2023) [ISO and IEC 2005]
-* **Questão Relacionada:** Q3-I (Acessibilidade e Seleção de Texto)
-* **Definição Operacional:** Proporção de seleções de texto bem-sucedidas em páginas com diferentes layouts combinada à verificação de conformidade de contraste visual dos elementos do widget com a diretriz WCAG (nível AA, contraste mínimo de 4.5:1).
+### **MI3.1: Taxa de Conformidade de Contraste**
+* **Característica:** Capacidade de Interação (ISO/IEC 25010:2023) [ISO/IEC 2023]
+* **Subcaracterística:** Inclusividade (contraste)
+* **Questão Relacionada:** Q3-I (Contraste e Seleção de Texto)
+* **Definição Operacional:** Proporção de elementos da interface do widget que atendem ao contraste mínimo da WCAG 2.2, nível AA (4.5:1 para texto comum e 3:1 para texto grande e componentes de interface).
 * **Unidade:** Percentual (%)
-* **Coleta:** Testes de uso (mínimo 8 participantes) registrando o total de seleções tentadas e falhas de seleção, associados à inspeção automatizada de acessibilidade via *axe-core*/Lighthouse em 10 portais governamentais.
-* **Cálculo:** `X = (A / B) * 100`  
-  * $A$ = seleções de texto efetuadas com sucesso (sem erro de área ou feedback)  
-  * $B$ = total de tentativas de seleção de texto executadas
-* **Fonte de Dados:** Ferramentas de verificação de acessibilidade e gravações de tela dos testes.
-* **Interpretação:**  
-  * **Alto (≥ 90%):** Excelente contraste e seleção precisa sem interferência do layout hospedeiro.  
-  * **Baixo (< 70%):** Problemas de contraste e falhas frequentes de feedback na seleção de texto.
+* **Coleta:** Inspecionar cada tela do widget e os controles do player com *axe-core* e Lighthouse, registrando os elementos aprovados e reprovados. Casos "incompletos" são conferidos manualmente. O avatar 3D fica fora.
+* **Cálculo:** `X = (A / B) * 100`
+  * $A$ = elementos que atendem ao contraste mínimo do nível AA
+  * $B$ = total de elementos avaliados
+* **Fonte de Dados:** Relatórios do *axe-core*/Lighthouse e planilha de verificação manual com capturas de tela.
+* **Interpretação:**
+  * **Alto (≥ 90%):** Contraste adequado; a interface é legível para usuários com baixa visão.
+  * **Intermediário (70% a 89%):** Parte dos elementos tem contraste insuficiente e merece ajuste.
+  * **Baixo (< 70%):** Problemas frequentes de contraste que comprometem o uso autônomo.
+
+---
+
+### **MI3.2: Taxa de Eficácia na Seleção de Texto**
+* **Característica:** Capacidade de Interação (ISO/IEC 25010:2023) [ISO/IEC 2023]
+* **Subcaracterística:** Operabilidade
+* **Questão Relacionada:** Q3-I (Acessibilidade e Seleção de Texto)
+* **Definição Operacional:** Proporção de tentativas de seleção de texto na página que resultam em tradução corretamente iniciada, sem erro de área selecionada e com feedback visual claro do modo de seleção.
+* **Unidade:** Percentual (%)
+* **Coleta:** Teste de uso com no mínimo 8 participantes, em portais com layouts diferentes, registrando o total de seleções tentadas e as falhas. Gravação de tela.
+* **Cálculo:** `X = (A / B) * 100`
+  * $A$ = seleções de texto efetuadas com sucesso
+  * $B$ = total de tentativas de seleção executadas
+* **Fonte de Dados:** Observação direta e gravações de tela do teste.
+* **Interpretação:**
+  * **Alto (≥ 90%):** Seleção precisa, sem interferência do layout hospedeiro.
+  * **Baixo (< 70%):** Falhas frequentes, com possível falta de feedback visual.
 
 ---
 
@@ -175,15 +194,19 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 ---
 
 ### **MM3.1: Tempo Médio de Correção e Merge**
-* **Característica:** Manutenibilidade (ISO/IEC 25010:2023) [ISO and IEC 2005]
+* **Característica:** Manutenibilidade (ISO/IEC 25010:2023) [ISO/IEC 2023]
 * **Questão Relacionada:** Q3-M (Modificabilidade e Tempo de Ciclo)
-* **Definição Operacional:** Tempo médio decorrido entre a abertura de uma *issue* crítica de incompatibilidade e a realização do *merge* da solução no repositório oficial.
+* **Definição Operacional:** Tempo médio decorrido entre a abertura de uma *issue* de incompatibilidade (quebra de funcionamento em navegadores ou portais) e o *merge* do *Pull Request* que a resolve no repositório oficial.
 * **Unidade:** Dias
-* **Coleta:** Selecionar as *issues* fechadas por *merge* relacionadas à quebra de funcionamento em navegadores ou portais e calcular a diferença entre as datas.
-* **Cálculo:** `X = (Soma dos módulos distintos alterados) / (Número de alterações analisadas)`
-* **Fonte de Dados:** *Issues* e *Pull Requests* do repositório oficial no GitHub.
+* **Coleta:** No repositório oficial (*vlibras-web-browsers*), selecionar as *issues* fechadas por *merge* de *Pull Request* relacionadas à quebra de funcionamento em navegadores ou portais. Para cada uma, registrar a data de abertura da *issue* e a data de *merge* do PR vinculado. Considerar *issue* de incompatibilidade aquela que descreve falha de funcionamento do widget em determinado navegador, dispositivo ou portal (critério aplicado de forma igual a todas as *issues* e registrado na planilha de coleta). Registrar também o número de *issues* analisadas e, por transparência, a mediana.
+* **Cálculo:** `X = (Σ (Dᵢ_merge − Dᵢ_abertura)) / N`
+  * $D_{i\_abertura}$ = data de abertura da *issue* *i*
+  * $D_{i\_merge}$ = data de *merge* do PR que resolveu a *issue* *i*
+  * $N$ = número de *issues* analisadas
+* **Fonte de Dados:** *Issues* e *Pull Requests* do repositório oficial no GitHub (interface web, GitHub CLI ou API).
 * **Interpretação:**  
   * **Baixo (≤ 7 dias):** Correções rápidas; a comunidade passa pouco tempo desassistida.  
+  * **Intermediário (8 a 15 dias):** Tempo aceitável, mas com possíveis gargalos no processo de correção.  
   * **Alto (> 15 dias):** Processo de manutenção lento e burocrático.
 
 ---
