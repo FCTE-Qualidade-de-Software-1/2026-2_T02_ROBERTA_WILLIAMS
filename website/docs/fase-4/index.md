@@ -15,6 +15,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | Página | Métrica | Situação |
 | ------ | ------- | -------- |
 | [MM1.1 – Reuso do Design System](./MM1-1.md) | MM1.1 | Análise concluída em 15/11/2026; inventário e evidências disponíveis na página. |
+| [ME2.1 – Utilização média de CPU](./me2-1-utilizacao-de-cpu.md) | ME2.1 | Parcial: coletada em 16/11/2026, na simulação de *hardware* limitado no D1. Coleta no D3 prevista. |
 | [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
 | [ME3.1 – Teste complementar no gov.br](./me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
 | [Dados brutos](./dados-brutos/README.md) | — | HARs, planilhas CSV, scripts, registros de coleta e capturas de tela organizados por métrica. |
@@ -31,3 +32,4 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | ------ | ---------- | -------------------------------------------------------- | ------------------ | ---------- |
 | 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1) | Geovane S. Freitas |            |
 | 0.2    | 15/11/2026 | Inclusão da MM1.1 e organização dos dados brutos por métrica | Rafael W. Schadt |            |
+| 0.3    | 16/11/2026 | Inclusão da ME2.1                                         | Amanda C. Lima   |            |

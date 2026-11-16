@@ -23,7 +23,7 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | MI3.1   | Capacidade de Interação  | axe-core e Lighthouse                               | Ludmila          |
 | MI3.2   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | A definir        |
 | ME1.1   | Eficiência de Desempenho | DevTools (Network e Performance) e gravação de tela | Rafael           |
-| ME2.1   | Eficiência de Desempenho | Performance Monitor do navegador                    | Amanda           |
+| ME2.1   | Eficiência de Desempenho | Contadores de CPU do sistema operacional (script)   | Amanda           |
 | ME3.1   | Eficiência de Desempenho | DevTools (Network)                                  | Geovane          |
 | MF1.1   | Flexibilidade            | Checklist por navegador                             | Rodrigo e Rafael |
 | MF2.1   | Flexibilidade            | Injeção do widget nos portais                       | A definir        |
@@ -105,14 +105,14 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### ME2.1: Utilização Média de CPU
 
-- **Ferramentas:** Performance Monitor do navegador (DevTools) ou monitor de desempenho do sistema operacional.
+- **Ferramentas:** script PowerShell que lê os contadores de tempo de CPU por processo do Windows (os mesmos do Gerenciador de Tarefas), somando todos os processos do navegador.
 - **Passos:**
   1. Preparar o ambiente de hardware modesto definido em [Recursos e ambiente](./recursos-e-ambiente.md), fechando as demais aplicações.
-  2. Abrir a página de teste, carregar o avatar e iniciar o Performance Monitor.
-  3. Acionar a tradução contínua (sequência de frases) por 2 minutos.
-  4. Registrar o uso médio e o pico de CPU da sessão.
+  2. Abrir a página de teste e carregar o avatar.
+  3. Acionar a tradução contínua (sequência de frases) e, com o avatar sinalizando, iniciar o script por 2 minutos.
+  4. Registrar o uso médio e o pico de CPU da sessão, calculados por `X = B / (A × N) × 100`, com N igual ao número de *threads* disponíveis ao navegador.
 - **Repetições:** 5 sessões de 2 minutos.
-- **Registro:** planilha (sessão, média, pico) e capturas de tela do monitor.
+- **Registro:** planilha (sessão, A, B, N, média, pico), CSV por sessão e capturas de tela da saída do script.
 - **Critério de parada:** as 5 sessões concluídas.
 
 ### ME3.1: Volume de Dados Consumidos e Taxa de Reuso do Cache
@@ -240,3 +240,4 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | ------ | ---------- | ------------------------------------------------------------ | ---------------- | ---------- |
 | 0.1    | 15/11/2026 | Inserção do método de avaliação e dos protocolos por métrica | Ludmila O. Nunes |            |
 | 0.2    | 15/11/2026 | Protocolo da ME3.1: página de teste, 10 frases nas velocidades 0.5x, 1x e 2x e limpeza do cache do navegador | Geovane S. Freitas |            |
+| 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads* | Amanda C. Lima |            |

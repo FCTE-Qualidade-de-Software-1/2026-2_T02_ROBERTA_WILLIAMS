@@ -98,13 +98,15 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 ### **ME2.1: Utilização Média de CPU**
 * **Característica:** Eficiência de Desempenho (ISO/IEC 25010:2023) [ISO and IEC 2005]
 * **Questão Relacionada:** Q2-E (Utilização de Recursos de Hardware)
-* **Definição Operacional:** Percentual do tempo de CPU utilizado pelo processo do navegador enquanto o avatar sinaliza continuamente em um dispositivo com recursos de hardware limitados.
+* **Definição Operacional:** Percentual da capacidade de processamento disponível utilizado pelos processos do navegador enquanto o avatar sinaliza continuamente em um dispositivo com recursos de hardware limitados.
 * **Unidade:** Percentual (%)
 * **Coleta:** Sessões de 2 minutos de tradução contínua, repetidas 5 vezes, em um ambiente de hardware modesto sem outras aplicações abertas. Registrar a média e o pico de consumo.
-* **Cálculo:** `X = (B / A) * 100`  
-  * $A$ = tempo total de operação/tradução  
-  * $B$ = tempo de CPU efetivamente consumido pelo processo
-* **Fonte de Dados:** Monitor de desempenho do navegador (*Performance Monitor*) ou do sistema operacional.
+* **Cálculo:** `X = B / (A × N) * 100`  
+  * $A$ = tempo total de operação/tradução, em segundos  
+  * $B$ = tempo de CPU efetivamente consumido por todos os processos do navegador, em segundos  
+  * $N$ = número de *threads* (núcleos lógicos) disponíveis ao navegador  
+  * O navegador roda em vários processos ao mesmo tempo e pode acumular mais de 1 segundo de CPU por segundo. A divisão por N mantém X entre 0% e 100%. Sem restrição de núcleos, N é o total de *threads* do processador, e X fica próximo do uso de CPU mostrado pelo Gerenciador de Tarefas.
+* **Fonte de Dados:** Contadores de tempo de CPU por processo do sistema operacional (os mesmos do Gerenciador de Tarefas e do Monitor de Desempenho), lidos por script a cada segundo.
 * **Interpretação:**  
   * **Baixo (≤ 30%):** Execução leve e estável em aparelhos simples.  
   * **Alto (> 50%):** Consumo excessivo com risco de travamentos e animação truncada.
@@ -224,3 +226,4 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 | ------ | ---------- | ----------------------------- | ---------------- | ---------- |
 | 0.1    | 23/10/2026 | Adicionando métricas          | Mariana Pereira  |            |
 | 0.2    | 15/11/2026 | Divide MI3.1 em MI3.1 e MI3.2 | Ludmila O. Nunes |            |
+| 0.3    | 16/11/2026 | ME2.1: fórmula normalizada pelo número de *threads* (N) e fonte de dados | Amanda C. Lima |            |
