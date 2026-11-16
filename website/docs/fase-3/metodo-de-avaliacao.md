@@ -117,16 +117,17 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### ME3.1: Volume de Dados Consumidos e Taxa de Reuso do Cache
 
-- **Ferramentas:** DevTools (aba Network).
+- **Ferramentas:** DevTools (aba Network), página de teste (`instrumentos/pagina-teste.html`).
 - **Passos:**
   1. Limpar os dados do site e abrir a página de teste com o widget.
-  2. Com a aba Network aberta, executar o roteiro padrão: reproduzir uma tradução, alterar a velocidade para 0.5x e 2x, repetir o trecho e consultar 5 termos no dicionário.
-  3. Registrar o total de requisições e o volume transferido (MB).
-  4. Repetir o mesmo roteiro, sem limpar o cache.
-  5. Contar as requisições atendidas pelo cache (status 304 ou *from cache*) e calcular `(A / B) × 100`.
-- **Repetições:** uma execução inicial e uma reexecução, repetidas 3 vezes para conferir a estabilidade.
-- **Registro:** planilha (execução, requisições, MB, requisições do cache) e arquivo HAR exportado.
-- **Critério de parada:** as 3 repetições do par de execuções concluídas.
+  2. Abrir a página de teste, que carrega o widget pelo código padrão de instalação, com a aba Network aberta (*Keep log* ligado, *Disable cache* desligado, sem limitação de rede), e ativar o widget.
+  3. **1ª execução:** traduzir cada uma das 10 frases padronizadas (F1 a F10) e consultar os 5 termos do dicionário definidos em [Massa de dados](./massa-de-dados.md).
+  4. **Reexecução:** reproduzir de novo cada frase já traduzida nas velocidades 0.5x, 1x e 2x, usando "Repetir", sem limpar o cache.
+  5. Registrar prints da aba Network a cada frase e a cada velocidade e, ao final, com o filtro `dicionario2` e o total de requisições da barra inferior. Exportar o HAR.
+  6. Contar as requisições da reexecução atendidas pelo cache (status 304 ou *from cache*) e calcular `(A / B) × 100`. Registrar também o volume transferido (MB) na 1ª execução e na reexecução.
+- **Repetições:** uma 1ª execução e duas reexecuções por frase (uma por velocidade).
+- **Registro:** arquivo HAR, prints da aba Network e planilha (CSV) com cada requisição classificada como cache ou rede, na pasta `dados/ME3.1/`.
+- **Critério de parada:** as 10 frases reproduzidas nas 3 velocidades e os 5 termos consultados.
 
 ---
 
@@ -211,3 +212,4 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | Versão | Data       | Descrição da alteração                                       | Autor(a)         | Revisor(a) |
 | ------ | ---------- | ------------------------------------------------------------ | ---------------- | ---------- |
 | 0.1    | 15/11/2026 | Inserção do método de avaliação e dos protocolos por métrica | Ludmila O. Nunes |            |
+| 0.2    | 15/11/2026 | Protocolo da ME3.1: página de teste, 10 frases nas velocidades 0.5x, 1x e 2x e limpeza do cache do navegador | Geovane S. Freitas |            |

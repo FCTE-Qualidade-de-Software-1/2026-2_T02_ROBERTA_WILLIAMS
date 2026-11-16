@@ -73,7 +73,7 @@ A amostra tem 10 portais públicos federais, com layouts variados. Ela é usada 
 
 | Roteiro           | Métrica | Passos |
 | ----------------- | ------- | -------|
-| Rede e cache      | ME3.1   | Traduzir a F6; alterar a velocidade para 0.5x e para 2x; repetir o trecho; consultar os 5 termos do dicionário |
+| Rede e cache      | ME3.1   | Traduzir todas as frases padronizadas; repetir cada trecho nas velocidades 0.5x, 1x e 2x; consultar os 5 termos do dicionário |
 | Tradução contínua | ME2.1   | Traduzir as frases F4 a F8 em sequência e repetir, durante 2 minutos |
 | Funções do escopo | MF1.1   | Executar, em cada ambiente: consulta ao dicionário, alteração da velocidade, repetição do trecho e escolha do regionalismo |
 
@@ -116,3 +116,4 @@ Cada participante seleciona e traduz três trechos em quatro páginas com layout
 | Versão | Data       | Descrição da alteração                                                                      | Autor(a)         | Revisor(a) |
 | ------ | ---------- | ------------------------------------------------------------------------------------------- | ---------------- | ---------- |
 | 0.1    | 15/11/2026 | Inserção das frases, dos termos, dos portais, dos roteiros, das tarefas e dos participantes | Ludmila O. Nunes |            |
+| 0.2    | 15/11/2026 | Roteiro "Rede e cache" (ME3.1) com as 10 frases nas velocidades 0.5x, 1x e 2x | Geovane S. Freitas |            |
