@@ -11,7 +11,7 @@ Esta página reúne os dados de teste usados nos [protocolos de medição](./met
 
 | Conjunto de dados       | Métricas que o utilizam                  |
 | ----------------------- | ---------------------------------------- |
-| Frases padronizadas     | ME1.1, ME2.1, ME3.1, MF1.1               |
+| Frases padronizadas     | ME1.1, ME2.1, ME3.1                      |
 | Portais da amostra      | MF2.1 e páginas de seleção da MI3.2      |
 | Página de teste         | MI1.1, MI3.1, ME1.1, ME2.1, ME3.1, MF1.1 |
 | Tarefas e participantes | MI1.1 e MI3.2                            |
@@ -75,7 +75,7 @@ A amostra tem 10 portais públicos federais, com layouts variados. Ela é usada 
 | ----------------- | ------- | -------|
 | Rede e cache      | ME3.1   | Traduzir a F6; alterar a velocidade para 0.5x e para 2x; repetir o trecho; consultar os 5 termos do dicionário |
 | Tradução contínua | ME2.1   | Traduzir as frases F4 a F8 em sequência e repetir, durante 2 minutos |
-| Funções do escopo | MF1.1   | Executar, em cada ambiente: tradução da F6, consulta ao dicionário, alteração da velocidade, repetição do trecho e escolha do regionalismo |
+| Funções do escopo | MF1.1   | Executar, em cada ambiente: consulta ao dicionário, alteração da velocidade, repetição do trecho e escolha do regionalismo |
 
 ## Tarefas do teste de usabilidade
 
