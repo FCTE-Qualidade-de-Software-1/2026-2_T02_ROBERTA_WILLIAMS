@@ -195,21 +195,22 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 
 ---
 
-### **MM3.1: Tempo Médio de Correção e Merge**
+### **MM3.1: Tempo Médio de Correção de Incompatibilidades**
 * **Característica:** Manutenibilidade (ISO/IEC 25010:2023) [ISO/IEC 2023]
+* **Subcaracterística:** Modificabilidade
 * **Questão Relacionada:** Q3-M (Modificabilidade e Tempo de Ciclo)
-* **Definição Operacional:** Tempo médio decorrido entre a abertura de uma *issue* de incompatibilidade (quebra de funcionamento em navegadores ou portais) e o *merge* do *Pull Request* que a resolve no repositório oficial.
+* **Definição Operacional:** Tempo médio, em dias, entre a abertura e a resolução de uma *issue* de incompatibilidade (falha de funcionamento do widget em determinado navegador, dispositivo ou portal) no repositório oficial. Para *issues* ainda abertas, a resolução é substituída pela data da coleta (tempo em aberto).
 * **Unidade:** Dias
-* **Coleta:** No repositório oficial (*vlibras-web-browsers*), selecionar as *issues* fechadas por *merge* de *Pull Request* relacionadas à quebra de funcionamento em navegadores ou portais. Para cada uma, registrar a data de abertura da *issue* e a data de *merge* do PR vinculado. Considerar *issue* de incompatibilidade aquela que descreve falha de funcionamento do widget em determinado navegador, dispositivo ou portal (critério aplicado de forma igual a todas as *issues* e registrado na planilha de coleta). Registrar também o número de *issues* analisadas e, por transparência, a mediana.
-* **Cálculo:** `X = (Σ (Dᵢ_merge − Dᵢ_abertura)) / N`
+* **Coleta:** No repositório oficial (*vlibras-web-browsers*), listar todas as *issues* (abertas e fechadas) e selecionar as de incompatibilidade, com o mesmo critério para todas, registrado na planilha. Para cada uma, anotar a data de abertura e a data de fechamento ou, se aberta, a data da coleta. Registrar o número de *issues* abertas e fechadas, a mediana e o motivo de cada exclusão.
+* **Cálculo:** `X = (Σ (Dᵢ_fim − Dᵢ_abertura)) / N`
   * D<sub>i_abertura</sub> = data de abertura da *issue* *i*
-  * D<sub>i_merge</sub> = data de *merge* do PR que resolveu a *issue* *i*
-  * $N$ = número de *issues* analisadas
-* **Fonte de Dados:** *Issues* e *Pull Requests* do repositório oficial no GitHub (interface web, GitHub CLI ou API).
+  * D<sub>i_fim</sub> = data de fechamento da *issue* *i* ou, se aberta, data da coleta
+  * $N$ = número de *issues* de incompatibilidade analisadas
+* **Fonte de Dados:** *Issues* do repositório oficial no GitHub (interface web ou GitHub CLI).
 * **Interpretação:**  
-  * **Baixo (≤ 7 dias):** Correções rápidas; a comunidade passa pouco tempo desassistida.  
-  * **Intermediário (8 a 15 dias):** Tempo aceitável, mas com possíveis gargalos no processo de correção.  
-  * **Alto (> 15 dias):** Processo de manutenção lento e burocrático.
+  * **Baixo (≤ 7 dias):** Incompatibilidades resolvidas rapidamente.  
+  * **Intermediário (8 a 15 dias):** Tempo aceitável, com possíveis gargalos.  
+  * **Alto (> 15 dias):** Incompatibilidades ficam muito tempo sem resolução.
 
 ---
 

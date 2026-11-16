@@ -28,8 +28,10 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                   | Autor(a)           | Revisor(a) |
-| ------ | ---------- | -------------------------------------------------------- | ------------------ | ---------- |
-| 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1) | Geovane S. Freitas |            |
-| 0.2    | 15/11/2026 | Inclusão da MM1.1 e organização dos dados brutos por métrica | Rafael W. Schadt |            |
-| 0.3    | 16/11/2026 | Inclusão da ME2.1                                         | Amanda C. Lima   |            |
+| Versão | Data       | Descrição da alteração                                       | Autor(a)           | Revisor(a)       |
+| ------ | ---------- | ------------------------------------------------------------ | ------------------ | ---------------- |
+| 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1)     | Geovane S. Freitas | Ludmila O. Nunes |
+| 0.2    | 15/11/2026 | Inclusão da MM1.1 e organização dos dados brutos por métrica | Rafael W. Schadt   | Ludmila O. Nunes |
+| 0.3    | 16/11/2026 | Adição da MM3.1                                              | Ludmila O. Nunes   |                  |
+| 0.4    | 16/11/2026 | Inclusão da ME2.1                                         | Amanda C. Lima   |            |
+

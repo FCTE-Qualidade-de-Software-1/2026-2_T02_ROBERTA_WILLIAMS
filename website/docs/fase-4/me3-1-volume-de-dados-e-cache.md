@@ -133,6 +133,6 @@ Os dados completos estão em [Dados brutos da ME3.1 — coleta padronizada](./da
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                        | Autor(a)           | Revisor(a) |
-| ------ | ---------- | ------------------------------------------------------------- | ------------------ | ---------- |
-| 0.1    | 15/11/2026 | Registro da execução padronizada e do julgamento da ME3.1    | Geovane S. Freitas |            |
+| Versão | Data       | Descrição da alteração                                    | Autor(a)           | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------------- | ------------------ | ---------- |
+| 0.1    | 15/11/2026 | Registro da execução padronizada e do julgamento da ME3.1 | Geovane S. Freitas |            |

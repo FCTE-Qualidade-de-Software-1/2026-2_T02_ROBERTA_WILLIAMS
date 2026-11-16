@@ -25,10 +25,10 @@ Esta página organiza as atividades da avaliação das métricas definidas. As a
 
 | Fase   | Atividade | Métrica | Responsável | Prazo | Entregável |
 | ------ | --------- | ------- | ----------- | ----- | ---------- |
-| Plano  | Redigir as páginas da Fase 3 e os protocolos de medição | Todas | Ludmila | 16/11 | Páginas publicadas no GitPages |
-| Plano  | Corrigir as inconsistências entre as Fases 1 e 2 | Todas | Ludmila | 16/11 | Páginas atualizadas |
+| Plano  | Redigir as páginas da Fase 3 e os protocolos de medição | Todas | Ludmila | 15/11 | Páginas publicadas no GitPages |
+| Plano  | Corrigir as inconsistências entre as Fases 1 e 2 | Todas | Ludmila | 15/11 | Páginas atualizadas |
 | Plano  | Escrever a seção da Fase 3 no artigo | Todas | Mariana | 16/11 | Seção 3.3 do artigo |
-| Coleta | Medir o tempo médio de correção e merge | MM3.1 | Ludmila | 16/11 | Planilha e comandos usados |
+| Coleta | Medir o tempo médio de correção | MM3.1 | Ludmila | 16/11 | Planilha e comandos usados |
 | Coleta | Medir os módulos impactados por alteração | MM2.1 | Mariana | 16/11 | Planilha e comandos usados |
 | Coleta | Classificar o reuso do Design System | MM1.1 | Rafael e um segundo avaliador | 17/11 | Planilha com as duas classificações |
 | Coleta | Inventariar as mensagens de erro e status | MI2.1 | A definir | 17/11 | Planilha e prints |
@@ -71,4 +71,4 @@ A Fase 4 usa este cronograma da seguinte forma: os dados brutos de cada métrica
 
 | Versão | Data       | Descrição da alteração                   | Autor(a)         | Revisor(a) |
 | ------ | ---------- | ---------------------------------------- | ---------------- | ---------- |
-| 0.1    | 16/11/2026 | Inserção dos marcos, atividades e riscos | Ludmila O. Nunes |            |
+| 0.1    | 15/11/2026 | Inserção dos marcos, atividades e riscos | Ludmila O. Nunes |            |
