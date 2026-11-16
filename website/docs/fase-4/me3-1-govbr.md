@@ -3,7 +3,7 @@ unlisted: true
 sidebar_label: ME3.1 – Teste no gov.br
 ---
 
-# ME3.1 – Teste complementar em um portal real (gov.br)
+# ME3.1: Teste complementar em um portal real (gov.br)
 
 Esta página registra um teste complementar da métrica ME3.1, feito no portal `www.gov.br/pt-br`, que já traz o VLibras embutido. Ele **não segue o protocolo padronizado** da [Fase 3](../fase-3/metodo-de-avaliacao.md) (página de teste com as 10 frases padronizadas): usa textos e termos do próprio portal. O resultado oficial da métrica está em [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md); este teste fica disponível para consulta, para mostrar o comportamento do widget em uso real. A página segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 

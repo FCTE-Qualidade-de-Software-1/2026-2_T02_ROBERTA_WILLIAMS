@@ -3,7 +3,7 @@ sidebar_position: 1
 sidebar_label: ME3.1 – Dados e cache
 ---
 
-# ME3.1 – Volume de dados consumidos e taxa de reuso do cache
+# ME3.1: Volume de dados consumidos e taxa de reuso do cache
 
 Esta página registra a execução da métrica ME3.1, definida em [Métricas](../fase-2/metricas.md), seguindo o protocolo de [Método de avaliação](../fase-3/metodo-de-avaliacao.md) e o roteiro "Rede e cache" de [Massa de dados](../fase-3/massa-de-dados.md). Ela segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 
