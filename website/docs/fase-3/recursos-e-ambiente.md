@@ -5,7 +5,7 @@ sidebar_label: Recursos e ambiente
 
 # Recursos e ambiente
 
-Esta página registra o produto, os dispositivos, os navegadores, as redes e as ferramentas usados nas medições, para que elas possam ser repetidas. Os [protocolos](./metodo-de-avaliacao.md) e os [roteiros](./roteiros/index.md) apontam para cá.
+Esta página registra o produto, os dispositivos, os navegadores, as redes e as ferramentas usados nas medições, para que elas possam ser repetidas. Os [protocolos](./metodo-de-avaliacao.md) apontam para cá.
 
 ## Produto avaliado
 
