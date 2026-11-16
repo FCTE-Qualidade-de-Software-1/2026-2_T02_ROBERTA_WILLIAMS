@@ -214,17 +214,19 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 - **Registro:** planilha (*commit* ou PR, arquivos, módulos e quantidade) e o comando usado.
 - **Critério de parada:** todas as alterações do histórico nos caminhos selecionados analisadas.
 
-### MM3.1: Tempo Médio de Correção e Merge
+### MM3.1: Tempo Médio de Correção de Incompatibilidades
 
-- **Ferramentas:** GitHub (interface web, GitHub CLI ou API).
+- **Ferramentas:** GitHub (interface web ou GitHub CLI).
 - **Passos:**
-  1. Listar as *issues* fechadas do repositório oficial (ex.: `gh issue list --state closed --limit 500 --json number,title,createdAt,closedAt`).
-  2. Selecionar as *issues* de incompatibilidade (falha de funcionamento do widget em determinado navegador, dispositivo ou portal) que foram fechadas por *merge* de um *Pull Request*, aplicando o mesmo critério a todas.
-  3. Para cada uma, registrar a data de abertura da *issue* e a data de *merge* do PR vinculado.
-  4. Calcular a média dos dias entre a abertura e o *merge*, a mediana e o número de *issues* analisadas (N).
-- **Repetições:** uma análise de todo o histórico. *Issues* fechadas sem *merge* são descartadas e contadas à parte.
-- **Registro:** planilha (*issue*, PR, datas, dias) e o critério de seleção.
-- **Critério de parada:** todas as *issues* do histórico verificadas e classificadas.
+  1. Listar todas as *issues*, abertas e fechadas:
+     `gh issue list --repo spbgovbr-vlibras/vlibras-web-browsers --state all --limit 500 --json number,title,state,createdAt,closedAt > issues.json`
+  2. Selecionar as de **incompatibilidade**: relatam falha de funcionamento do widget em navegador, dispositivo ou portal específico. Ficam de fora pedidos de funcionalidade, perguntas, spam e temas de segurança. O critério é aplicado a todas e registrado.
+  3. Para cada *issue*, anotar a data de abertura e a de fechamento. Se estiver aberta, usar a data da coleta, registrada na planilha.
+  4. Nas fechadas, ler a conversa e descartar as encerradas como duplicadas ou "não procede", contando-as à parte.
+  5. Calcular os dias, a média, a mediana, o número de abertas, o de fechadas e N.
+- **Repetições:** uma análise de todo o histórico, com a data da coleta registrada.
+- **Registro:** planilha (*issue*, estado, abertura, fim, dias, motivo de inclusão ou exclusão).
+- **Critério de parada:** todas as *issues* do repositório verificadas e classificadas.
 
 ---
 

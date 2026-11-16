@@ -18,6 +18,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
 | [ME3.1 – Teste complementar no gov.br](./me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
 | [Dados brutos](./dados-brutos/README.md) | — | HARs, planilhas CSV, scripts, registros de coleta e capturas de tela organizados por métrica. |
+| [MM3.1 – Tempo Médio de Correção e Merge](./mm3-1-tempo-medio-de-correcao.md.md) | MM3.1 | Coletada em 15/11/2026 (repositório oficial). |
 
 {/* Cada membro acrescenta uma linha por métrica coletada. */}
 
@@ -27,7 +28,8 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                   | Autor(a)           | Revisor(a) |
-| ------ | ---------- | -------------------------------------------------------- | ------------------ | ---------- |
-| 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1) | Geovane S. Freitas |            |
+| Versão | Data       | Descrição da alteração                                   | Autor(a)           | Revisor(a)       |
+| ------ | ---------- | -------------------------------------------------------- | ------------------ | ---------------- |
+| 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1) | Geovane S. Freitas | Ludmila O. Nunes |
+| 0.2    | 15/11/2026 | Adição da MM3.1                                          | Ludmila O. Nunes   |                  |
 | 0.2    | 15/11/2026 | Inclusão da MM1.1 e organização dos dados brutos por métrica | Rafael W. Schadt |            |
