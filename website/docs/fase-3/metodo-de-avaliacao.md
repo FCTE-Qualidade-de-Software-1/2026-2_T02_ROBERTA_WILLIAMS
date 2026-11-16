@@ -135,14 +135,41 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 ### MF1.1: Adaptabilidade a Navegadores
 
 - **Ferramentas:** navegadores e dispositivos definidos em [Recursos e ambiente](./recursos-e-ambiente.md), checklist de funcionalidades.
+- **Página padronizada:** todos os testes são realizados na página https://www.gov.br/pt-br/servicos/consultar-cadastro-de-pessoas-fisicas.
 - **Passos:**
   1. Abrir a página de teste com o widget em um navegador e dispositivo.
-  2. Executar cada função do escopo: tradutor, dicionário, velocidade, repetição e regionalismo.
-  3. Marcar cada função como funciona ou falha, e anotar a evidência (print ou log de erro).
-  4. Calcular `(1 − A / B) × 100` por navegador e ambiente (desktop e mobile), e o resultado geral.
-- **Repetições:** uma execução completa por função e por ambiente.
-- **Registro:** checklist por navegador, com prints e logs.
-- **Critério de parada:** todas as funções testadas em todos os ambientes previstos.
+  2. Abrir o widget e aguardar o carregamento completo do avatar 3D antes de iniciar cada caso.
+  3. Executar sequencialmente os quatro casos de teste funcionais abaixo em cada ambiente previsto (ENV-01 a ENV-04).
+  4. Marcar cada caso como **funciona** ou **falha**. Qualquer desvio do comportamento esperado soma uma falha à variável `A`.
+  5. Registrar a evidência da execução (print, gravação de tela ou log de erro).
+  6. Calcular `(1 − A / B) × 100` por ambiente e o resultado geral, considerando `B` igual ao total de casos executados.
+- **Casos de teste funcionais:**
+  - **CT-01 - Tradutor (texto da página → Libras):**
+    1. Clicar no ícone azul de acessibilidade do VLibras para abrir o widget.
+    2. Aguardar o carregamento completo do avatar 3D (Ícaro, Hosana ou Guga).
+    3. Selecionar um parágrafo visível com, no mínimo, duas frases pontuadas.
+    4. Considerar o caso aprovado quando o widget capturar o trecho, exibir a legenda sincronizada e o avatar executar os sinais até o fim sem travamentos de renderização WebGL.
+    5. Considerar falha se o widget não abrir, o avatar não renderizar, o texto não for capturado (inclusive em eventos de toque no mobile) ou a animação congelar antes do término.
+  - **CT-02 - Dicionário:**
+    1. Com o widget aberto, acessar a aba ou o ícone **Dicionário**.
+    2. Digitar `computador` no campo de busca e selecionar o resultado.
+    3. Repetir a busca com o termo inexistente `xyzteste`.
+    4. Considerar o caso aprovado quando a lista filtrar corretamente, o avatar reproduzir o sinal do termo selecionado e houver feedback adequado para o termo não encontrado.
+    5. Considerar falha se o campo não receber foco ou teclado no mobile, a lista não carregar, o sinal não for executado ou ocorrer exceção no console.
+  - **CT-03 - Velocidade de sinalização:**
+    1. Acionar a tradução de uma frase média, com 10 a 15 palavras.
+    2. Durante ou antes da reprodução, alterar a velocidade para 1.5x ou 2.0x.
+    3. Alterar a velocidade para 0.5x.
+    4. Considerar o caso aprovado quando o seletor responder ao clique ou toque, o indicador visual for atualizado e a cadência do avatar e das legendas mudar proporcionalmente.
+    5. Considerar falha se o seletor estiver inacessível ou sobreposto, o valor visual mudar sem alterar a velocidade real ou a animação dessincronizar ou quebrar.
+  - **CT-04 - Repetição:**
+    1. Aguardar a conclusão completa da tradução executada no caso anterior.
+    2. Clicar no botão **Repetir** (replay) na barra de controles do player.
+    3. Considerar o caso aprovado quando o avatar reiniciar imediatamente a última frase desde o primeiro sinal, mantendo as configurações de velocidade e regionalismo, sem nova seleção de texto.
+    4. Considerar falha se o botão permanecer desabilitado, não responder ou iniciar uma tradução vazia ou incorreta.
+- **Repetições:** uma execução completa dos quatro casos por ambiente.
+- **Registro:** checklist por ambiente, com resultado de cada caso, navegador, dispositivo, data, hora, evidência e log de erro, quando houver.
+- **Critério de parada:** todos os quatro casos executados em todos os ambientes previstos, ou a execução interrompida por indisponibilidade do ambiente, registrada com justificativa.
 
 ### MF2.1: Taxa de Integração sem Ajuste Manual
 
