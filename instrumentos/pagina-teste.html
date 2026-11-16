@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página de teste VLibras</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #fff; color: #111; max-width: 760px; margin: 32px auto; padding: 0 16px; line-height: 1.6; }
+    h2 { margin-top: 32px; font-size: 1.1em; }
+    .bloco { border: 1px dashed #999; padding: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Página de teste</h1>
+
+  <h2>Frases padronizadas</h2>
+  <p id="F1">Bom dia, como posso ajudar?</p>
+  <p id="F2">O atendimento começa às oito horas.</p>
+  <p id="F3">Faça o login com sua conta gov.br.</p>
+  <p id="F4">Para agendar a consulta, informe o número do seu cartão do SUS.</p>
+  <p id="F5">O prazo para entregar a declaração termina no final do mês de maio.</p>
+  <p id="F6">Se você perdeu o documento, solicite a segunda via no site do órgão.</p>
+  <p id="F7">O CPF e o RG são obrigatórios para solicitar o benefício do INSS.</p>
+  <p id="F8">Antes de enviar o formulário, confira se todos os dados estão corretos, anexe os documentos pedidos e guarde o número do protocolo.</p>
+  <p id="F9">O serviço ficará indisponível neste sábado, das oito às doze horas, para manutenção do sistema, e voltará a funcionar normalmente à tarde.</p>
+  <p id="F10">O requerente deve comprovar a residência mediante apresentação de comprovante emitido nos últimos noventa dias, sob pena de indeferimento do pedido.</p>
+
+  <h2>Roteiro de tradução contínua (ME2.1): F4 a F8 em sequência, repetidas</h2>
+  <div class="bloco" id="me21"></div>
+
+  <script>
+    var seq = ["F4", "F5", "F6", "F7", "F8"].map(function (id) { return document.getElementById(id).textContent; }).join(" ");
+    var reps = parseInt(new URLSearchParams(location.search).get("reps") || "5", 10);
+    document.getElementById("me21").textContent = Array(reps).fill(seq).join(" ");
+  </script>
+</body>
+</html>
