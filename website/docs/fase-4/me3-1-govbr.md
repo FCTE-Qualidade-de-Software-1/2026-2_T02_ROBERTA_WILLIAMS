@@ -7,7 +7,9 @@ sidebar_label: ME3.1 – Teste no gov.br
 
 Esta página registra um teste complementar da métrica ME3.1, feito no portal `www.gov.br/pt-br`, que já traz o VLibras embutido. Ele **não segue o protocolo padronizado** da [Fase 3](../fase-3/metodo-de-avaliacao.md) (página de teste com as 10 frases padronizadas): usa textos e termos do próprio portal. O resultado oficial da métrica está em [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md); este teste fica disponível para consulta, para mostrar o comportamento do widget em uso real. A página segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 
-**Tabela 1.** Identificação da métrica.
+## Identificação da medição
+
+**Tabela 1.** Identificação da medição.
 
 | Item | Registro |
 | ---- | -------- |
@@ -15,7 +17,7 @@ Esta página registra um teste complementar da métrica ME3.1, feito no portal `
 | Questão | Q3-E – Qual é o volume de dados de rede consumido ao utilizar os recursos de repetição de vídeo, alteração de velocidade e consulta ao dicionário? |
 | Hipótese | H3-E – As ações de repetição e alteração de velocidade de um trecho já traduzido reutilizam o cache local em 100% dos casos, sem tráfego adicional na rede ([Hipóteses](../fase-2/hipoteses.md)) |
 | Cálculo | X = (A / B) × 100, com A = requisições da reexecução atendidas pelo cache local e B = total de requisições disparadas pelas ações da reexecução |
-| Data da coleta | 15/11/2026, das 21:31 às 21:53 |
+| Data da coleta | 15/11/2026, das 21:31 às 21:53 (horário de Brasília) |
 | Responsável | Geovane S. Freitas |
 
 ## 1. Obter a medida
@@ -34,7 +36,7 @@ Ao final, o registro da aba *Network* foi exportado em HAR e classificado por um
 | Texto 1 (Agricultura e Pecuária) | 47 (25 / 22) | 322.876 | 18 (2 / 16) | 2.332 |
 | Texto 2 (Assistência Social) | 25 (13 / 12) | 147.696 | 5 (1 / 4) | 1.151 |
 | Texto 3 (Pesquisa e ciência) | 19 (11 / 8) | 124.744 | 10 (2 / 8) | 2.305 |
-| Texto 4 (Empresas e indústrias) | 13 (9 / 4) | 117.737 | 9 (1 / 8) | 1.144 |
+| Texto 4 (Autorizações) | 13 (9 / 4) | 117.737 | 9 (1 / 8) | 1.144 |
 | Dicionário | 179 (26 / 153) | 204.764 | 143 (2 / 141) | 10.607 |
 | **Total** | **283 (84 / 199)** | **917.817 (≈ 918 kB)** | **185 (8 / 177)** | **17.539 (≈ 17,5 kB)** |
 
@@ -80,37 +82,37 @@ O resultado fica no nível **Satisfatório/Ideal**, perto do limite: com 2 requi
 
 ## Evidências
 
-![Aba Network durante a 1ª tradução do texto 1, com os sinais baixados pela rede](../../img/me3-1/govbr/03_texto1-agricultura_E1_1x.png)
+![Aba Network durante a 1ª tradução do texto 1, com os sinais baixados pela rede](./dados-brutos/ME3.1/govbr-figuras/03_texto1-agricultura_E1_1x.png)
 
 **Figura 1.** 1ª tradução do texto 1: o texto vai ao tradutor e cada sinal é baixado (redirecionamento 301 e arquivo). Fonte: elaborado pelos autores.
 
-![Aba Network durante a reexecução do texto 1 a 2x, com ícones lidos do cache de disco](../../img/me3-1/govbr/06_texto1-agricultura_R_2x.png)
+![Aba Network durante a reexecução do texto 1 a 2x, com ícones lidos do cache de disco](./dados-brutos/ME3.1/govbr-figuras/06_texto1-agricultura_R_2x.png)
 
 **Figura 2.** Reexecução do texto 1 a 2x: só o texto vai de novo ao tradutor; os ícones vêm do cache de disco e nenhum sinal é baixado. Fonte: elaborado pelos autores.
 
-![Aba Network depois da troca de velocidade para 0.5x durante a reprodução do texto 2](../../img/me3-1/govbr/10_texto2-assistencia_E1_0.5x.png)
+![Aba Network depois da troca de velocidade para 0.5x durante a reprodução do texto 2](./dados-brutos/ME3.1/govbr-figuras/10_texto2-assistencia_E1_0.5x.png)
 
 **Figura 3.** Troca de velocidade para 0.5x durante a reprodução do texto 2, sem nova chamada ao tradutor. Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida do termo ABERTO no dicionário](../../img/me3-1/govbr/23_dicionario_R_ABERTO.png)
+![Aba Network durante a reprodução repetida do termo ABERTO no dicionário](./dados-brutos/ME3.1/govbr-figuras/23_dicionario_R_ABERTO.png)
 
 **Figura 4.** Reexecução no dicionário: o termo ABERTO é reproduzido de novo sem nova requisição do sinal. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada pelo índice do dicionário, com as duas requisições atendidas pelo cache de disco](../../img/me3-1/govbr/26_filtro-2018.3.1.json.png)
+![Aba Network filtrada pelo índice do dicionário, com as duas requisições atendidas pelo cache de disco](./dados-brutos/ME3.1/govbr-figuras/26_filtro-2018.3.1.json.png)
 
 **Figura 5.** Índice do dicionário (`2018.3.1.json`) pedido duas vezes, as duas atendidas pelo cache de disco. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada por dicionario2 no fim do registro, com cada sinal baixado uma única vez](../../img/me3-1/govbr/27_filtro-dicionario2_fim-do-registro.png)
+![Aba Network filtrada por dicionario2 no fim do registro, com cada sinal baixado uma única vez](./dados-brutos/ME3.1/govbr-figuras/27_filtro-dicionario2_fim-do-registro.png)
 
 **Figura 6.** Requisições ao servidor de sinais no fim do registro: cada sinal aparece uma única vez (68 requisições, 874 kB). Fonte: elaborado pelos autores.
 
-Os dados completos estão na pasta [`dados/ME3.1/govbr`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/tree/main/dados/ME3.1/govbr) do repositório:
+Os dados completos estão em [Dados brutos da ME3.1 — gov.br](./dados-brutos/ME3.1/govbr/README.md):
 
-- `resultado.md`: registro completo da coleta, com ambiente, procedimento, critérios de classificação e limitações;
-- `brutos/ME3.1_govbr_2026-11-15.har`: HAR exportado da aba *Network* (860 requisições);
-- `requisicoes_classificadas.csv`: cada requisição classificada por ação, execução, cache ou rede e bytes;
-- `ME3.1_calculo.py`: script que recalcula todos os valores a partir do HAR;
-- `prints/`: 27 prints da aba *Network*, um para cada etapa do roteiro.
+- `resultado.md`: registro detalhado da coleta, ambiente, procedimento, critérios e limitações;
+- `brutos/ME3.1_govbr_2026-11-15.har`: HAR exportado da aba *Network*;
+- `requisicoes_classificadas.csv`: requisições classificadas por ação, execução, cache/rede e bytes;
+- `ME3.1_calculo.py`: script de recálculo a partir do HAR;
+- `prints/`: 27 capturas originais da aba *Network*.
 
 ## Diferenças em relação à coleta padronizada
 
@@ -131,6 +133,12 @@ Fonte: elaborado pelos autores.
 - **Telemetria bloqueada.** O navegador usado (Brave) bloqueia por padrão os envios de telemetria do widget (PostHog), que ficaram fora do cálculo. Se entrassem em B, X cairia para 52,4 %.
 - **Corte entre 1ª execução e reexecução.** Pausas e trocas de velocidade feitas durante a primeira reprodução de cada texto contaram na 1ª execução. Contadas na reexecução, X subiria no máximo para 96,5 %.
 
+## Participação na coleta
+
+| Integrante | Contribuição |
+| ---------- | ------------ |
+| Geovane S. Freitas | Responsável pela coleta complementar no gov.br e pelo registro das evidências da ME3.1. |
+
 ## Referências
 
 > RAMOS, Cristiane Soares. **Aula A07: Processo de Avaliação de Produto**. Slides da disciplina Qualidade de Software 1. Brasília: Universidade de Brasília, 2026.
@@ -142,3 +150,4 @@ Fonte: elaborado pelos autores.
 | Versão | Data       | Descrição da alteração                         | Autor(a)           | Revisor(a) |
 | ------ | ---------- | ---------------------------------------------- | ------------------ | ---------- |
 | 0.1    | 15/11/2026 | Registro da execução e do julgamento da ME3.1 | Geovane S. Freitas |            |
+| 0.2    | 15/11/2026 | Organização e vinculação dos dados brutos da coleta | Rafael W. Schadt |            |

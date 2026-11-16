@@ -91,33 +91,33 @@ O [teste complementar no gov.br](./me3-1-govbr.md) chegou a X = 95,7 %. Lá, as 
 
 ## Evidências
 
-![Aba Network durante a 1ª tradução da F1, com os sinais baixados pela rede](../../img/me3-1/padronizado/03_F1_1x.png)
+![Aba Network durante a 1ª tradução da F1, com os sinais baixados pela rede](./dados-brutos/ME3.1/padronizado-figuras/03_F1_1x.png)
 
 **Figura 1.** 1ª tradução da F1 (1x): o texto vai ao tradutor e cada sinal é baixado (redirecionamento 301 e arquivo). Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida da F1 a 0.5x, com tradução e verificação CORS, e ícones do cache](../../img/me3-1/padronizado/04_F1_0.5x.png)
+![Aba Network durante a reprodução repetida da F1 a 0.5x, com tradução e verificação CORS, e ícones do cache](./dados-brutos/ME3.1/padronizado-figuras/04_F1_0.5x.png)
 
 **Figura 2.** Reexecução da F1 a 0.5x: só a verificação CORS e o texto vão de novo à rede; os ícones vêm do cache de disco e nenhum sinal é baixado. Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida da F3 a 2x, com o sinal GOV pedido de novo e retornando 404](../../img/me3-1/padronizado/11_F3_2x.png)
+![Aba Network durante a reprodução repetida da F3 a 2x, com o sinal GOV pedido de novo e retornando 404](./dados-brutos/ME3.1/padronizado-figuras/11_F3_2x.png)
 
 **Figura 3.** Reexecução da F3 a 2x: o sinal GOV, inexistente no servidor, é pedido de novo (404). Fonte: elaborado pelos autores.
 
-![Aba Network durante a consulta do termo BENEFÍCIO no dicionário, sem requisição do sinal](../../img/me3-1/padronizado/34_dicionario_BENEFICIO.png)
+![Aba Network durante a consulta do termo BENEFÍCIO no dicionário, sem requisição do sinal](./dados-brutos/ME3.1/padronizado-figuras/34_dicionario_BENEFICIO.png)
 
 **Figura 4.** Consulta de BENEFÍCIO no dicionário: o sinal, já carregado na F7, é reproduzido sem nova requisição. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada por dicionario2 no fim do registro](../../img/me3-1/padronizado/39_filtro-dicionario2_fim-do-registro.png)
+![Aba Network filtrada por dicionario2 no fim do registro](./dados-brutos/ME3.1/padronizado-figuras/39_filtro-dicionario2_fim-do-registro.png)
 
 **Figura 5.** Requisições ao servidor de sinais no fim do registro: 150 requisições e 5.261 kB, incluindo o índice do dicionário (3.479 kB) e o único sinal baixado no dicionário (PRAZO). Fonte: elaborado pelos autores.
 
-Os dados completos estão na pasta [`dados/ME3.1/padronizado`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_ROBERTA_WILLIAMS/tree/main/dados/ME3.1/padronizado) do repositório:
+Os dados completos estão em [Dados brutos da ME3.1 — coleta padronizada](./dados-brutos/ME3.1/padronizado/README.md):
 
-- `resultado.md`: registro completo da coleta, com resultados por frase, ambiente, procedimento, critérios de classificação e limitações;
-- `brutos/ME3.1_Padronizado_2026-11-15.har`: HAR exportado da aba *Network* (791 requisições);
-- `requisicoes_classificadas.csv`: cada requisição classificada por ação, execução, cache ou rede e bytes;
-- `ME3.1_calculo.py`: script que recalcula todos os valores a partir do HAR;
-- `prints/`: 39 prints da aba *Network*, um para cada frase em cada velocidade e um para cada termo do dicionário.
+- `resultado.md`: registro detalhado da coleta, resultados por frase, ambiente, procedimento e limitações;
+- `brutos/ME3.1_Padronizado_2026-11-15.har`: HAR exportado da aba *Network*;
+- `requisicoes_classificadas.csv`: requisições classificadas por ação, execução, cache/rede e bytes;
+- `ME3.1_calculo.py`: script de recálculo a partir do HAR;
+- `prints/`: 39 capturas originais da aba *Network*.
 
 ## Limitações
 

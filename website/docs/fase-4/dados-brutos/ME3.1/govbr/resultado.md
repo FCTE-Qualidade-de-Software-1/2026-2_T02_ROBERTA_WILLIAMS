@@ -1,3 +1,8 @@
+---
+unlisted: true
+sidebar_label: Registro — gov.br
+---
+
 # ME3.1 – Teste complementar no portal gov.br
 
 > Teste complementar, feito em um portal real (`www.gov.br/pt-br`) e fora do protocolo padronizado da Fase 3. O resultado oficial da ME3.1, na página de teste com as 10 frases padronizadas, está em `../padronizado/`.

@@ -1,3 +1,8 @@
+---
+unlisted: true
+sidebar_label: Registro — coleta padronizada
+---
+
 # ME3.1 – Volume de dados consumidos por requisição e taxa de reuso do cache (coleta padronizada)
 
 | Item | Registro |
