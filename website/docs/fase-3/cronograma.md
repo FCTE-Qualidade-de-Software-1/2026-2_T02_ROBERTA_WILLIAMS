@@ -65,7 +65,7 @@ Esta página organiza as atividades da avaliação das métricas definidas. As a
 
 ## Alinhamento com a Fase 4
 
-A Fase 4 usa este cronograma da seguinte forma: os dados brutos de cada métrica ficam em `dados-brutos/<métrica>/` até as datas da Tabela 2, a análise (cálculo, pontuação e julgamento) ocorre entre 20/11 e 21/11, e a entrega final reúne os resultados no artigo e no GitPages em 22/11.
+A Fase 4 usa este cronograma da seguinte forma: os dados brutos de cada métrica ficam em uma planilha compartilhada até as datas da Tabela 2, a análise (cálculo, pontuação e julgamento) ocorre entre 20/11 e 21/11, e a entrega final reúne os resultados no artigo e no GitPages em 22/11.
 
 ## Histórico de Versões
 
