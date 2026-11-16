@@ -200,8 +200,8 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Unidade:** Dias
 * **Coleta:** No repositório oficial (*vlibras-web-browsers*), selecionar as *issues* fechadas por *merge* de *Pull Request* relacionadas à quebra de funcionamento em navegadores ou portais. Para cada uma, registrar a data de abertura da *issue* e a data de *merge* do PR vinculado. Considerar *issue* de incompatibilidade aquela que descreve falha de funcionamento do widget em determinado navegador, dispositivo ou portal (critério aplicado de forma igual a todas as *issues* e registrado na planilha de coleta). Registrar também o número de *issues* analisadas e, por transparência, a mediana.
 * **Cálculo:** `X = (Σ (Dᵢ_merge − Dᵢ_abertura)) / N`
-  * $D_{i\_abertura}$ = data de abertura da *issue* *i*
-  * $D_{i\_merge}$ = data de *merge* do PR que resolveu a *issue* *i*
+  * D<sub>i_abertura</sub> = data de abertura da *issue* *i*
+  * D<sub>i_merge</sub> = data de *merge* do PR que resolveu a *issue* *i*
   * $N$ = número de *issues* analisadas
 * **Fonte de Dados:** *Issues* e *Pull Requests* do repositório oficial no GitHub (interface web, GitHub CLI ou API).
 * **Interpretação:**  

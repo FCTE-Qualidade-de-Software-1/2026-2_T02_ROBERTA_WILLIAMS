@@ -24,7 +24,7 @@ O resultado é a base para a Fase 4, em que as medições são executadas, os da
 | [Recursos e ambiente](./recursos-e-ambiente.md)                    | Versão do produto, máquinas, navegadores, perfis de rede, ferramentas e perfil dos avaliadores                  |
 | [Massa de dados](./massa-de-dados.md)                              | Frases padronizadas, portais da amostra, roteiros, tarefas do teste de usabilidade e participantes              |
 | [Cronograma](./cronograma.md)                                      | Atividades, responsáveis, datas e entregáveis até a entrega final                                               |
-<!-- | [Consistência entre as Fases 2 e 3](./consistencia-fases-2-e-3.md) | Ligação entre objetivo, questão, métrica, protocolo e ambiente, e entre as decisões da Fase 1 e as métricas     | -->
+{/* | [Consistência entre as Fases 2 e 3](./consistencia-fases-2-e-3.md) | Ligação entre objetivo, questão, métrica, protocolo e ambiente, e entre as decisões da Fase 1 e as métricas     | */}
 
 ## Histórico de Versões
 
