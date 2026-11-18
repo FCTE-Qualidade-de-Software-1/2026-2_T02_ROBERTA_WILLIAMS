@@ -173,3 +173,8 @@ git checkout 1ef06d01529f00f0baffae6b1d9eab6381775a92
 
 Depois, execute o script da seção 5 com o comando da seção 6, a partir da raiz do repositório. Requer apenas Git e Python 3, sem bibliotecas adicionais. Como o repositório continua recebendo commits, use o hash acima para reproduzir o mesmo resultado.
 
+## Histórico de Versões
+
+| Versão | Data       | Descrição da alteração                                      | Autor(a)         | Revisor(a) |
+| ------ | ---------- | ----------------------------------------------------------- | ---------------- | ---------- |
+| 1.0    | 18/11/2026 | Registro da documentação | Mariana Pereira da Silva |            |
