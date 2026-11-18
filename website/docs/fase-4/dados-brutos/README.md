@@ -11,5 +11,6 @@ Os registros desta pasta preservam os arquivos usados para calcular e interpreta
 | [ME2.1](./ME2.1/README.md) | CSVs de uso de CPU por segundo das 5 sessões, script de coleta e capturas da saída do script e da configuração do processador. |
 | [ME3.1](./ME3.1/README.md) | Coleta padronizada na página de teste e coleta complementar no portal gov.br: HARs, CSVs, scripts, registros e capturas de tela. |
 | [MM1.1](./MM1.1/README.md) | Inventário da análise estática e capturas de evidência do Design System. |
+| [MM2.1](./MM2.1/README.md) | Script e arquivo gerados na análise das alterações por commit |
 
 Quando novas métricas forem coletadas, seus dados devem ser adicionados em uma pasta com o identificador correspondente, preservando arquivos brutos, planilhas, scripts e evidências.

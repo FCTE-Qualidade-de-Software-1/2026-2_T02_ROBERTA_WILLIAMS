@@ -1,0 +1,6 @@
+Comando: git log --no-merges --pretty=format:%h	%s -- src/widget/components/controls src/widget/dialogs/settings/regionalism-field.tsx src/widget/dialogs/settings/regionalism-list-item.tsx src/widget/dialogs/settings/__tests__/regionalism-field.test.tsx src/widget/dialogs/settings/__tests__/regionalism-list-item.test.tsx
+Alterações analisadas: 102
+Soma de módulos distintos: 161
+MM2.1 (média) = 1.58 módulos/alteração  -> Baixo (<=2)
+Mediana: 1.0
+Distribuição (n_modulos: qtd): {1: 55, 2: 36, 3: 10, 4: 1}
