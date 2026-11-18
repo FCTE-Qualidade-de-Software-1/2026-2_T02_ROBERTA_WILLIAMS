@@ -37,17 +37,19 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### MI1.1: Taxa de Conclusão de Tarefas sem Assistência
 
-- **Ferramentas:** widget em página de teste, gravação de tela, cronômetro, planilha de observação.
-- **Participantes:** no mínimo 8 pessoas surdas. Se não for possível, o teste é feito entre os integrantes da equipe e a limitação é declarada nos resultados.
+- **Ferramentas:** widget em página de teste, gravação de tela, cronômetro, planilha de observação, cartões de cenário com vídeo em Libras.
+- **Participantes:** no mínimo 8 pessoas usuárias de Libras, priorizando pessoas surdas. A participação de ouvintes fluentes em Libras é aceita, com resultados reportados separadamente por perfil. Se não houver participantes suficientes, o teste é feito entre os integrantes da equipe e a limitação é declarada.
 - **Passos:**
-  1. Obter o consentimento do participante e registrar o perfil (fluência em português e experiência com o widget).
-  2. Apresentar cada tarefa em Libras (vídeo ou intérprete), antes de começar. As tarefas estão em [Massa de dados](./massa-de-dados.md): repetir um trecho, alterar a velocidade, consultar um termo no dicionário e escolher o regionalismo.
-  3. Iniciar a gravação de tela e pedir que o participante execute a tarefa sozinho, sem nenhuma ajuda.
-  4. Cronometrar a tarefa, com limite de 3 minutos.
-  5. Registrar o resultado: concluída sem assistência, concluída com assistência ou não concluída.
+  1. Obter o consentimento e registrar o perfil (condição auditiva, relação com a Libras, fluência em português e experiência com o VLibras).
+  2. Fazer um aquecimento de 3 minutos sem medição, para familiarização com o equipamento.
+  3. Apresentar cada cenário em Libras (vídeo com legenda) e em cartão visual, sem indicar qual controle usar. Os cenários estão em [Massa de dados](./massa-de-dados.md).
+  4. Iniciar a gravação de tela e pedir que o participante cumpra o objetivo sozinho. A equipe não responde dúvidas durante a tarefa.
+  5. Cronometrar a tarefa, com limite de 4 minutos.
+  6. Registrar o resultado (concluída sem assistência, com assistência ou não concluída), o tempo, o número de tentativas erradas, o primeiro clique e se o participante recorreu à leitura de texto.
+  7. Após cada tarefa, aplicar a escala de dificuldade de 1 a 5 com carinhas.
 - **Repetições:** uma execução por tarefa por participante.
-- **Registro:** planilha de observação (participante, tarefa, resultado, tempo) e gravações de tela.
-- **Critério de parada:** todas as tarefas tentadas por todos os participantes, ou 3 minutos por tarefa.
+- **Registro:** planilha de observação (participante, perfil, tarefa, resultado, tempo, tentativas erradas, primeiro clique, uso de texto, dificuldade percebida) e gravações de tela.
+- **Critério de parada:** todas as tarefas tentadas por todos os participantes, ou 4 minutos por tarefa.
 
 ### MI2.1: Proporção de Mensagens Apenas em Texto
 
@@ -77,14 +79,17 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### MI3.2: Taxa de Eficácia na Seleção de Texto
 
-- **Ferramentas:** widget em páginas com layouts diferentes, gravação de tela. A coleta pode ocorrer na mesma sessão da MI1.1.
+- **Ferramentas:** widget na página de teste e em portais da amostra, gravação de tela, cartões visuais das tarefas e planilha de observação. A coleta pode ocorrer na mesma sessão da MI1.1.
 - **Passos:**
-  1. Abrir cada uma das páginas de teste definidas em [Massa de dados](./massa-de-dados.md), com layouts diferentes.
-  2. Pedir que o participante selecione e traduza os trechos indicados.
-  3. Registrar, para cada tentativa, se houve sucesso (tradução corretamente iniciada, sem erro de área e com feedback visual do modo de seleção) ou falha.
-- **Repetições:** o mesmo número de tentativas por participante e por página.
-- **Registro:** planilha (participante, página, tentativas, sucessos e falhas) e gravações de tela.
-- **Critério de parada:** todas as tentativas previstas executadas por todos os participantes.
+  1. No início da sessão, capturar a página de cada portal e registrar a versão do widget carregado. Nos portais que já tenham o VLibras instalado, usar o widget existente e registrar isso.
+  2. Apresentar cada tarefa (S1 a S7) por cartão visual, na ordem fixa definida em [Massa de dados](./massa-de-dados.md), sem indicar como selecionar o texto.
+  3. Pedir que o participante selecione e traduza o trecho indicado, sozinho, com no máximo 2 minutos por tarefa. A equipe não ajuda durante a tarefa.
+  4. Registrar sucesso, que exige três condições: tradução corretamente iniciada, área selecionada correta e feedback visual claro do modo de seleção. Se faltar qualquer uma, é falha.
+  5. Nas falhas, registrar o motivo (widget não capturou o texto, capturou área errada, carrossel trocou de slide durante a seleção, sem feedback visual ou outro) e o tipo (limitação técnica do widget ou problema de usabilidade e feedback).
+  6. Nas tarefas com conteúdo que muda com o tempo (S4, carrossel, e S5, card de rede social), descrever na planilha o trecho efetivamente usado.
+- **Repetições:** uma tentativa por tarefa por participante. Com 8 participantes, são 56 tentativas previstas (7 tarefas x 8 participantes).
+- **Registro:** planilha de observação (participante, grupo de análise, tarefa, página, elemento, resultado, as três verificações do critério de sucesso, motivo e tipo da falha, estratégia alternativa, timestamp na gravação e desvio do protocolo), capturas das páginas e gravações de tela.
+- **Critério de parada:** as 7 tarefas (S1 a S7) tentadas por todos os participantes, ou 2 minutos por tarefa.
 
 ---
 
@@ -238,8 +243,9 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                       | Autor(a)         | Revisor(a) |
-| ------ | ---------- | ------------------------------------------------------------ | ---------------- | ---------- |
-| 0.1    | 15/11/2026 | Inserção do método de avaliação e dos protocolos por métrica | Ludmila O. Nunes |            |
+| Versão | Data       | Descrição da alteração                                                                                       | Autor(a)           | Revisor(a) |
+| ------ | ---------- | ------------------------------------------------------------------------------------------------------------ | ------------------ | ---------- |
+| 0.1    | 15/11/2026 | Inserção do método de avaliação e dos protocolos por métrica                                                 | Ludmila O. Nunes   |            |
 | 0.2    | 15/11/2026 | Protocolo da ME3.1: página de teste, 10 frases nas velocidades 0.5x, 1x e 2x e limpeza do cache do navegador | Geovane S. Freitas |            |
-| 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads* | Amanda C. Lima |            |
+| 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads*                         | Amanda C. Lima     |            |
+| 0.4    | 18/11/2026 | Correções MI1.1                                                                                              | Ludmila O. Nunes   |            |

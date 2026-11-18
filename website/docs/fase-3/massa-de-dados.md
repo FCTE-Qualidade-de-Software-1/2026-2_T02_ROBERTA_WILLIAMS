@@ -9,13 +9,14 @@ Esta página reúne os dados de teste usados nos [protocolos de medição](./met
 
 **Tabela 1.** Onde cada conjunto de dados é usado.
 
-| Conjunto de dados       | Métricas que o utilizam                  |
-| ----------------------- | ---------------------------------------- |
-| Frases padronizadas     | ME1.1, ME2.1, ME3.1                      |
-| Portais da amostra      | MF2.1 e páginas de seleção da MI3.2      |
-| Página de teste         | MI1.1, MI3.1, ME1.1, ME2.1, ME3.1, MF1.1 |
-| Tarefas e participantes | MI1.1 e MI3.2                            |
-| Termos do dicionário    | ME3.1, MF1.1 e MI1.1                     |
+| Conjunto de dados    | Métricas que o utilizam                  |
+| -------------------- | ---------------------------------------- |
+| Frases padronizadas  | ME1.1, ME2.1, ME3.1, MI1.1 e MI3.2       |
+| Portais da amostra   | MF2.1 e páginas de seleção da MI3.2      |
+| Página de teste      | MI1.1, MI3.1, MI3.2, ME1.1, ME2.1, ME3.1 |
+| Cenários e tarefas   | MI1.1 e MI3.2                            |
+| Termos do dicionário | ME3.1, MF1.1 e MI1.1                     |
+| Participantes        | MI1.1 e MI3.2                            |
 
 ## Frases padronizadas
 
@@ -52,68 +53,86 @@ A amostra tem 10 portais públicos federais, com layouts variados. Ela é usada 
 
 **Tabela 3.** Portais da amostra.
 
-| ID  | Portal                  | Endereço                             |
-| --- | ----------------------- | ------------------------------------ |
-| P1  | Portal gov.br           | https://www.gov.br                   |
-| P2  | Receita Federal         | https://www.gov.br/receitafederal    |
-| P3  | Ministério da Saúde     | https://www.gov.br/saude             |
-| P4  | Portal da Transparência | https://portaldatransparencia.gov.br |
-| P5  | IBGE                    | https://www.ibge.gov.br              |
-| P6  | Banco Central           | https://www.bcb.gov.br               |
-| P7  | Ipea                    | https://www.ipea.gov.br              |
-| P8  | Caixa                   | https://www.caixa.gov.br             |
-| P9  | Agência Brasil          | https://agenciabrasil.ebc.com.br     |
-| P10 | Fiocruz                 | https://portal.fiocruz.br            |
+| ID  | Portal                       | Endereço                             |
+| --- | ---------------------------- | ------------------------------------ |
+| P1  | Portal gov.br                | https://www.gov.br                   |
+| P2  | Receita Federal              | https://www.gov.br/receitafederal    |
+| P3  | Ministério da Saúde          | https://www.gov.br/saude             |
+| P4  | Casa Civil                   | https://www.gov.br/casacivil/pt-br   |
+| P5  | Controladoria-Geral da União | https://www.gov.br/cgu/pt-br         |
+| P6  | IBGE                         | https://www.ibge.gov.br              |
+| P7  | Banco Central                | https://www.bcb.gov.br               |
+| P8  | Ipea                         | https://www.ipea.gov.br              |
+| P9  | Agência Brasil               | https://agenciabrasil.ebc.com.br     |
+| P10 | Fiocruz                      | https://portal.fiocruz.br            |
 
-**Critérios de escolha:** portais públicos federais, de acesso aberto (sem login) e com layouts diferentes. Os portais P1 a P3 seguem o mesmo padrão visual do gov.br, e os demais têm layouts próprios, o que aumenta a variedade da amostra. A lista pode ser ajustada na execução se um portal estiver fora do ar, exigir login ou já trouxer o VLibras instalado, que nesse caso não permite a injeção do widget e deve ser substituído por outro com layout parecido. Qualquer troca é registrada na ficha de integração.
+**Critérios de escolha:** portais públicos federais, de acesso aberto (sem login) e com layouts diferentes. Os portais P1 a P5 seguem o mesmo padrão visual do gov.br, e os demais têm layouts próprios, o que aumenta a variedade da amostra.
 
 ## Roteiros
 
 **Tabela 4.** Roteiros usados nas medições.
 
-| Roteiro           | Métrica | Passos |
-| ----------------- | ------- | -------|
+| Roteiro           | Métrica | Passos                                                                                                                        |
+| ----------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Rede e cache      | ME3.1   | Traduzir todas as frases padronizadas; repetir cada trecho nas velocidades 0.5x, 1x e 2x; consultar os 5 termos do dicionário |
-| Tradução contínua | ME2.1   | Traduzir as frases F4 a F8 em sequência e repetir, durante 2 minutos |
-| Funções do escopo | MF1.1   | Executar, em cada ambiente: consulta ao dicionário, alteração da velocidade, repetição do trecho e escolha do regionalismo |
+| Tradução contínua | ME2.1   | Traduzir as frases F4 a F8 em sequência e repetir, durante 2 minutos                                                          |
+| Funções do escopo | MF1.1   | Executar, em cada ambiente: tradução de um parágrafo, consulta ao dicionário, alteração da velocidade e repetição do trecho   |
 
-## Tarefas do teste de usabilidade
+## Cenários do teste de usabilidade (MI1.1)
 
-As tarefas são usadas na MI1.1 e apresentadas ao participante em Libras (vídeo gravado ou intérprete), antes da execução.
+Os cenários são usados na MI1.1. Cada um traz um objetivo e um contexto, sem indicar qual controle usar. São apresentados ao participante em Libras (vídeo curto com legenda) e em um cartão visual, antes da execução. Todos partem do widget fechado.
 
-**Tabela 5.** Tarefas da MI1.1.
+**Tabela 5.** Cenários da MI1.1.
 
-| ID  | Tarefa                                                                                | Função avaliada        |
-| --- | ------------------------------------------------------------------------------------- | ---------------------- |
-| T1  | Traduzir a F6 e repetir o trecho                                                      | Tradução e repetição   |
-| T2  | Alterar a velocidade para mais devagar                                                | Controle de velocidade |
-| T3  | Consultar o termo "protocolo" no dicionário                                           | Dicionário             |
-| T4  | Localizar a opção de regionalismo e confirmar o regionalismo em uso (Padrão Nacional) | Regionalismo           |
+| ID  | Cenário (objetivo do participante)                                  | Material                                                            | Pré-condição                   | Critério de conclusão                                                                         | Função avaliada                                       |
+| --- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------ | --------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| T1  | Entender em Libras o aviso da página                                | F9 (aviso com horários), na página de teste                         | Widget fechado, rede normal    | Avatar sinaliza o parágrafo completo                                                          | Abrir o widget, selecionar texto e iniciar a tradução |
+| T2  | Rever o aviso mais devagar, porque o avatar sinalizou rápido demais | F9, já traduzida na T1                                              | Tradução da T1 concluída       | Aviso reproduzido de novo, com velocidade menor que 1x                                        | Repetição e velocidade                                |
+| T3  | Ver o sinal de uma palavra que não entendeu                         | Termo "prazo"                                                       | Widget aberto                  | Avatar exibe o sinal de "prazo" pelo dicionário                                               | Dicionário                                            |
+| T4  | Verificar se é possível usar sinais de outra região                 | Opção de regionalismo                                               | Widget aberto                  | Participante localiza a opção e identifica o regionalismo em uso (Padrão Nacional)            | Regionalismo                                          |
+| T5  | Traduzir apenas uma frase de um parágrafo                           | Parágrafo do P7 (Banco Central), frase de carrossel | Widget aberto                  | Tradução iniciada só de parte da frase indicada                                                        | Seleção parcial de texto                              |
 
-Cada tarefa tem limite de 3 minutos. Como o escopo trata só do Padrão Nacional, a T4 verifica se o participante encontra e entende a opção, e não compara regionalismos.
+Limite de 4 minutos por cenário. Como o escopo trata só do Padrão Nacional, a T4 verifica se o participante encontra e entende a opção, e não compara regionalismos.
 
 ## Seleção de texto (MI3.2)
 
-Cada participante seleciona e traduz três trechos em quatro páginas com layouts diferentes: a página de teste, o P1 (gov.br), o P4 (Portal da Transparência, com tabelas) e o P5 (IBGE). Os trechos são **uma palavra**, **uma frase** e **um parágrafo**. Com 8 participantes, são 96 tentativas previstas (4 páginas x 3 trechos x 8 participantes).
+Cada participante cumpre 7 tarefas de seleção e tradução de texto, em ordem fixa, começando pela página de teste e seguindo pelos portais da amostra. As tarefas cobrem tipos diferentes de elemento (texto comum, seleção repetida, texto sobre imagem com troca automática, conteúdo incorporado, card e botão), porque é nesses elementos que a seleção tende a falhar.
+
+**Tabela 6.** Tarefas de seleção de texto (MI3.2).
+
+| ID  | Página                   | Tarefa                                            | Elemento                                          | Trecho                                                                                                                                        |
+| --- | ------------------------ | ------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| S1  | Página de teste          | Traduzir uma palavra da F6                        | Texto comum                                       | Palavra "documento"                                                                                                                           |
+| S2  | Página de teste          | Traduzir uma frase                                | Texto comum                                       | F8                                                                                                                                       |
+| S3  | Página de teste          | Traduzir um parágrafo inteiro                     | Texto comum                                       | Parágrafo F9                                                                                                                                  |
+| S4  | CGU (P5)                 | Ler um trecho do carrossel de destaques           | Texto sobre imagem, com troca automática de slide | Primeiro card do carrossel: "Até outubro de 2026, a plataforma registrou o maior número de consultas deste tipo desde o início das medições." |
+| S5  | CGU (P5)                 | Ler uma frase do card de rede social              | Conteúdo incorporado (provável *iframe*)          | "A CGU participou da COP31, na Turquia, debatendo o papel dos órgãos de controle no fortalecimento da governança climática."                  |
+| S6  | P1 (gov.br)              | Traduzir o texto de um card de categorias         | Card em layout gov.br                             | Item do card "Agricultura e Pecuária"                                                                                                         |
+| S7  | P3 (Ministério da Saúde) | Traduzir o texto de um botão de mais informações  | Botão com texto curto                             | "Mais informações na Agência Saúde"                                                                                                           |
+
+O carrossel e o card de rede social mudam com o tempo. Por isso, a equipe captura a página no início de cada sessão, descreve na planilha o trecho efetivamente usado e, se o conteúdo mudar, usa o item equivalente disponível no dia. Com 8 participantes, são 56 tentativas previstas (7 tarefas x 8 participantes).
 
 ## Participantes
 
-**Tabela 6.** Participantes do teste de usabilidade.
+**Tabela 7.** Participantes do teste de usabilidade.
 
-| Item               | Definição                                                                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Quantidade         | No mínimo 8                                                                                                                         |
-| Perfil             | Maiores de 18 anos, usuárias e usuários de Libras, com fluência em português variada                                                |
-| Recrutamento       | Comunidade surda e pessoas com conhecimento de Libras, como estudantes e professores da UnB                                         |
-| Registro do perfil | Código do participante (P01, P02...), fluência em português autodeclarada (baixa, média ou alta) e experiência prévia com o VLibras |
-| Consentimento      | Termo de consentimento assinado antes do teste, com autorização para a gravação de tela                                             |
-| Privacidade        | Sem nome nos registros e gravação apenas da tela                                                                                    |
+| Item               | Definição                                                                                                                                                                                                |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Quantidade         | No mínimo 8                                                                                                                                                                                              |
+| Perfil             | Maiores de 18 anos, usuárias e usuários de Libras, priorizando pessoas surdas. Ouvintes fluentes em Libras são aceitos e reportados separadamente                                                        |
+| Recrutamento       | Comunidade surda e pessoas com conhecimento de Libras, como estudantes e professores da UnB                                                                                                              |
+| Registro do perfil | Código do participante (P01, P02...), condição auditiva, relação e fluência em Libras, fluência em português autodeclarada (baixa, média ou alta), experiência prévia com o VLibras e dificuldade visual |
+| Consentimento      | Termo de consentimento assinado antes do teste, com autorização para a gravação de tela                                                                                                                  |
+| Privacidade        | Sem nome nos registros e gravação apenas da tela                                                                                                                                                         |
 
-**Plano B:** se não for possível reunir participantes da comunidade surda, o teste é feito pelos integrantes da equipe, como prevê o [Escopo](../fase-1/escopo-e-profundidade.md). Os resultados são declarados como limitados, e não representam a experiência de todos os perfis de usuário.
+**Plano B:** se não for possível reunir 8 participantes, o teste é aplicado também a ouvintes fluentes em Libras e, em último caso, aos integrantes da equipe, como prevê o [Escopo](../fase-1/escopo-e-profundidade.md). Os resultados são reportados por perfil, e só os dados de pessoas surdas sustentam conclusões sobre a H1-I e a H2-I.
+
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                                                      | Autor(a)         | Revisor(a) |
-| ------ | ---------- | ------------------------------------------------------------------------------------------- | ---------------- | ---------- |
-| 0.1    | 15/11/2026 | Inserção das frases, dos termos, dos portais, dos roteiros, das tarefas e dos participantes | Ludmila O. Nunes |            |
-| 0.2    | 15/11/2026 | Roteiro "Rede e cache" (ME3.1) com as 10 frases nas velocidades 0.5x, 1x e 2x | Geovane S. Freitas |            |
+| Versão | Data       | Descrição da alteração                                                                      | Autor(a)           | Revisor(a) |
+| ------ | ---------- | ------------------------------------------------------------------------------------------- | ------------------ | ---------- |
+| 0.1    | 15/11/2026 | Inserção das frases, dos termos, dos portais, dos roteiros, das tarefas e dos participantes | Ludmila O. Nunes   |            |
+| 0.2    | 15/11/2026 | Roteiro "Rede e cache" (ME3.1) com as 10 frases nas velocidades 0.5x, 1x e 2x               | Geovane S. Freitas |            |
+| 0.3    | 18/11/2026 | Adequação das tarefas de MI1.1 e MI3.2                                                      | Ludmila O. Nunes   |            |
+| 0.4    | 18/11/2026 | Correção de inconsistências: cenário T5, trechos S4 e S6, Tabelas 1, 3 e 4, participantes e plano B | Ludmila O. Nunes   |            |
