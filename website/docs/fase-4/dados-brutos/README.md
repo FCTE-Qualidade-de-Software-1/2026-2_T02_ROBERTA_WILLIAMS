@@ -8,6 +8,7 @@ Os registros desta pasta preservam os arquivos usados para calcular e interpreta
 
 | Métrica | Conteúdo |
 | ------- | -------- |
+| [ME1.1](./ME1.1/README.md) | Instantes e tempos de resposta por frase e perfil, estatísticas e gravações de tela. |
 | [ME2.1](./ME2.1/README.md) | CSVs de uso de CPU por segundo das 5 sessões, script de coleta e capturas da saída do script e da configuração do processador. |
 | [ME3.1](./ME3.1/README.md) | Coleta padronizada na página de teste e coleta complementar no portal gov.br: HARs, CSVs, scripts, registros e capturas de tela. |
 | [MM1.1](./MM1.1/README.md) | Inventário da análise estática e capturas de evidência do Design System. |
