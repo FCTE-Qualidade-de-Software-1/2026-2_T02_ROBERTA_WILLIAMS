@@ -9,10 +9,10 @@ Esta página registra quanto o navegador usa de processador enquanto o avatar do
 
 A Fase 3 prevê duas condições de coleta:
 
-| Condição | Dispositivo | Situação |
-| -------- | ----------- | -------- |
+| Condição                         | Dispositivo                                 | Situação     |
+| -------------------------------- | ------------------------------------------- | ------------ |
 | Simulação de *hardware* limitado | D1 (Ryzen 7 7800X3D, restrito pelo Windows) | **Coletada** |
-| *Hardware* modesto real | D3 (Core i7-7700HQ, 2017) | Prevista |
+| *Hardware* modesto real          | D3 (Core i7-7700HQ, 2017)                   | Prevista     |
 
 Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi necessária porque o processador do D1 é de alto desempenho e não se parece com o de um aparelho de entrada. O julgamento desta página vale para essa condição e será revisto depois da coleta no D3.
 
@@ -35,13 +35,13 @@ Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi nece
 
 O D1 ([Recursos e ambiente](../fase-3/recursos-e-ambiente.md)) tem um processador de alto desempenho. Para chegar perto de um computador comum, o navegador foi restringido pelo próprio Windows:
 
-| Item | Configuração |
-| ---- | ------------ |
-| Processador de origem | AMD Ryzen 7 7800X3D (8 núcleos, 16 *threads*), 16 GB de RAM, Windows 11 |
-| Núcleos disponíveis ao navegador | CPUs lógicas 0 a 7, ou seja, **4 núcleos físicos e 8 *threads*** |
-| Desempenho máximo do processador | **60%**, velocidade observada de 2,96 GHz, contra 4,20 GHz de base |
-| Navegador | Google Chrome 157.0.8103.79, em janela anônima, com **aceleração gráfica desligada** |
-| Demais aplicações | Fechadas |
+| Item                             | Configuração                                                                         |
+| -------------------------------- | ------------------------------------------------------------------------------------ |
+| Processador de origem            | AMD Ryzen 7 7800X3D (8 núcleos, 16 *threads*), 16 GB de RAM, Windows 11              |
+| Núcleos disponíveis ao navegador | CPUs lógicas 0 a 7, ou seja, **4 núcleos físicos e 8 *threads***                     |
+| Desempenho máximo do processador | **60%**, velocidade observada de 2,96 GHz, contra 4,20 GHz de base                   |
+| Navegador                        | Google Chrome 157.0.8103.79, em janela anônima, com **aceleração gráfica desligada** |
+| Demais aplicações                | Fechadas                                                                             |
 
 Quatro núcleos e oito *threads* é o perfil mais comum em notebooks de entrada e intermediários. Com a aceleração gráfica desligada, o avatar (Unity/WebGL) é desenhado pela CPU e não pela placa de vídeo, como aconteceria num aparelho sem GPU dedicada ou com vídeo integrado fraco.
 
@@ -61,12 +61,12 @@ A ME2.1 é calculada pela fórmula definida em [Métricas](../fase-2/metricas.md
 
 **X = B / (A × N) × 100**
 
-| Termo | Significado | Valor nesta coleta |
-| ----- | ----------- | ------------------ |
-| A | Tempo total da sessão de tradução, em segundos | ≈ 122 s |
-| B | Tempo de CPU consumido por todos os processos do navegador, em segundos | 535,6 s a 551,9 s |
-| N | Número de *threads* disponíveis ao navegador | 8 |
-| X | Utilização média de CPU | 55,7% (média das 5 sessões) |
+| Termo | Significado                                                             | Valor nesta coleta          |
+| ----- | ----------------------------------------------------------------------- | --------------------------- |
+| A     | Tempo total da sessão de tradução, em segundos                          | ≈ 122 s                     |
+| B     | Tempo de CPU consumido por todos os processos do navegador, em segundos | 535,6 s a 551,9 s           |
+| N     | Número de *threads* disponíveis ao navegador                            | 8                           |
+| X     | Utilização média de CPU                                                 | 55,7% (média das 5 sessões) |
 
 Na sessão 1: X = 535,6 / (122,0 × 8) × 100 = **54,9%**.
 
@@ -76,24 +76,24 @@ Aqui, N é o número de *threads* liberadas ao navegador pela afinidade. No D3, 
 
 **Tabela 1.** Consumo de CPU por sessão.
 
-| Sessão | A (s) | B (s) | *Threads* ocupadas (B / A) | Média X | Pico | Mínimo |
-| :----: | ----: | ----: | -------------------------: | ------: | ---: | -----: |
-| 1 | 122,0 | 535,6 | 4,39 | 54,9% | 72,3% | 19,9% |
-| 2 | 122,1 | 536,8 | 4,40 | 55,0% | 78,3% | 19,5% |
-| 3 | 121,9 | 547,1 | 4,49 | 56,1% | 89,5% | 19,4% |
-| 4 | 121,9 | 551,9 | 4,53 | 56,6% | 79,6% | 18,9% |
-| 5 | 122,0 | 546,1 | 4,48 | 55,9% | 83,7% | 20,0% |
-| **Geral** | | | **4,46** | **55,7%** | **89,5%** | **18,9%** |
+|  Sessão   | A (s) | B (s) | *Threads* ocupadas (B / A) |   Média X |      Pico |    Mínimo |
+| :-------: | ----: | ----: | -------------------------: | --------: | --------: | --------: |
+|     1     | 122,0 | 535,6 |                       4,39 |     54,9% |     72,3% |     19,9% |
+|     2     | 122,1 | 536,8 |                       4,40 |     55,0% |     78,3% |     19,5% |
+|     3     | 121,9 | 547,1 |                       4,49 |     56,1% |     89,5% |     19,4% |
+|     4     | 121,9 | 551,9 |                       4,53 |     56,6% |     79,6% |     18,9% |
+|     5     | 122,0 | 546,1 |                       4,48 |     55,9% |     83,7% |     20,0% |
+| **Geral** |       |       |                   **4,46** | **55,7%** | **89,5%** | **18,9%** |
 
 Fonte: elaborado pelos autores, a partir dos CSVs da coleta. Desvio padrão da média entre sessões: 0,73 p.p.
 
 **Tabela 2.** Distribuição das 600 amostras de 1 s pelas faixas da métrica.
 
-| Faixa | Amostras | Proporção |
-| ----- | -------: | --------: |
-| ≤ 30% (Satisfatório / Ideal) | 24 | 4,0% |
-| 31% a 50% (Aceitável / Regular) | 85 | 14,2% |
-| &gt; 50% (Ruim) | 491 | 81,8% |
+| Faixa                           | Amostras | Proporção |
+| ------------------------------- | -------: | --------: |
+| ≤ 30% (Satisfatório / Ideal)    |       24 |      4,0% |
+| 31% a 50% (Aceitável / Regular) |       85 |     14,2% |
+| &gt; 50% (Ruim)                 |      491 |     81,8% |
 
 Fonte: elaborado pelos autores.
 

@@ -29,10 +29,10 @@ O [protocolo da Fase 3](../fase-3/metodo-de-avaliacao.md#me11-tempo-médio-de-re
 
 **Tabela 1.** Tempos de resposta por perfil de rede.
 
-| Perfil | Medições | Média (s) | Mediana (s) | Mínimo (s) | Máximo (s) | Desvio padrão amostral (s) |
-| ------ | -------: | --------: | ----------: | ---------: | ---------: | -------------------------: |
-| Banda larga | 10 | 3,66 | 3,97 | 1,40 (F1) | 7,64 (F6) | 2,02 |
-| 3G | 10 | 3,48 | 3,45 | 2,97 (F7) | 4,81 (F3) | 0,51 |
+| Perfil      | Medições | Média (s) | Mediana (s) | Mínimo (s) | Máximo (s) | Desvio padrão amostral (s) |
+| ----------- | -------: | --------: | ----------: | ---------: | ---------: | -------------------------: |
+| Banda larga |       10 |      3,66 |        3,97 |  1,40 (F1) |  7,64 (F6) |                       2,02 |
+| 3G          |       10 |      3,48 |        3,45 |  2,97 (F7) |  4,81 (F3) |                       0,51 |
 
 Fonte: cálculos a partir dos instantes fornecidos pelo responsável pela coleta. Os resultados são arredondados a duas casas decimais.
 
@@ -56,6 +56,6 @@ As 20 gravações, organizadas por perfil e frase, e a [tabela com os dados e c�
 
 ## Histórico de Versões
 
-| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
-| ------ | ---- | ---------------------- | -------- | ---------- |
-| 1.0 | 20/11/2026 | Registro dos dados fornecidos, cálculos e análise da ME1.1 | Rafael W. Schadt  | |
+| Versão | Data       | Descrição da alteração                                     | Autor(a)         | Revisor(a) |
+| ------ | ---------- | ---------------------------------------------------------- | ---------------- | ---------- |
+| 1.0    | 20/11/2026 | Registro dos dados fornecidos, cálculos e análise da ME1.1 | Rafael W. Schadt |            |

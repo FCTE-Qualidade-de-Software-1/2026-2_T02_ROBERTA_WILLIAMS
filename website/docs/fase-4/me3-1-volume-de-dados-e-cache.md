@@ -31,22 +31,22 @@ O registro da aba *Network* foi exportado em HAR e classificado por um script, q
 
 **Tabela 2.** Resultado por execução.
 
-| Execução | Requisições | Pela rede | Pelo cache | Dados pela rede |
-| -------- | ----------: | --------: | ---------: | --------------: |
-| 1ª execução: tradução das 10 frases | 225 | 163 | 62 | 1.756.900 B |
-| 1ª execução: dicionário (5 termos) | 162 | 76 | 86 | 3.590.152 B |
-| **1ª execução (total)** | **387** | **239** | **148** | **≈ 5,35 MB** |
-| **Reexecução (21 reproduções)** | **202** | **48** | **154** | **≈ 28,1 kB** |
+| Execução                            | Requisições | Pela rede | Pelo cache | Dados pela rede |
+| ----------------------------------- | ----------: | --------: | ---------: | --------------: |
+| 1ª execução: tradução das 10 frases |         225 |       163 |         62 |     1.756.900 B |
+| 1ª execução: dicionário (5 termos)  |         162 |        76 |         86 |     3.590.152 B |
+| **1ª execução (total)**             |     **387** |   **239** |    **148** |   **≈ 5,35 MB** |
+| **Reexecução (21 reproduções)**     |     **202** |    **48** |    **154** |   **≈ 28,1 kB** |
 
 Fonte: elaborado pelos autores, a partir do HAR da coleta. Bytes = coluna *Size* da aba *Network*.
 
 **Tabela 3.** Requisições da reexecução que foram para a rede (48 de 202).
 
-| Requisição | Quantidade | Bytes | Motivo |
-| ---------- | ---------: | ----: | ------ |
-| `POST traducao2.vlibras.gov.br/translate` | 21 | 23.203 | O texto é reenviado ao tradutor a cada nova reprodução; a tradução não fica em cache local |
-| `OPTIONS traducao2.vlibras.gov.br/translate` | 21 | 0 | Verificação CORS (*preflight*) que o navegador faz antes de cada `POST` |
-| `GET dicionario2…/GOV`, `…/12` e `…/90` | 6 | 4.870 | Sinais que não existem no servidor (erro 404), pedidos de novo a cada reprodução |
+| Requisição                                   | Quantidade |  Bytes | Motivo                                                                                     |
+| -------------------------------------------- | ---------: | -----: | ------------------------------------------------------------------------------------------ |
+| `POST traducao2.vlibras.gov.br/translate`    |         21 | 23.203 | O texto é reenviado ao tradutor a cada nova reprodução; a tradução não fica em cache local |
+| `OPTIONS traducao2.vlibras.gov.br/translate` |         21 |      0 | Verificação CORS (*preflight*) que o navegador faz antes de cada `POST`                    |
+| `GET dicionario2…/GOV`, `…/12` e `…/90`      |          6 |  4.870 | Sinais que não existem no servidor (erro 404), pedidos de novo a cada reprodução           |
 
 Fonte: elaborado pelos autores.
 
@@ -58,22 +58,22 @@ As outras 154 requisições da reexecução foram ícones da interface, lidos do
 
 **Tabela 4.** Comparação com os níveis de pontuação da ME3.1.
 
-| Nível | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado |
-| ----- | ------------------------------------------------------------------- | --------- |
-| Ruim (1 a 2) | &lt; 80 % | **76,2 %** |
-| Aceitável/Regular (3) | 80 % a 94 % | |
-| Satisfatório/Ideal (4 a 5) | ≥ 95 % | |
+| Nível                      | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado  |
+| -------------------------- | ------------------------------------------------------------------- | ---------- |
+| Ruim (1 a 2)               | &lt; 80 %                                                           | **76,2 %** |
+| Aceitável/Regular (3)      | 80 % a 94 %                                                         |            |
+| Satisfatório/Ideal (4 a 5) | ≥ 95 %                                                              |            |
 
 Fonte: elaborado pelos autores.
 
 **Tabela 5.** Sensibilidade do resultado.
 
-| Cenário | A / B | X | Nível |
-| ------- | ----- | - | ----- |
-| Todas as requisições da reexecução (resultado oficial) | 154 / 202 | 76,2 % | Ruim |
-| Sem as verificações CORS (`OPTIONS`) | 154 / 181 | 85,1 % | Aceitável/Regular |
+| Cenário                                                     | A / B     | X      | Nível             |
+| ----------------------------------------------------------- | --------- | ------ | ----------------- |
+| Todas as requisições da reexecução (resultado oficial)      | 154 / 202 | 76,2 % | Ruim              |
+| Sem as verificações CORS (`OPTIONS`)                        | 154 / 181 | 85,1 % | Aceitável/Regular |
 | Sem as verificações CORS e sem os sinais inexistentes (404) | 154 / 175 | 88,0 % | Aceitável/Regular |
-| Incluindo a telemetria do widget em B | 154 / 257 | 59,9 % | Ruim |
+| Incluindo a telemetria do widget em B                       | 154 / 257 | 59,9 % | Ruim              |
 
 Fonte: elaborado pelos autores.
 

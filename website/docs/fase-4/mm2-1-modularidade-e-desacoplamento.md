@@ -16,17 +16,17 @@ Registro da medição da métrica MM2.1 no VLibras Web Browsers: o que foi medid
 
 ## 2. Objeto medido e ambiente
 
-| Item | Valor |
-|---|---|
-| Repositório | https://github.com/spbgovbr-vlibras/vlibras-web-browsers |
-| Branch analisada | `dev` |
-| Commit de referência (HEAD) | `1ef06d01529f00f0baffae6b1d9eab6381775a92` |
-| Total de commits no repositório | 1.284 |
-| Sistema operacional | Windows ([PREENCHER versão]) |
-| Git | 2.47.1.windows.2 |
-| Python | 3.11.9 |
-| Data e hora da medição | 17/11/2026 19:00 |
-| Avaliador | Mariana Pereira da Silva |
+| Item                            | Valor                                                    |
+| ------------------------------- | -------------------------------------------------------- |
+| Repositório                     | https://github.com/spbgovbr-vlibras/vlibras-web-browsers |
+| Branch analisada                | `dev`                                                    |
+| Commit de referência (HEAD)     | `1ef06d01529f00f0baffae6b1d9eab6381775a92`               |
+| Total de commits no repositório | 1.284                                                    |
+| Sistema operacional             | Windows ([PREENCHER versão])                             |
+| Git                             | 2.47.1.windows.2                                         |
+| Python                          | 3.11.9                                                   |
+| Data e hora da medição          | 17/11/2026 19:00                                         |
+| Avaliador                       | Mariana Pereira da Silva                                 |
 
 > **Desvio em relação ao plano.** O plano define como objeto a versão 7.12.2 do widget. A análise foi executada sobre o HEAD da branch `dev`, e não sobre a tag `v7.12.2`. Existem as tags `v7.12.0` a `v7.12.3`, e o `dev` tem 114 commits posteriores à `v7.12.0`. Portanto, a análise pode incluir alterações posteriores à versão 7.12.2. 
 
@@ -47,11 +47,11 @@ Critério de parada: todas as alterações do histórico nos caminhos selecionad
 
 Os caminhos foram identificados por busca textual por `speed`, `veloc`, `repeat`, `repetir` e `regional` na árvore atual do repositório.
 
-| Controle | Caminho |
-|---|---|
-| Velocidade e repetição | `src/widget/components/controls` (inclui `speed-option.tsx` e `main-action/`) |
-| Regionalismo | `src/widget/dialogs/settings/regionalism-field.tsx` |
-| Regionalismo | `src/widget/dialogs/settings/regionalism-list-item.tsx` |
+| Controle               | Caminho                                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------------------------- |
+| Velocidade e repetição | `src/widget/components/controls` (inclui `speed-option.tsx` e `main-action/`)                         |
+| Regionalismo           | `src/widget/dialogs/settings/regionalism-field.tsx`                                                   |
+| Regionalismo           | `src/widget/dialogs/settings/regionalism-list-item.tsx`                                               |
 | Testes do regionalismo | `src/widget/dialogs/settings/__tests__/regionalism-field.test.tsx` e `regionalism-list-item.test.tsx` |
 
 
@@ -67,13 +67,13 @@ Para cada commit, foram considerados **todos os arquivos alterados no commit**, 
 
 Cada arquivo foi classificado por prefixo de caminho, nos módulos descritos em [Tipo de produto](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-1/tipo-produto-descricao):
 
-| Prefixo | Módulo |
-|---|---|
-| `src/widget/` | Widget |
-| `src/player/` e `public/unity/` | Player |
-| `src/core/` e `src/common/` | Core e Common |
-| `src/loader/` | Loader |
-| `extensions/` | Extensão |
+| Prefixo                         | Módulo        |
+| ------------------------------- | ------------- |
+| `src/widget/`                   | Widget        |
+| `src/player/` e `public/unity/` | Player        |
+| `src/core/` e `src/common/`     | Core e Common |
+| `src/loader/`                   | Loader        |
+| `extensions/`                   | Extensão      |
 
 Um módulo conta **uma vez por alteração**, independentemente de quantos arquivos dele mudaram.
 
@@ -110,22 +110,22 @@ python mm2_1_modulos_por_alteracao.py `
 
 ### 7.1 Resumo
 
-| Indicador | Valor |
-|---|---|
-| Alterações analisadas | 102 |
-| Soma de módulos distintos | 161 |
-| **MM2.1 (média)** | **1,58 módulos/alteração** |
-| Mediana | 1 |
-| Classificação | Baixo (≤ 2) |
+| Indicador                 | Valor                      |
+| ------------------------- | -------------------------- |
+| Alterações analisadas     | 102                        |
+| Soma de módulos distintos | 161                        |
+| **MM2.1 (média)**         | **1,58 módulos/alteração** |
+| Mediana                   | 1                          |
+| Classificação             | Baixo (≤ 2)                |
 
 ### 7.3 Distribuição
 
 | Módulos por alteração | Alterações |
-|---|---|
-| 1 | 55 |
-| 2 | 36 |
-| 3 | 10 |
-| 4 | 1 |
+| --------------------- | ---------- |
+| 1                     | 55         |
+| 2                     | 36         |
+| 3                     | 10         |
+| 4                     | 1          |
 
 ### 7.4 Dados brutos
 
@@ -175,6 +175,6 @@ Depois, execute o script da seção 5 com o comando da seção 6, a partir da ra
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                      | Autor(a)         | Revisor(a) |
-| ------ | ---------- | ----------------------------------------------------------- | ---------------- | ---------- |
+| Versão | Data       | Descrição da alteração   | Autor(a)                 | Revisor(a) |
+| ------ | ---------- | ------------------------ | ------------------------ | ---------- |
 | 1.0    | 18/11/2026 | Registro da documentação | Mariana Pereira da Silva |            |

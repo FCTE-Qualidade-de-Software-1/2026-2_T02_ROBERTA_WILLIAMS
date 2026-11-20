@@ -60,11 +60,11 @@ As outras 177 requisições da reexecução foram ícones da interface, o índic
 
 **Tabela 4.** Comparação com os níveis de pontuação da ME3.1.
 
-| Nível | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado |
-| ----- | ------------------------------------------------------------------- | --------- |
-| Ruim (1 a 2) | &lt; 80 % | |
-| Aceitável/Regular (3) | 80 % a 94 % | |
-| Satisfatório/Ideal (4 a 5) | ≥ 95 % | **95,7 %** |
+| Nível                      | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado  |
+| -------------------------- | ------------------------------------------------------------------- | ---------- |
+| Ruim (1 a 2)               | &lt; 80 %                                                           |            |
+| Aceitável/Regular (3)      | 80 % a 94 %                                                         |            |
+| Satisfatório/Ideal (4 a 5) | ≥ 95 %                                                              | **95,7 %** |
 
 Fonte: elaborado pelos autores.
 
@@ -135,8 +135,8 @@ Fonte: elaborado pelos autores.
 
 ## Participação na coleta
 
-| Integrante | Contribuição |
-| ---------- | ------------ |
+| Integrante         | Contribuição                                                                            |
+| ------------------ | --------------------------------------------------------------------------------------- |
 | Geovane S. Freitas | Responsável pela coleta complementar no gov.br e pelo registro das evidências da ME3.1. |
 
 ## Referências
@@ -147,7 +147,7 @@ Fonte: elaborado pelos autores.
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                         | Autor(a)           | Revisor(a) |
-| ------ | ---------- | ---------------------------------------------- | ------------------ | ---------- |
-| 0.1    | 15/11/2026 | Registro da execução e do julgamento da ME3.1 | Geovane S. Freitas |            |
-| 0.2    | 15/11/2026 | Organização e vinculação dos dados brutos da coleta | Rafael W. Schadt |            |
+| Versão | Data       | Descrição da alteração                              | Autor(a)           | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------- | ------------------ | ---------- |
+| 0.1    | 15/11/2026 | Registro da execução e do julgamento da ME3.1       | Geovane S. Freitas |            |
+| 0.2    | 15/11/2026 | Organização e vinculação dos dados brutos da coleta | Rafael W. Schadt   |            |
