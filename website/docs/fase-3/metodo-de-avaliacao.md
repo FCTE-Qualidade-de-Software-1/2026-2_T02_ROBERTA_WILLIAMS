@@ -18,10 +18,10 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 | Métrica | Característica           | Ferramenta principal                                | Responsável      |
 | ------- | ------------------------ | --------------------------------------------------- | ---------------- |
-| MI1.1   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | A definir        |
+| MI1.1   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | Ludmila e Amanda |
 | MI2.1   | Capacidade de Interação  | Código-fonte e inspeção da interface                | A definir        |
 | MI3.1   | Capacidade de Interação  | axe-core e Lighthouse                               | Ludmila          |
-| MI3.2   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | A definir        |
+| MI3.2   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | Ludmila e Amanda |
 | ME1.1   | Eficiência de Desempenho | DevTools (Network e Performance) e gravação de tela | Rafael           |
 | ME2.1   | Eficiência de Desempenho | Contadores de CPU do sistema operacional (script)   | Amanda           |
 | ME3.1   | Eficiência de Desempenho | DevTools (Network)                                  | Geovane          |
@@ -249,3 +249,4 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | 0.2    | 15/11/2026 | Protocolo da ME3.1: página de teste, 10 frases nas velocidades 0.5x, 1x e 2x e limpeza do cache do navegador | Geovane S. Freitas |            |
 | 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads*                         | Amanda C. Lima     |            |
 | 0.4    | 18/11/2026 | Correções MI1.1                                                                                              | Ludmila O. Nunes   |            |
+| 0.5    | 20/11/2026 | Alteração responsáveis MI1.1 e MI3.2                                                                         | Ludmila O. Nunes   |            |
