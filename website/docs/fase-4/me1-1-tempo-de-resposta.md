@@ -50,14 +50,6 @@ Assim, os tempos registrados **não sustentam as previsões de resposta da hipó
 
 A média observada em 3G foi 0,18 s menor que em banda larga, mas a amostra tem apenas uma medição por frase e perfil; o resultado não demonstra que o 3G seja mais rápido. A dispersão também foi maior em banda larga, com desvio padrão amostral de 2,02 s contra 0,51 s em 3G.
 
-## Limitações e observações
-
-- Os instantes A e B foram informados pelo responsável; não foram validados independentemente quadro a quadro nesta análise. Sua identificação nas gravações pode introduzir incerteza.
-- Há uma medição por frase e perfil, sem repetições para estimar a variação de cada caso. As frases têm comprimentos e conteúdos diferentes.
-- O tempo da requisição de tradução no *Network*, previsto como medida auxiliar, não foi fornecido na tabela e não foi usado nos cálculos.
-- Os dados fornecidos não documentam a data da coleta, a versão efetivamente carregada do widget, as velocidades da conexão de banda larga, eventuais falhas e repetições ou a limpeza do cache. Essas condições e a aplicação consistente dos perfis devem ser confirmadas antes de afirmar conformidade integral com o protocolo.
-- Os resultados não incluem o tempo de carregamento inicial do avatar. O esforço em horas e a participação percentual por integrante não foram registrados para esta medição e não são estimados aqui.
-
 ## Evidências
 
 As 20 gravações, organizadas por perfil e frase, e a [tabela com os dados e cálculos](./dados-brutos/ME1.1/tabela/medicoes.md) estão em [Dados brutos da ME1.1](./dados-brutos/ME1.1/README.md).
