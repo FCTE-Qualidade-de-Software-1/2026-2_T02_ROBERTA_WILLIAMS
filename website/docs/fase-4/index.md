@@ -19,6 +19,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | [ME2.1 – Utilização média de CPU](./me2-1-utilizacao-de-cpu.md) | ME2.1 | Parcial: coletada em 16/11/2026, na simulação de *hardware* limitado no D1. Coleta no D3 prevista. |
 | [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
 | [ME3.1 – Teste complementar no gov.br](./me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
+| [MF1.1 – Adaptabilidade a navegadores](./mf1-1-adaptabilidade-a-navegadores.md) | MF1.1 | Análise concluída com 20 verificações nos cinco ambientes, matriz de resultados e vídeos de evidência. |
 | [Dados brutos](./dados-brutos/README.md) | — | HARs, planilhas CSV, scripts, registros de coleta e capturas de tela organizados por métrica. |
 
 {/* Cada membro acrescenta uma linha por métrica coletada. */}

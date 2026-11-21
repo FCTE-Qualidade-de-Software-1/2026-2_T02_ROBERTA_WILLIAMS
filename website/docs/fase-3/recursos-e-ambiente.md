@@ -36,6 +36,7 @@ Esta página registra o produto, os dispositivos, os navegadores, as redes e as 
 | DI4 | Rodrigo    | iPhone 14                     | iOS 26.6.2                        | Apple A15 Bionic     | 6 GB  | MF1.1               |
 | DI5 | Rafael     | Notebook Acer Predator Helios | Windows 11                        | Intel Core i7-11800H | 16 GB | ME1.1, MM1.1        |
 | DI6 | Ludmila    | Notebook Acer Nitro 5         | Windows 11 Pro                    | Intel Core i7-11800H | 16 GB | MI1.1, MI3.1, MI3.2 |
+| DI7 | Rafael     | Samsung Galaxy M62            | Android 13                        | Samsung Exynos 9825  | 8 GB  | MF1.1               |
 
 As métricas de análise de código e de histórico (MI2.1, MM1.1, MM2.1, MM3.1) não dependem de dispositivo específico e usam a máquina de cada responsável, com Git e GitHub CLI.
 
@@ -55,6 +56,7 @@ As versões são registradas no dia de cada teste, e nenhuma atualização é fe
 | DI4         | Safari          | Integrado ao iOS 26.6.2          |
 | DI5         | Google Chrome   | 157.0.8103.51 (64 bits)          |
 | DI6         | Opera GX Stable | 139.0.6053.63 (64 bits)          |
+| DI7         | Google Chrome   | 157.0.8103.51 (64 bits)          |
 
 ## Ambientes de teste da MF1.1
 
@@ -66,8 +68,9 @@ As versões são registradas no dia de cada teste, e nenhuma atualização é fe
 | ENV-02 | Mozilla Firefox | Desktop, Windows 10 | DI3         |
 | ENV-03 | Microsoft Edge  | Desktop, Windows 10 | DI3         |
 | ENV-04 | Safari          | Mobile, iOS         | DI4         |
+| ENV-05 | Google Chrome   | Mobile, Android     | DI7         |
 
-São 4 ambientes e 5 funções por ambiente, o que dá B total = 20 execuções. No iOS, Chrome e Edge usam o motor do Safari (WebKit), então não são ambientes distintos.
+São 5 ambientes e 5 funções por ambiente, o que dá B total = 25 execuções. No iOS, Chrome e Edge usam o motor do Safari (WebKit), então não são ambientes distintos.
 
 ## Perfil de hardware e rede
 

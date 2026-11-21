@@ -1,0 +1,29 @@
+ID_Execucao,ID_Ambiente,Navegador,Plataforma,ID_Caso_Teste,Funcionalidade,Status,Falhas_A,Total_B,Formula_Calculo_X,Classificacao,Observacoes
+EXEC-01,ENV-01,Google Chrome,Desktop,CT-01,Tradutor,Concluido,0,1,100,Alto,
+EXEC-02,ENV-01,Google Chrome,Desktop,CT-02,Dicionário,Concluido,0,1,100,Alto,
+EXEC-03,ENV-01,Google Chrome,Desktop,CT-03,Velocidade,Concluido,0,1,100,Alto,
+EXEC-04,ENV-01,Google Chrome,Desktop,CT-04,Repetição,Concluido,0,1,100,Alto,
+EXEC-05,ENV-02,Mozilla Firefox,Desktop,CT-01,Tradutor,Concluido,0,1,100,Alto,
+EXEC-06,ENV-02,Mozilla Firefox,Desktop,CT-02,Dicionário,Concluido,0,1,100,Alto,
+EXEC-07,ENV-02,Mozilla Firefox,Desktop,CT-03,Velocidade,Concluido,0,1,100,Alto,
+EXEC-08,ENV-02,Mozilla Firefox,Desktop,CT-04,Repetição,Concluido,0,1,100,Alto,
+EXEC-09,ENV-03,Microsoft Edge,Desktop,CT-01,Tradutor,Concluido,0,1,100,Alto,
+EXEC-10,ENV-03,Microsoft Edge,Desktop,CT-02,Dicionário,Concluido,0,1,100,Alto,
+EXEC-11,ENV-03,Microsoft Edge,Desktop,CT-03,Velocidade,Concluido,0,1,100,Alto,
+EXEC-12,ENV-03,Microsoft Edge,Desktop,CT-04,Repetição,Concluido,0,1,100,Alto,
+EXEC-13,ENV-04,Apple Safari,Mobile,CT-01,Tradutor,Concluido,1,1,0,Baixo,"Elementos da interface, como ícones, não aparecem na tela"
+EXEC-14,ENV-04,Apple Safari,Mobile,CT-02,Dicionário,Concluido,0,1,100,Alto,
+EXEC-15,ENV-04,Apple Safari,Mobile,CT-03,Velocidade,Concluido,0,1,100,Alto,
+EXEC-16,ENV-04,Apple Safari,Mobile,CT-04,Repetição,Concluido,0,1,100,Alto,
+EXEC-17,ENV-05,Google Chrome,Mobile,CT-01,Tradutor,Concluido,1,1,0,Baixo,"Foram necessários múltiplos toques para que a tradução fosse realizada"
+EXEC-18,ENV-05,Google Chrome,Mobile,CT-02,Dicionário,Concluido,0,1,100,Alto,
+EXEC-19,ENV-05,Google Chrome,Mobile,CT-03,Velocidade,Concluido,0,1,100,Alto,
+EXEC-20,ENV-05,Google Chrome,Mobile,CT-04,Repetição,Concluido,0,1,100,Alto,
+,,,,,,,,,,,
+CONSOLIDACAO,ID_Ambiente,Navegador,Plataforma,Escopo,Descricao_Consolidacao,Status_Geral,Falhas_A,Total_B,Formula_Calculo_X,Classificacao,Observacoes_Gerais
+RES-01,ENV-01,Google Chrome,Desktop,CT-01 a CT-04,Consolidado por Ambiente (4 funções),Concluído,0,4,100,Alto,
+RES-02,ENV-02,Mozilla Firefox,Desktop,CT-01 a CT-04,Consolidado por Ambiente (4 funções),Concluído,0,4,100,Alto,
+RES-03,ENV-03,Microsoft Edge,Desktop,CT-01 a CT-04,Consolidado por Ambiente (4 funções),Concluído,0,4,100,Alto,
+RES-04,ENV-04,Apple Safari,Mobile,CT-01 a CT-04,Consolidado por Ambiente (4 funções),Concluído,1,4,75,Baixo,
+RES-05,ENV-05,Google Chrome,Mobile,CT-01 a CT-04,Consolidado por Ambiente (4 funções),Concluído,1,4,75,Baixo,
+RES-GERAL,TODOS,Todos os Navegadores,Desktop + Mobile,20 Execuções,Consolidado Geral MF1.1,Concluído,2,20,"90",Aceitável/Regular
