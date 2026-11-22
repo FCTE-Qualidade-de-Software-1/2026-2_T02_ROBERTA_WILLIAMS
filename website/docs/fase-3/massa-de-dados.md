@@ -130,9 +130,9 @@ O carrossel e o card de rede social mudam com o tempo. Por isso, a equipe captur
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração                                                                      | Autor(a)           | Revisor(a) |
-| ------ | ---------- | ------------------------------------------------------------------------------------------- | ------------------ | ---------- |
-| 0.1    | 15/11/2026 | Inserção das frases, dos termos, dos portais, dos roteiros, das tarefas e dos participantes | Ludmila O. Nunes   |            |
-| 0.2    | 15/11/2026 | Roteiro "Rede e cache" (ME3.1) com as 10 frases nas velocidades 0.5x, 1x e 2x               | Geovane S. Freitas |            |
-| 0.3    | 18/11/2026 | Adequação das tarefas de MI1.1 e MI3.2                                                      | Ludmila O. Nunes   |            |
+| Versão | Data       | Descrição da alteração                                                                              | Autor(a)           | Revisor(a) |
+| ------ | ---------- | --------------------------------------------------------------------------------------------------- | ------------------ | ---------- |
+| 0.1    | 15/11/2026 | Inserção das frases, dos termos, dos portais, dos roteiros, das tarefas e dos participantes         | Ludmila O. Nunes   |            |
+| 0.2    | 15/11/2026 | Roteiro "Rede e cache" (ME3.1) com as 10 frases nas velocidades 0.5x, 1x e 2x                       | Geovane S. Freitas |            |
+| 0.3    | 18/11/2026 | Adequação das tarefas de MI1.1 e MI3.2                                                              | Ludmila O. Nunes   |            |
 | 0.4    | 18/11/2026 | Correção de inconsistências: cenário T5, trechos S4 e S6, Tabelas 1, 3 e 4, participantes e plano B | Ludmila O. Nunes   |            |
