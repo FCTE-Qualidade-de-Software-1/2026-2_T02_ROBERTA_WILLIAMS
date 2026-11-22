@@ -80,7 +80,7 @@ A amostra tem 10 portais públicos federais, com layouts variados. Ela é usada 
 
 ## Cenários do teste de usabilidade (MI1.1)
 
-Os cenários são usados na MI1.1. Cada um traz um objetivo e um contexto, sem indicar qual controle usar. São apresentados ao participante em Libras (vídeo curto com legenda) e em um cartão visual, antes da execução. Todos partem do widget fechado.
+Os cenários são usados na MI1.1. Cada um traz um objetivo e um contexto, sem indicar qual controle usar. São apresentados ao participante em Libras (vídeo curto com legenda) e em um cartão visual, antes da execução.
 
 **Tabela 5.** Cenários da MI1.1.
 
@@ -92,7 +92,7 @@ Os cenários são usados na MI1.1. Cada um traz um objetivo e um contexto, sem i
 | T4  | Verificar se é possível usar sinais de outra região                 | Opção de regionalismo                                               | Widget aberto                  | Participante localiza a opção e identifica o regionalismo em uso (Padrão Nacional)            | Regionalismo                                          |
 | T5  | Traduzir apenas uma frase de um parágrafo                           | Parágrafo do P7 (Banco Central), frase de carrossel | Widget aberto                  | Tradução iniciada só de parte da frase indicada                                                        | Seleção parcial de texto                              |
 
-Limite de 4 minutos por cenário. Como o escopo trata só do Padrão Nacional, a T4 verifica se o participante encontra e entende a opção, e não compara regionalismos.
+Limite de 2 minutos por cenário. Como o escopo trata só do Padrão Nacional, a T4 verifica se o participante encontra e entende a opção, e não compara regionalismos.
 
 ## Seleção de texto (MI3.2)
 
