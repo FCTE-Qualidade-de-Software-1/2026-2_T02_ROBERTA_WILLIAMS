@@ -19,14 +19,14 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | Métrica | Característica           | Ferramenta principal                                | Responsável      |
 | ------- | ------------------------ | --------------------------------------------------- | ---------------- |
 | MI1.1   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | Ludmila e Amanda |
-| MI2.1   | Capacidade de Interação  | Código-fonte e inspeção da interface                | A definir        |
+| MI2.1   | Capacidade de Interação  | Código-fonte e inspeção da interface                | Rafael           |
 | MI3.1   | Capacidade de Interação  | axe-core e Lighthouse                               | Ludmila          |
 | MI3.2   | Capacidade de Interação  | Teste de usabilidade e gravação de tela             | Ludmila e Amanda |
 | ME1.1   | Eficiência de Desempenho | DevTools (Network e Performance) e gravação de tela | Rafael           |
 | ME2.1   | Eficiência de Desempenho | Contadores de CPU do sistema operacional (script)   | Amanda           |
 | ME3.1   | Eficiência de Desempenho | DevTools (Network)                                  | Geovane          |
 | MF1.1   | Flexibilidade            | Checklist por navegador                             | Rodrigo e Rafael |
-| MF2.1   | Flexibilidade            | Injeção do widget nos portais                       | A definir        |
+| MF2.1   | Flexibilidade            | Injeção do widget nos portais                       | Amanda           |
 | MM1.1   | Manutenibilidade         | Análise estática do código                          | Rafael           |
 | MM2.1   | Manutenibilidade         | Histórico do Git                                    | Mariana          |
 | MM3.1   | Manutenibilidade         | GitHub (*issues* e *Pull Requests*)                 | Ludmila          |
@@ -83,14 +83,14 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
   1. No início da sessão, capturar a página de cada portal e registrar a versão do widget carregado. Nos portais que já tenham o VLibras instalado, usar o widget existente e registrar isso.
   2. Apresentar cada tarefa (S1 a S7) por cartão visual, na ordem fixa definida em [Massa de dados](./massa-de-dados.md), sem indicar como selecionar o texto.
   3. Pedir que o participante selecione e traduza o trecho indicado, sozinho, com no máximo 2 minutos por tarefa. A equipe não ajuda durante a tarefa.
-  4. Registrar sucesso, que exige três condições: tradução corretamente iniciada, área selecionada correta e feedback visual claro do modo de seleção. Se faltar qualquer uma, é falha.
-  5. Nas falhas, registrar o motivo (widget não capturou o texto, capturou área errada, carrossel trocou de slide durante a seleção, sem feedback visual ou outro) e o tipo (limitação técnica do widget ou problema de usabilidade e feedback).
-  6. Nas tarefas com conteúdo que muda com o tempo (S4, carrossel, e S5, card de rede social), descrever na planilha o trecho efetivamente usado.
+  4. Registrar o resultado de cada tarefa: **sucesso**, quando a tradução é corretamente iniciada a partir da seleção, a área selecionada está correta e há feedback visual claro do modo de seleção, ou **falha**, se faltar qualquer uma dessas condições. Registrar também se o feedback de seleção foi claro (sim ou não).
+  5. Nas falhas, anotar o motivo em texto livre (por exemplo, widget não capturou o texto, capturou área errada, carrossel se moveu durante a seleção ou ausência de feedback visual).
+  6. Nas tarefas com conteúdo que muda com o tempo (S4, carrossel, e S5, card de rede social), descrever na tabela de coleta o trecho efetivamente usado.
+  7. Após a sessão, classificar cada falha como **limitação técnica do widget** ou **problema de usabilidade e feedback**, a partir do motivo registrado e da gravação.
+  8. Calcular `(A / B) x 100`, com A igual às tarefas com sucesso e B igual às tarefas tentadas, e a proporção de tarefas sem feedback visual claro.
 - **Repetições:** uma tentativa por tarefa por participante. Com 8 participantes, são 56 tentativas previstas (7 tarefas x 8 participantes).
-- **Registro:** planilha de observação (participante, grupo de análise, tarefa, página, elemento, resultado, as três verificações do critério de sucesso, motivo e tipo da falha, estratégia alternativa, timestamp na gravação e desvio do protocolo), capturas das páginas e gravações de tela.
+- **Registro:** planilha de observação (participante, página, tarefa, trecho, resultado, motivo da falha e feedback de seleção claro), tabela de coleta com os trechos usados e o cálculo, capturas das páginas e gravações de tela. O tipo de cada falha é registrado na análise.
 - **Critério de parada:** as 7 tarefas (S1 a S7) tentadas por todos os participantes, ou 2 minutos por tarefa.
-
----
 
 ## 2. Eficiência de Desempenho
 
@@ -249,3 +249,4 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads*                         | Amanda C. Lima     |            |
 | 0.4    | 18/11/2026 | Correções MI1.1                                                                                              | Ludmila O. Nunes   |            |
 | 0.5    | 20/11/2026 | Alteração responsáveis MI1.1 e MI3.2                                                                         | Ludmila O. Nunes   |            |
+| 0.6    | 22/11/2026 | Ajuste do protocolo da MI3.2 ao que foi coletado e alteração dos responsáveis                                | Ludmila O. Nunes   |            |
