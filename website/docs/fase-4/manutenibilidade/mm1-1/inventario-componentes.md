@@ -1,5 +1,5 @@
 ---
-unlisted: true
+sidebar_position: 2
 sidebar_label: Inventário de componentes
 ---
 

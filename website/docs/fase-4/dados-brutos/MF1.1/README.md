@@ -21,4 +21,4 @@ Esta pasta deve reunir os registros usados para calcular e interpretar a métric
 - ENV-05 — [YouTube](https://youtu.be/JHrUeRzwAJw)
 - [Planilha de cálculos publicada](https://docs.google.com/spreadsheets/d/e/2PACX-1vSNuh878WD1MabKZI3YpaJd00_LBHbCnYZjOsX5RvUl4SuqWAmrklECfwEFF_QPQNY5lwdhXj0LAGXZ/pubhtml?gid=569079131&single=true&widget=true&headers=false)
 
-O resultado, o cálculo e o julgamento estão em [MF1.1 — Adaptabilidade a Navegadores](../../mf1-1-adaptabilidade-a-navegadores.md).
+O resultado, o cálculo e o julgamento estão em [MF1.1 — Adaptabilidade a Navegadores](../../flexibilidade/mf1-1-adaptabilidade-a-navegadores.md).

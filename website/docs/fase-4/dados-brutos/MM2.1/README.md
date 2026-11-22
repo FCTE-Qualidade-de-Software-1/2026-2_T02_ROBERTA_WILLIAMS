@@ -10,4 +10,4 @@ sidebar_label: MM2.1
 | `resultados\MM2.1_2026-11-17_resumo.txt` | Apresenta o resultado final da métrica (média, mediana e distribuição) e o comando de seleção dos commits. |
 | `script\mm2_1_modulos_por_alteracao.py` | Script utilizado para analisar os modulos alterados a cada commit|
 
-O resultado, o cálculo e a interpretação estão em [MM2.1 – Modularidade e desacoplamento](../../mm2-1-modularidade-e-desacoplamento.md).
+O resultado, o cálculo e a interpretação estão em [MM2.1 – Modularidade e desacoplamento](../../manutenibilidade/mm2-1-modularidade-e-desacoplamento.md).

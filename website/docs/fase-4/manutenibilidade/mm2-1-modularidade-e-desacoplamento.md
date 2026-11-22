@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: MM2.1 - Modularidade e desacoplamento
 ---
 
@@ -89,7 +89,7 @@ Os bundles gerados pelo build em `extensions/<navegador>/app/` foram excluídos 
 
 ## 5. Script
 
-Script em Python que automatiza os passos 2 a 4 do protocolo e gera o CSV e o resumo: [Script de analise](../fase-4/dados-brutos/MM2.1/script/mm2_1_modulos_por_alteracao.py)
+Script em Python que automatiza os passos 2 a 4 do protocolo e gera o CSV e o resumo: [Script de analise](../dados-brutos/MM2.1/script/mm2_1_modulos_por_alteracao.py)
 
 
 ## 6. Comando executado
@@ -131,10 +131,10 @@ python mm2_1_modulos_por_alteracao.py `
 
 | Arquivo | Descrição |
 |---|---|
-| [CSV com alterações analisadas](../fase-4/dados-brutos/MM2.1/resultados/MM2.1_2026-11-17_alteracoes.csv) | Uma linha por alteração: commit, arquivos, módulos e quantidade |
-| [Resumo da análise](../fase-4/dados-brutos/MM2.1/resultados/MM2.1_2026-11-17_resumo.txt) | Comando usado e indicadores |
+| [CSV com alterações analisadas](../dados-brutos/MM2.1/resultados/MM2.1_2026-11-17_alteracoes.csv) | Uma linha por alteração: commit, arquivos, módulos e quantidade |
+| [Resumo da análise](../dados-brutos/MM2.1/resultados/MM2.1_2026-11-17_resumo.txt) | Comando usado e indicadores |
 
-Evidências armazenadas em [Fase 4 - Dados Brutos](../fase-4/dados-brutos/MM2.1/).
+Evidências armazenadas em [Fase 4 - Dados Brutos](../dados-brutos/MM2.1).
 
 ## 8. Análise
 

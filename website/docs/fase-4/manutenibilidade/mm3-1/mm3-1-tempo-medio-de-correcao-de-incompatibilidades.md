@@ -5,7 +5,7 @@ sidebar_label: MM3.1 – Tempo de correção
 
 # MM3.1: Tempo médio de correção de incompatibilidades
 
-Esta página registra a execução da métrica MM3.1, definida em [Métricas](../fase-2/metricas.md), seguindo o protocolo de [Método de avaliação](../fase-3/metodo-de-avaliacao.md). Ela segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
+Esta página registra a execução da métrica MM3.1, definida em [Métricas](../../../fase-2/metricas.md), seguindo o protocolo de [Método de avaliação](../../../fase-3/metodo-de-avaliacao.md). Ela segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 
 > Resultado: tempo médio de **83,0 dias** (mediana de **65 dias**) em 7 *issues* de incompatibilidade, sendo 5 abertas e 2 fechadas. Nível **Ruim** (> 15 dias). A hipótese H3-M **não foi confirmada**. As 2 *issues* fechadas levaram em média 12,5 dias, enquanto as 5 abertas já passam de 100 dias sem resolução.
 
@@ -15,7 +15,7 @@ Esta página registra a execução da métrica MM3.1, definida em [Métricas](..
 | -------------- | ------------------------------------------------------------------------------------------- |
 | Característica | Manutenibilidade (subcaracterística: Modificabilidade)                                      |
 | Questão        | Q3-M: Qual é o esforço médio (ou tempo de ciclo no repositório oficial) para atualizar o código e corrigir incompatibilidades geradas por mudanças nas plataformas do Governo Federal ou atualizações de navegadores? |
-| Hipótese       | H3-M: Problemas críticos de quebra de funcionamento em navegadores levam em média menos de 7 dias para serem corrigidos e mesclados (*merged*) no repositório oficial do projeto ([Hipóteses](../fase-2/hipoteses.md)) |
+| Hipótese       | H3-M: Problemas críticos de quebra de funcionamento em navegadores levam em média menos de 7 dias para serem corrigidos e mesclados (*merged*) no repositório oficial do projeto ([Hipóteses](../../../fase-2/hipoteses.md)) |
 | Cálculo        | X = Σ(D_fim − D_abertura) / N, com D_fim = data de fechamento ou, se aberta, data da coleta |
 | Data da coleta | 21/11/2026                                                                                  |
 | Responsável    | Ludmila O. Nunes                                                                            |
@@ -65,7 +65,7 @@ Fonte: elaborado pelos autores.
 
 **Tabela 5.** Comparação com os níveis de pontuação da MM3.1.
 
-| Nível              | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado     |
+| Nível              | Faixa ([Pontuação e critérios](../../../fase-2/pontuacao-e-criterios.md)) | Resultado     |
 | ------------------ | ------------------------------------------------------------------- | ------------- |
 | Satisfatório/Ideal | ≤ 7 dias                                                            |               |
 | Aceitável/Regular  | 8 a 15 dias                                                         |               |
@@ -99,14 +99,14 @@ O nível só muda se forem consideradas as *issues* fechadas isoladamente, o que
 
 ## Evidências
 
-![Lista de issues do repositório](./dados-brutos/MM3.1/prints/issues.png)
+![Lista de issues do repositório](../../dados-brutos/MM3.1/prints/issues.png)
 
 **Figura 1.** Lista de *issues* do repositório na data da coleta. Fonte: elaborado pelos autores.
 
-Os dados completos estão em [Dados brutos da MM3.1](./dados-brutos/MM3.1/README.md):
+Os dados completos estão em [Dados brutos da MM3.1](../../dados-brutos/MM3.1/README.md):
 
 - `issues.json`: exportação do repositório;
-- `tabela/medicoes.md`: planilha de classificação e cálculo;
+- [Tabela de medições](./medicoes.md): planilha de classificação e cálculo;
 - `prints/`: capturas das *issues*.
 
 ## Limitações

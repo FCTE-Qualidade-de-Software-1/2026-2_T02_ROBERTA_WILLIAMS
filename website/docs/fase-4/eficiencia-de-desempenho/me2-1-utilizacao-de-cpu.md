@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: ME2.1 – Uso de CPU
 ---
 
 # ME2.1: Utilização média de CPU
 
-Esta página registra quanto o navegador usa de processador enquanto o avatar do VLibras sinaliza sem parar. A métrica foi definida em [Métricas](../fase-2/metricas.md) para responder à questão Q2-E. A coleta seguiu o protocolo de [Método de avaliação](../fase-3/metodo-de-avaliacao.md) e o roteiro "Tradução contínua" da [Massa de dados](../fase-3/massa-de-dados.md).
+Esta página registra quanto o navegador usa de processador enquanto o avatar do VLibras sinaliza sem parar. A métrica foi definida em [Métricas](../../fase-2/metricas.md) para responder à questão Q2-E. A coleta seguiu o protocolo de [Método de avaliação](../../fase-3/metodo-de-avaliacao.md) e o roteiro "Tradução contínua" da [Massa de dados](../../fase-3/massa-de-dados.md).
 
 A Fase 3 prevê duas condições de coleta:
 
@@ -25,7 +25,7 @@ Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi nece
 | Métrica | ME2.1: Utilização média de CPU |
 | Característica | Eficiência de Desempenho (ISO/IEC 25010:2023) |
 | Questão | Q2-E: Qual é o consumo de processamento (CPU) do navegador durante a renderização contínua do avatar em dispositivos com recursos de *hardware* limitados? |
-| Hipótese | H2-E: Em *hardware* modesto, a renderização contínua do avatar eleva o uso de CPU do navegador para mais de 50% ([Hipóteses](../fase-2/hipoteses.md)) |
+| Hipótese | H2-E: Em *hardware* modesto, a renderização contínua do avatar eleva o uso de CPU do navegador para mais de 50% ([Hipóteses](../../fase-2/hipoteses.md)) |
 | Objeto | Widget VLibras publicado, versão 7.12.2, carregado na página de teste pelo código padrão de instalação |
 | Condição | Simulação de *hardware* limitado no D1. A coleta no D3 ainda será feita |
 | Data | 16/11/2026 |
@@ -33,7 +33,7 @@ Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi nece
 
 ## Ambiente do ensaio
 
-O D1 ([Recursos e ambiente](../fase-3/recursos-e-ambiente.md)) tem um processador de alto desempenho. Para chegar perto de um computador comum, o navegador foi restringido pelo próprio Windows:
+O D1 ([Recursos e ambiente](../../fase-3/recursos-e-ambiente.md)) tem um processador de alto desempenho. Para chegar perto de um computador comum, o navegador foi restringido pelo próprio Windows:
 
 | Item                             | Configuração                                                                         |
 | -------------------------------- | ------------------------------------------------------------------------------------ |
@@ -57,7 +57,7 @@ O script lê os contadores de processo do Windows, os mesmos que o Gerenciador d
 
 ## Fórmula
 
-A ME2.1 é calculada pela fórmula definida em [Métricas](../fase-2/metricas.md):
+A ME2.1 é calculada pela fórmula definida em [Métricas](../../fase-2/metricas.md):
 
 **X = B / (A × N) × 100**
 
@@ -97,7 +97,7 @@ Fonte: elaborado pelos autores, a partir dos CSVs da coleta. Desvio padrão da m
 
 Fonte: elaborado pelos autores.
 
-Nos [critérios de pontuação](../fase-2/pontuacao-e-criterios.md), média acima de 50% é nível Ruim (1 a 2). As cinco sessões ficaram nessa faixa, e a menor média foi 54,9%.
+Nos [critérios de pontuação](../../fase-2/pontuacao-e-criterios.md), média acima de 50% é nível Ruim (1 a 2). As cinco sessões ficaram nessa faixa, e a menor média foi 54,9%.
 
 ## Análise
 
@@ -109,23 +109,23 @@ Nos [critérios de pontuação](../fase-2/pontuacao-e-criterios.md), média acim
 
 ## Evidências
 
-![Configuração de afinidade do chrome.exe com as CPUs lógicas 0 a 7 marcadas](./dados-brutos/ME2.1/prints/afinidade_cpus.png)
+![Configuração de afinidade do chrome.exe com as CPUs lógicas 0 a 7 marcadas](../dados-brutos/ME2.1/prints/afinidade_cpus.png)
 
 **Figura 1.** Afinidade do processo `chrome.exe`, com as CPUs lógicas 0 a 7 marcadas (a lista continua abaixo do trecho visível). Fonte: elaborado pelos autores.
 
-![Gerenciador de Tarefas do Windows mostrando a velocidade da CPU em 2,96 GHz](./dados-brutos/ME2.1/prints/gerenciador_velocidade_cpu.png)
+![Gerenciador de Tarefas do Windows mostrando a velocidade da CPU em 2,96 GHz](../dados-brutos/ME2.1/prints/gerenciador_velocidade_cpu.png)
 
 **Figura 2.** Gerenciador de Tarefas com o limite de 60% aplicado: velocidade de 2,96 GHz, para uma base de 4,20 GHz. Fonte: elaborado pelos autores.
 
-![Saída do script na sessão 1: média 54,9% e pico 72,3%](./dados-brutos/ME2.1/prints/rodada1_resultado.png)
-![Saída do script na sessão 2: média 55% e pico 78,3%](./dados-brutos/ME2.1/prints/rodada2_resultado.png)
-![Saída do script na sessão 3: média 56,1% e pico 89,5%](./dados-brutos/ME2.1/prints/rodada3_resultado.png)
-![Saída do script na sessão 4: média 56,6% e pico 79,6%](./dados-brutos/ME2.1/prints/rodada4_resultado.png)
-![Saída do script na sessão 5: média 55,9% e pico 83,7%](./dados-brutos/ME2.1/prints/rodada5_resultado.png)
+![Saída do script na sessão 1: média 54,9% e pico 72,3%](../dados-brutos/ME2.1/prints/rodada1_resultado.png)
+![Saída do script na sessão 2: média 55% e pico 78,3%](../dados-brutos/ME2.1/prints/rodada2_resultado.png)
+![Saída do script na sessão 3: média 56,1% e pico 89,5%](../dados-brutos/ME2.1/prints/rodada3_resultado.png)
+![Saída do script na sessão 4: média 56,6% e pico 79,6%](../dados-brutos/ME2.1/prints/rodada4_resultado.png)
+![Saída do script na sessão 5: média 55,9% e pico 83,7%](../dados-brutos/ME2.1/prints/rodada5_resultado.png)
 
 **Figura 3.** Saída do script no fim das cinco sessões, com A, B, média e pico. Fonte: elaborado pelos autores.
 
-Os arquivos originais estão em [Dados brutos da ME2.1](./dados-brutos/ME2.1/README.md).
+Os arquivos originais estão em [Dados brutos da ME2.1](../dados-brutos/ME2.1/README.md).
 
 ## Limitações e próximos passos
 

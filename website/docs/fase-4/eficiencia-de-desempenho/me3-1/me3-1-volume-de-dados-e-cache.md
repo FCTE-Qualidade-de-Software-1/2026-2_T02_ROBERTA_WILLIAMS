@@ -5,7 +5,7 @@ sidebar_label: ME3.1 – Dados e cache
 
 # ME3.1: Volume de dados consumidos e taxa de reuso do cache
 
-Esta página registra a execução da métrica ME3.1, definida em [Métricas](../fase-2/metricas.md), seguindo o protocolo de [Método de avaliação](../fase-3/metodo-de-avaliacao.md) e o roteiro "Rede e cache" de [Massa de dados](../fase-3/massa-de-dados.md). Ela segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
+Esta página registra a execução da métrica ME3.1, definida em [Métricas](../../../fase-2/metricas.md), seguindo o protocolo de [Método de avaliação](../../../fase-3/metodo-de-avaliacao.md) e o roteiro "Rede e cache" de [Massa de dados](../../../fase-3/massa-de-dados.md). Ela segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 
 Um teste complementar, feito em um portal real (`www.gov.br`) e fora deste protocolo, está disponível para consulta em [ME3.1 – Teste complementar no gov.br](./me3-1-govbr.md).
 
@@ -15,7 +15,7 @@ Um teste complementar, feito em um portal real (`www.gov.br`) e fora deste proto
 | ---- | -------- |
 | Característica | Eficiência de Desempenho |
 | Questão | Q3-E – Qual é o volume de dados de rede consumido ao utilizar os recursos de repetição de vídeo, alteração de velocidade e consulta ao dicionário? |
-| Hipótese | H3-E – As ações de repetição e alteração de velocidade de um trecho já traduzido reutilizam o cache local em 100% dos casos, sem tráfego adicional na rede ([Hipóteses](../fase-2/hipoteses.md)) |
+| Hipótese | H3-E – As ações de repetição e alteração de velocidade de um trecho já traduzido reutilizam o cache local em 100% dos casos, sem tráfego adicional na rede ([Hipóteses](../../../fase-2/hipoteses.md)) |
 | Cálculo | X = (A / B) × 100, com A = requisições da reexecução atendidas pelo cache local e B = total de requisições disparadas pelas ações da reexecução |
 | Data da coleta | 15/11/2026, das 22:31 às 22:56 |
 | Responsável | Geovane S. Freitas |
@@ -58,7 +58,7 @@ As outras 154 requisições da reexecução foram ícones da interface, lidos do
 
 **Tabela 4.** Comparação com os níveis de pontuação da ME3.1.
 
-| Nível                      | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado  |
+| Nível                      | Faixa ([Pontuação e critérios](../../../fase-2/pontuacao-e-criterios.md)) | Resultado  |
 | -------------------------- | ------------------------------------------------------------------- | ---------- |
 | Ruim (1 a 2)               | &lt; 80 %                                                           | **76,2 %** |
 | Aceitável/Regular (3)      | 80 % a 94 %                                                         |            |
@@ -91,27 +91,27 @@ O [teste complementar no gov.br](./me3-1-govbr.md) chegou a X = 95,7 %. Lá, as 
 
 ## Evidências
 
-![Aba Network durante a 1ª tradução da F1, com os sinais baixados pela rede](./dados-brutos/ME3.1/padronizado-figuras/03_F1_1x.png)
+![Aba Network durante a 1ª tradução da F1, com os sinais baixados pela rede](../../dados-brutos/ME3.1/padronizado-figuras/03_F1_1x.png)
 
 **Figura 1.** 1ª tradução da F1 (1x): o texto vai ao tradutor e cada sinal é baixado (redirecionamento 301 e arquivo). Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida da F1 a 0.5x, com tradução e verificação CORS, e ícones do cache](./dados-brutos/ME3.1/padronizado-figuras/04_F1_0.5x.png)
+![Aba Network durante a reprodução repetida da F1 a 0.5x, com tradução e verificação CORS, e ícones do cache](../../dados-brutos/ME3.1/padronizado-figuras/04_F1_0.5x.png)
 
 **Figura 2.** Reexecução da F1 a 0.5x: só a verificação CORS e o texto vão de novo à rede; os ícones vêm do cache de disco e nenhum sinal é baixado. Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida da F3 a 2x, com o sinal GOV pedido de novo e retornando 404](./dados-brutos/ME3.1/padronizado-figuras/11_F3_2x.png)
+![Aba Network durante a reprodução repetida da F3 a 2x, com o sinal GOV pedido de novo e retornando 404](../../dados-brutos/ME3.1/padronizado-figuras/11_F3_2x.png)
 
 **Figura 3.** Reexecução da F3 a 2x: o sinal GOV, inexistente no servidor, é pedido de novo (404). Fonte: elaborado pelos autores.
 
-![Aba Network durante a consulta do termo BENEFÍCIO no dicionário, sem requisição do sinal](./dados-brutos/ME3.1/padronizado-figuras/34_dicionario_BENEFICIO.png)
+![Aba Network durante a consulta do termo BENEFÍCIO no dicionário, sem requisição do sinal](../../dados-brutos/ME3.1/padronizado-figuras/34_dicionario_BENEFICIO.png)
 
 **Figura 4.** Consulta de BENEFÍCIO no dicionário: o sinal, já carregado na F7, é reproduzido sem nova requisição. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada por dicionario2 no fim do registro](./dados-brutos/ME3.1/padronizado-figuras/39_filtro-dicionario2_fim-do-registro.png)
+![Aba Network filtrada por dicionario2 no fim do registro](../../dados-brutos/ME3.1/padronizado-figuras/39_filtro-dicionario2_fim-do-registro.png)
 
 **Figura 5.** Requisições ao servidor de sinais no fim do registro: 150 requisições e 5.261 kB, incluindo o índice do dicionário (3.479 kB) e o único sinal baixado no dicionário (PRAZO). Fonte: elaborado pelos autores.
 
-Os dados completos estão em [Dados brutos da ME3.1 — coleta padronizada](./dados-brutos/ME3.1/padronizado/README.md):
+Os dados completos estão em [Dados brutos da ME3.1 — coleta padronizada](../../dados-brutos/ME3.1/padronizado/README.md):
 
 - `resultado.md`: registro detalhado da coleta, resultados por frase, ambiente, procedimento e limitações;
 - `brutos/ME3.1_Padronizado_2026-11-15.har`: HAR exportado da aba *Network*;

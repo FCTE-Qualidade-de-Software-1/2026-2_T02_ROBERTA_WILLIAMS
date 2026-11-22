@@ -12,15 +12,17 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 
 **Tabela 1.** Páginas da Fase 4 e conteúdo.
 
-| Página | Métrica | Situação |
-| ------ | ------- | -------- |
-| [MM1.1 – Reuso do Design System](./MM1-1.md) | MM1.1 | Análise concluída em 15/11/2026; inventário e evidências disponíveis na página. |
-| [ME1.1 – Tempo médio de resposta da tradução](./me1-1-tempo-de-resposta.md) | ME1.1 | Tempos e estatísticas calculados a partir dos instantes informados, com gravações disponíveis para conferência. |
-| [ME2.1 – Utilização média de CPU](./me2-1-utilizacao-de-cpu.md) | ME2.1 | Parcial: coletada em 16/11/2026, na simulação de *hardware* limitado no D1. Coleta no D3 prevista. |
-| [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
-| [ME3.1 – Teste complementar no gov.br](./me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
-| [MF1.1 – Adaptabilidade a navegadores](./mf1-1-adaptabilidade-a-navegadores.md) | MF1.1 | Análise concluída com 20 verificações nos cinco ambientes, matriz de resultados e vídeos de evidência. |
-| [Dados brutos](./dados-brutos/README.md) | — | HARs, planilhas CSV, scripts, registros de coleta e capturas de tela organizados por métrica. |
+| Característica | Página | Métrica | Situação |
+| -------------- | ------ | ------- | -------- |
+| Eficiência de Desempenho | [ME1.1 – Tempo médio de resposta da tradução](./eficiencia-de-desempenho/me1-1/me1-1-tempo-de-resposta.md) | ME1.1 | Tempos e estatísticas calculados a partir dos instantes informados, com gravações disponíveis para conferência. |
+| Eficiência de Desempenho | [ME2.1 – Utilização média de CPU](./eficiencia-de-desempenho/me2-1-utilizacao-de-cpu.md) | ME2.1 | Parcial: coletada em 16/11/2026, na simulação de *hardware* limitado no D1. Coleta no D3 prevista. |
+| Eficiência de Desempenho | [ME3.1 – Volume de dados e reuso do cache](./eficiencia-de-desempenho/me3-1/me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
+| Eficiência de Desempenho | [ME3.1 – Teste complementar no gov.br](./eficiencia-de-desempenho/me3-1/me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
+| Flexibilidade | [MF1.1 – Adaptabilidade a navegadores](./flexibilidade/mf1-1-adaptabilidade-a-navegadores.md) | MF1.1 | Análise concluída com 20 verificações nos cinco ambientes, matriz de resultados e vídeos de evidência. |
+| Manutenibilidade | [MM1.1 – Reuso do Design System](./manutenibilidade/mm1-1/MM1-1.md) | MM1.1 | Análise concluída em 15/11/2026; inventário e evidências disponíveis na página. |
+| Manutenibilidade | [MM2.1 – Média de módulos impactados por alteração](./manutenibilidade/mm2-1-modularidade-e-desacoplamento.md) | MM2.1 | Medida em 17/11/2026 a partir do histórico de *commits*; CSV de alterações e resumo da análise disponíveis. |
+| Manutenibilidade | [MM3.1 – Tempo médio de correção de incompatibilidades](./manutenibilidade/mm3-1/mm3-1-tempo-medio-de-correcao-de-incompatibilidades.md) | MM3.1 | Coletada em 21/11/2026 nas *issues* do repositório; tabela de classificação disponível como subaba. |
+| — | [Dados brutos](./dados-brutos/README.md) | — | HARs, planilhas CSV, scripts, registros de coleta e capturas de tela organizados por métrica. |
 
 {/* Cada membro acrescenta uma linha por métrica coletada. */}
 
@@ -34,7 +36,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | ------ | ---------- | ------------------------------------------------------------ | ------------------ | ---------------- |
 | 0.1    | 15/11/2026 | Criação da Fase 4 e da tabela de rastreabilidade (ME3.1)     | Geovane S. Freitas | Ludmila O. Nunes |
 | 0.2    | 15/11/2026 | Inclusão da MM1.1 e organização dos dados brutos por métrica | Rafael W. Schadt   | Ludmila O. Nunes |
-| 0.3    | 16/11/2026 | Adição da MM3.1                                              | Ludmila O. Nunes   |                  |
-| 0.4    | 16/11/2026 | Inclusão da ME2.1                                         | Amanda C. Lima   |            |
-| 0.5    | 20/11/2026 | Inclusão da análise da ME1.1                                | Rafael W. Schadt | |
-
+| 0.3    | 16/11/2026 | Adição da MM3.1                                              | Ludmila O. Nunes   |  Amanda C. Lima  |
+| 0.4    | 16/11/2026 | Inclusão da ME2.1                                            | Amanda C. Lima     |                  |
+| 0.5    | 20/11/2026 | Inclusão da análise da ME1.1                                 | Rafael W. Schadt   |  Amanda C. Lima  |
+| 0.6    | 22/11/2026 | Organização das métricas por característica da ISO/IEC 25010:2023 e inclusão da MM2.1 e da MM3.1 na rastreabilidade | Amanda C. Lima | |

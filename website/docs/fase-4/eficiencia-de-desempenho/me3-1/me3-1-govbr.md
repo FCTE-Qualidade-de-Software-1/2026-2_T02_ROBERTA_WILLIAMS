@@ -1,11 +1,11 @@
 ---
-unlisted: true
+sidebar_position: 2
 sidebar_label: ME3.1 – Teste no gov.br
 ---
 
 # ME3.1: Teste complementar em um portal real (gov.br)
 
-Esta página registra um teste complementar da métrica ME3.1, feito no portal `www.gov.br/pt-br`, que já traz o VLibras embutido. Ele **não segue o protocolo padronizado** da [Fase 3](../fase-3/metodo-de-avaliacao.md) (página de teste com as 10 frases padronizadas): usa textos e termos do próprio portal. O resultado oficial da métrica está em [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md); este teste fica disponível para consulta, para mostrar o comportamento do widget em uso real. A página segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
+Esta página registra um teste complementar da métrica ME3.1, feito no portal `www.gov.br/pt-br`, que já traz o VLibras embutido. Ele **não segue o protocolo padronizado** da [Fase 3](../../../fase-3/metodo-de-avaliacao.md) (página de teste com as 10 frases padronizadas): usa textos e termos do próprio portal. O resultado oficial da métrica está em [ME3.1 – Volume de dados e reuso do cache](./me3-1-volume-de-dados-e-cache.md); este teste fica disponível para consulta, para mostrar o comportamento do widget em uso real. A página segue as três atividades da Fase 4: obter a medida, comparar com o critério e julgar o resultado (Aula A07, slide 20).
 
 ## Identificação da medição
 
@@ -15,7 +15,7 @@ Esta página registra um teste complementar da métrica ME3.1, feito no portal `
 | ---- | -------- |
 | Característica | Eficiência de Desempenho |
 | Questão | Q3-E – Qual é o volume de dados de rede consumido ao utilizar os recursos de repetição de vídeo, alteração de velocidade e consulta ao dicionário? |
-| Hipótese | H3-E – As ações de repetição e alteração de velocidade de um trecho já traduzido reutilizam o cache local em 100% dos casos, sem tráfego adicional na rede ([Hipóteses](../fase-2/hipoteses.md)) |
+| Hipótese | H3-E – As ações de repetição e alteração de velocidade de um trecho já traduzido reutilizam o cache local em 100% dos casos, sem tráfego adicional na rede ([Hipóteses](../../../fase-2/hipoteses.md)) |
 | Cálculo | X = (A / B) × 100, com A = requisições da reexecução atendidas pelo cache local e B = total de requisições disparadas pelas ações da reexecução |
 | Data da coleta | 15/11/2026, das 21:31 às 21:53 (horário de Brasília) |
 | Responsável | Geovane S. Freitas |
@@ -60,7 +60,7 @@ As outras 177 requisições da reexecução foram ícones da interface, o índic
 
 **Tabela 4.** Comparação com os níveis de pontuação da ME3.1.
 
-| Nível                      | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado  |
+| Nível                      | Faixa ([Pontuação e critérios](../../../fase-2/pontuacao-e-criterios.md)) | Resultado  |
 | -------------------------- | ------------------------------------------------------------------- | ---------- |
 | Ruim (1 a 2)               | &lt; 80 %                                                           |            |
 | Aceitável/Regular (3)      | 80 % a 94 %                                                         |            |
@@ -82,31 +82,31 @@ O resultado fica no nível **Satisfatório/Ideal**, perto do limite: com 2 requi
 
 ## Evidências
 
-![Aba Network durante a 1ª tradução do texto 1, com os sinais baixados pela rede](./dados-brutos/ME3.1/govbr-figuras/03_texto1-agricultura_E1_1x.png)
+![Aba Network durante a 1ª tradução do texto 1, com os sinais baixados pela rede](../../dados-brutos/ME3.1/govbr-figuras/03_texto1-agricultura_E1_1x.png)
 
 **Figura 1.** 1ª tradução do texto 1: o texto vai ao tradutor e cada sinal é baixado (redirecionamento 301 e arquivo). Fonte: elaborado pelos autores.
 
-![Aba Network durante a reexecução do texto 1 a 2x, com ícones lidos do cache de disco](./dados-brutos/ME3.1/govbr-figuras/06_texto1-agricultura_R_2x.png)
+![Aba Network durante a reexecução do texto 1 a 2x, com ícones lidos do cache de disco](../../dados-brutos/ME3.1/govbr-figuras/06_texto1-agricultura_R_2x.png)
 
 **Figura 2.** Reexecução do texto 1 a 2x: só o texto vai de novo ao tradutor; os ícones vêm do cache de disco e nenhum sinal é baixado. Fonte: elaborado pelos autores.
 
-![Aba Network depois da troca de velocidade para 0.5x durante a reprodução do texto 2](./dados-brutos/ME3.1/govbr-figuras/10_texto2-assistencia_E1_0.5x.png)
+![Aba Network depois da troca de velocidade para 0.5x durante a reprodução do texto 2](../../dados-brutos/ME3.1/govbr-figuras/10_texto2-assistencia_E1_0.5x.png)
 
 **Figura 3.** Troca de velocidade para 0.5x durante a reprodução do texto 2, sem nova chamada ao tradutor. Fonte: elaborado pelos autores.
 
-![Aba Network durante a reprodução repetida do termo ABERTO no dicionário](./dados-brutos/ME3.1/govbr-figuras/23_dicionario_R_ABERTO.png)
+![Aba Network durante a reprodução repetida do termo ABERTO no dicionário](../../dados-brutos/ME3.1/govbr-figuras/23_dicionario_R_ABERTO.png)
 
 **Figura 4.** Reexecução no dicionário: o termo ABERTO é reproduzido de novo sem nova requisição do sinal. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada pelo índice do dicionário, com as duas requisições atendidas pelo cache de disco](./dados-brutos/ME3.1/govbr-figuras/26_filtro-2018.3.1.json.png)
+![Aba Network filtrada pelo índice do dicionário, com as duas requisições atendidas pelo cache de disco](../../dados-brutos/ME3.1/govbr-figuras/26_filtro-2018.3.1.json.png)
 
 **Figura 5.** Índice do dicionário (`2018.3.1.json`) pedido duas vezes, as duas atendidas pelo cache de disco. Fonte: elaborado pelos autores.
 
-![Aba Network filtrada por dicionario2 no fim do registro, com cada sinal baixado uma única vez](./dados-brutos/ME3.1/govbr-figuras/27_filtro-dicionario2_fim-do-registro.png)
+![Aba Network filtrada por dicionario2 no fim do registro, com cada sinal baixado uma única vez](../../dados-brutos/ME3.1/govbr-figuras/27_filtro-dicionario2_fim-do-registro.png)
 
 **Figura 6.** Requisições ao servidor de sinais no fim do registro: cada sinal aparece uma única vez (68 requisições, 874 kB). Fonte: elaborado pelos autores.
 
-Os dados completos estão em [Dados brutos da ME3.1 — gov.br](./dados-brutos/ME3.1/govbr/README.md):
+Os dados completos estão em [Dados brutos da ME3.1 — gov.br](../../dados-brutos/ME3.1/govbr/README.md):
 
 - `resultado.md`: registro detalhado da coleta, ambiente, procedimento, critérios e limitações;
 - `brutos/ME3.1_govbr_2026-11-15.har`: HAR exportado da aba *Network*;

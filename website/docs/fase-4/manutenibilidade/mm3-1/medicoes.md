@@ -1,8 +1,9 @@
 ---
-unlisted: true
+sidebar_position: 2
+sidebar_label: Tabela de medições
 ---
 
-# ME3.1: Tabela de coleta
+# MM3.1: Classificação das *issues*
 
 **Tabela 1.** Relação de issues do repositório.
 

@@ -1,10 +1,11 @@
 ---
-unlisted: true
+sidebar_position: 2
+sidebar_label: Tabela de medições
 ---
 
 # ME1.1: Tabela de medições
 
-Os instantes A e B, em segundos desde o início de cada gravação, foram informados pelo responsável pela coleta. A corresponde à seleção do texto e B ao início do primeiro sinal, conforme o [protocolo da ME1.1](../../../../fase-3/metodo-de-avaliacao.md#me11-tempo-médio-de-resposta-da-tradução). O tempo de resposta é `B − A`.
+Os instantes A e B, em segundos desde o início de cada gravação, foram informados pelo responsável pela coleta. A corresponde à seleção do texto e B ao início do primeiro sinal, conforme o [protocolo da ME1.1](../../../fase-3/metodo-de-avaliacao.md#me11-tempo-médio-de-resposta-da-tradução). O tempo de resposta é `B − A`.
 
 ## Tempos por frase
 
@@ -27,7 +28,7 @@ Fonte: instantes informados pelo responsável pela coleta; diferenças calculada
 
 ## Frases utilizadas
 
-**Tabela 2.** Frases da [massa de dados da Fase 3](../../../../fase-3/massa-de-dados.md#frases-padronizadas).
+**Tabela 2.** Frases da [massa de dados da Fase 3](../../../fase-3/massa-de-dados.md#frases-padronizadas).
 
 | ID | Frase |
 | -- | ----- |
@@ -53,4 +54,4 @@ Fonte: instantes informados pelo responsável pela coleta; diferenças calculada
 
 Fonte: cálculos sobre os tempos da Tabela 1. A média e o desvio padrão são calculados antes do arredondamento a duas casas decimais. O desvio padrão é **amostral**, com divisor `n − 1`.
 
-O resultado e a interpretação estão em [ME1.1 — Tempo Médio de Resposta da Tradução](../../../me1-1-tempo-de-resposta.md).
+O resultado e a interpretação estão em [ME1.1 — Tempo Médio de Resposta da Tradução](./me1-1-tempo-de-resposta.md).

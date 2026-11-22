@@ -5,7 +5,7 @@ sidebar_label: MF1.1 — Adaptabilidade a navegadores
 
 # MF1.1: Adaptabilidade a Navegadores
 
-Esta página apresenta o resultado da métrica **MF1.1**, definida na [Fase 2](../fase-2/metricas.md#mf11-adaptabilidade-a-navegadores), conforme o [método de avaliação](../fase-3/metodo-de-avaliacao.md#mf11-adaptabilidade-a-navegadores). A medição verifica a compatibilidade funcional do widget em navegadores e plataformas diferentes.
+Esta página apresenta o resultado da métrica **MF1.1**, definida na [Fase 2](../../fase-2/metricas.md#mf11-adaptabilidade-a-navegadores), conforme o [método de avaliação](../../fase-3/metodo-de-avaliacao.md#mf11-adaptabilidade-a-navegadores). A medição verifica a compatibilidade funcional do widget em navegadores e plataformas diferentes.
 
 ## Identificação da medição
 
@@ -14,12 +14,12 @@ Esta página apresenta o resultado da métrica **MF1.1**, definida na [Fase 2](.
 | **Métrica** | MF1.1 — Adaptabilidade a Navegadores |
 | **Característica** | Flexibilidade |
 | **Questão relacionada** | Q1-F — Adaptabilidade entre Multiplataformas |
-| **Hipótese relacionada** | H1-F — O widget apresenta 95% de compatibilidade funcional nos navegadores em ambiente desktop, mas exibe falhas em dispositivos móveis ([Hipóteses](../fase-2/hipoteses.md)) |
+| **Hipótese relacionada** | H1-F — O widget apresenta 95% de compatibilidade funcional nos navegadores em ambiente desktop, mas exibe falhas em dispositivos móveis ([Hipóteses](../../fase-2/hipoteses.md)) |
 | **Responsável pela coleta** | Rodrigo F. Amaral e Rafael W. Schadt |
 | **Data da coleta** | 14/11/2026 |
 | **Objeto avaliado** | Widget VLibras Web Browsers, versão 7.12.2, carregado na página padronizada |
 | **Amostra** | Quatro casos funcionais executados uma vez em cada um dos cinco ambientes |
-| **Fonte dos dados** | Matriz de execução, planilha de cálculo e vídeos em [Dados brutos da MF1.1](./dados-brutos/MF1.1/README.md) |
+| **Fonte dos dados** | Matriz de execução, planilha de cálculo e vídeos em [Dados brutos da MF1.1](../dados-brutos/MF1.1/README.md) |
 | **Ambientes avaliados** | Chrome, Firefox e Edge em desktop; Safari e Chrome em dispositivos móveis |
 
 ## Método e cálculo
@@ -55,7 +55,7 @@ A coleta utilizou os cinco ambientes previstos no plano. Em cada ambiente, foram
 | ENV-04 | Safari | Mobile, iOS | DI4 | 75% | [Vídeo](https://youtu.be/YugaIa0N_aA) |
 | ENV-05 | Google Chrome | Mobile, Android | DI7 | 75% | [Vídeo](https://youtu.be/JHrUeRzwAJw) |
 
-Fonte: elaborado pelos autores a partir dos [Ambientes da Fase 3](../fase-3/recursos-e-ambiente.md) e das [evidências da coleta](./dados-brutos/MF1.1/README.md).
+Fonte: elaborado pelos autores a partir dos [Ambientes da Fase 3](../../fase-3/recursos-e-ambiente.md) e das [evidências da coleta](../dados-brutos/MF1.1/README.md).
 
 ## Roteiro funcional
 
@@ -68,7 +68,7 @@ Fonte: elaborado pelos autores a partir dos [Ambientes da Fase 3](../fase-3/recu
 | CT-03 | Velocidade | Alterar a reprodução para 1.5x/2.0x e 0.5x, mantendo sincronização da animação e das legendas. | Concluído sem falhas nos cinco ambientes. | Vídeos dos ambientes. |
 | CT-04 | Repetição | Reiniciar imediatamente a última tradução com as configurações anteriores, sem nova seleção. | Concluído sem falhas nos cinco ambientes. | Vídeos dos ambientes. |
 
-O método detalhado está em [MF1.1 — Método de avaliação](../fase-3/metodo-de-avaliacao.md#mf11-adaptabilidade-a-navegadores).
+O método detalhado está em [MF1.1 — Método de avaliação](../../fase-3/metodo-de-avaliacao.md#mf11-adaptabilidade-a-navegadores).
 
 > **Escopo observado:** esta coleta registrou os quatro casos de teste previstos no protocolo da Fase 3. O caso de regionalismo não foi separado em uma quinta função; por isso, não integra o denominador `B` desta medição.
 
@@ -85,7 +85,7 @@ O método detalhado está em [MF1.1 — Método de avaliação](../fase-3/metodo
 | ENV-05 | 4 | 1 | 75% | Ruim |
 | **Geral** | **20** | **2** | **90%** | **Aceitável/Regular** |
 
-Fonte: cálculos a partir da [matriz de execução em CSV](./dados-brutos/MF1.1/planilha/matriz_execucao_mf1_1_vlibras.csv) e dos cinco vídeos de evidência.
+Fonte: cálculos a partir da [matriz de execução em CSV](../dados-brutos/MF1.1/planilha/matriz_execucao_mf1_1_vlibras.csv) e dos cinco vídeos de evidência.
 
 O cálculo geral foi `X = (1 − 2 / 20) × 100 = 90%`.
 
@@ -93,7 +93,7 @@ O cálculo geral foi `X = (1 − 2 / 20) × 100 = 90%`.
 
 **Tabela 4.** Comparação com a matriz da Fase 2.
 
-| Nível | Faixa ([Pontuação e critérios](../fase-2/pontuacao-e-criterios.md)) | Resultado |
+| Nível | Faixa ([Pontuação e critérios](../../fase-2/pontuacao-e-criterios.md)) | Resultado |
 | ----- | -------------------------------------------------------------------- | -------- |
 | Aceitável/Regular (3) | 80% a 94% | Resultado geral (90%) |
 | Satisfatório/Ideal (4 a 5) | ≥ 95% | ENV-01, ENV-02 e ENV-03 (100%) |
@@ -115,7 +115,7 @@ A hipótese H1-F previa 95% de compatibilidade em ambiente desktop e falhas em 4
 
 ## Evidências
 
-Os registros originais devem ser armazenados em [Dados brutos da MF1.1](./dados-brutos/MF1.1/README.md):
+Os registros originais devem ser armazenados em [Dados brutos da MF1.1](../dados-brutos/MF1.1/README.md):
 
 - matriz detalhada da execução;
 - vídeos das gravações;
@@ -211,7 +211,7 @@ Os vídeos também estão disponíveis diretamente no YouTube:
 
 ### Planilha de cálculos
 
-Os dados consolidados usados na análise são apresentados nas tabelas desta página. Os registros detalhados por ambiente e caso estão disponíveis no [CSV da matriz de execução](./dados-brutos/MF1.1/planilha/matriz_execucao_mf1_1_vlibras.csv), e a planilha publicada pode ser consultada diretamente no Google Sheets.
+Os dados consolidados usados na análise são apresentados nas tabelas desta página. Os registros detalhados por ambiente e caso estão disponíveis no [CSV da matriz de execução](../dados-brutos/MF1.1/planilha/matriz_execucao_mf1_1_vlibras.csv), e a planilha publicada pode ser consultada diretamente no Google Sheets.
 
 <iframe
   width="768"
