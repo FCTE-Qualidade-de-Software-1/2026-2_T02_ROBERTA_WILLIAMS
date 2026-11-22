@@ -15,7 +15,7 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 * **Questão Relacionada:** Q1-I (Operabilidade e Autonomia)
 * **Definição Operacional:** Proporção das tarefas de vídeo (repetir trecho, alterar velocidade) e dicionário/regionalismo concluídas pelo usuário sem ajuda externa e sem depender de leitura em português.
 * **Unidade:** Percentual (%)
-* **Coleta:** Teste de usabilidade com no mínimo 8 participantes surdos. Instrução da tarefa em Libras antes de começar; nenhuma ajuda durante a execução; tempo-limite de 3 minutos por tarefa. Gravação de tela.
+* **Coleta:** Teste de usabilidade com pessoas usuárias de Libras, priorizando pessoas surdas. Instrução da tarefa em Libras antes de começar; nenhuma ajuda durante a execução; tempo-limite de 2 minutos por tarefa. Gravação de tela.
 * **Cálculo:** `X = (A / B) * 100`  
   * $A$ = tarefas concluídas sem assistência  
   * $B$ = total de tarefas tentadas

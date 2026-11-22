@@ -41,15 +41,14 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 - **Participantes:** no mínimo 8 pessoas usuárias de Libras, priorizando pessoas surdas. A participação de ouvintes fluentes em Libras é aceita, com resultados reportados separadamente por perfil. Se não houver participantes suficientes, o teste é feito entre os integrantes da equipe e a limitação é declarada.
 - **Passos:**
   1. Obter o consentimento e registrar o perfil (condição auditiva, relação com a Libras, fluência em português e experiência com o VLibras).
-  2. Fazer um aquecimento de 3 minutos sem medição, para familiarização com o equipamento.
+  2. Fazer um aquecimento de 2 minutos sem medição, para familiarização com o equipamento.
   3. Apresentar cada cenário em Libras (vídeo com legenda) e em cartão visual, sem indicar qual controle usar. Os cenários estão em [Massa de dados](./massa-de-dados.md).
   4. Iniciar a gravação de tela e pedir que o participante cumpra o objetivo sozinho. A equipe não responde dúvidas durante a tarefa.
-  5. Cronometrar a tarefa, com limite de 4 minutos.
-  6. Registrar o resultado (concluída sem assistência, com assistência ou não concluída), o tempo, o número de tentativas erradas, o primeiro clique e se o participante recorreu à leitura de texto.
-  7. Após cada tarefa, aplicar a escala de dificuldade de 1 a 5 com carinhas.
+  5. Cronometrar a tarefa, com limite de 2 minutos.
+  6. Registrar o resultado (concluída sem assistência, com assistência ou não concluída), o tempo e, em texto livre, onde o participante hesitou ou teve dúvidas.
+- **Registro:** planilha de observação (participante, tarefa, resultado, tempo e observações) e gravações de tela.
 - **Repetições:** uma execução por tarefa por participante.
-- **Registro:** planilha de observação (participante, perfil, tarefa, resultado, tempo, tentativas erradas, primeiro clique, uso de texto, dificuldade percebida) e gravações de tela.
-- **Critério de parada:** todas as tarefas tentadas por todos os participantes, ou 4 minutos por tarefa.
+- **Critério de parada:** todas as tarefas tentadas por todos os participantes, ou 2 minutos por tarefa.
 
 ### MI2.1: Proporção de Mensagens Apenas em Texto
 
