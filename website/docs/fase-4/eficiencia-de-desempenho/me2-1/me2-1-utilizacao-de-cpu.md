@@ -7,16 +7,9 @@ sidebar_label: ME2.1 – Uso de CPU
 
 Esta página registra quanto o navegador usa de processador enquanto o avatar do VLibras sinaliza sem parar. A métrica foi definida em [Métricas](../../../fase-2/metricas.md) para responder à questão Q2-E. A coleta seguiu o protocolo de [Método de avaliação](../../../fase-3/metodo-de-avaliacao.md) e o roteiro "Tradução contínua" da [Massa de dados](../../../fase-3/massa-de-dados.md).
 
-A Fase 3 prevê duas condições de coleta:
+A coleta foi feita no D1, com simulação de *hardware* limitado. A simulação foi necessária porque o processador do D1 é de alto desempenho e não se parece com o de um aparelho de entrada.
 
-| Condição                         | Dispositivo                                 | Situação     |
-| -------------------------------- | ------------------------------------------- | ------------ |
-| Simulação de *hardware* limitado | D1 (Ryzen 7 7800X3D, restrito pelo Windows) | **Coletada** |
-| *Hardware* modesto real          | D3 (Core i7-7700HQ, 2017)                   | Prevista     |
-
-Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi necessária porque o processador do D1 é de alto desempenho e não se parece com o de um aparelho de entrada. O julgamento desta página vale para essa condição e será revisto depois da coleta no D3.
-
-> Resultado parcial (simulação no D1): uso médio de CPU de **55,7%** e pico de **89,5%**, num computador comum simulado com 4 núcleos, 8 *threads* e sem aceleração gráfica. Pelos critérios da Fase 2, o nível é **Ruim**, e a hipótese H2-E se confirma quanto ao uso de CPU.
+> Resultado (simulação no D1): uso médio de CPU de **55,7%** e pico de **89,5%**, num computador comum simulado com 4 núcleos, 8 *threads* e sem aceleração gráfica. Pelos critérios da Fase 2, o nível é **Ruim**, e a hipótese H2-E se confirma quanto ao uso de CPU.
 
 ## Ficha da medição
 
@@ -27,7 +20,7 @@ Por enquanto, só a simulação feita no D1 foi coletada. A simulação foi nece
 | Questão | Q2-E: Qual é o consumo de processamento (CPU) do navegador durante a renderização contínua do avatar em dispositivos com recursos de *hardware* limitados? |
 | Hipótese | H2-E: Em *hardware* modesto, a renderização contínua do avatar eleva o uso de CPU do navegador para mais de 50% ([Hipóteses](../../../fase-2/hipoteses.md)) |
 | Objeto | Widget VLibras publicado, versão 7.12.2, carregado na página de teste pelo código padrão de instalação |
-| Condição | Simulação de *hardware* limitado no D1. A coleta no D3 ainda será feita |
+| Condição | Simulação de *hardware* limitado no D1 |
 | Data | 16/11/2026 |
 | Responsável | Amanda C. Lima |
 
@@ -119,7 +112,7 @@ A ME2.1 é calculada pela fórmula definida em [Métricas](../../../fase-2/metri
 
 Na sessão 1: X = 535,6 / (122,0 × 8) × 100 = **54,9%**.
 
-Aqui, N é o número de *threads* liberadas ao navegador pela afinidade. No D3, sem restrição, N será o total de *threads* do processador (também 8), e X ficará próximo do uso de CPU mostrado pelo Gerenciador de Tarefas.
+Aqui, N é o número de *threads* liberadas ao navegador pela afinidade.
 
 ## Resultados
 
@@ -153,8 +146,8 @@ Nos [critérios de pontuação](../../../fase-2/pontuacao-e-criterios.md), médi
 - O consumo foi alto em todas as sessões. Em 82% dos segundos medidos, o navegador usou mais da metade da capacidade disponível.
 - O pico de 89,5% deixa pouca folga para outras tarefas. Num computador de uso real, que divide a CPU com antivírus, outras abas e o sistema, isso tende a aparecer como animação truncada ou travamento.
 - O navegador ocupou em média 4,46 *threads* inteiras, mais da metade das 8 disponíveis.
-- A hipótese H2-E se confirma nesta condição, quanto ao uso de CPU: a média passou de 50% em todas as sessões. A outra parte da hipótese, a queda para menos de 20 FPS, não foi medida. Para uma conclusão definitiva, falta a coleta no D3.
-- Julgamento parcial: na simulação no D1, a ME2.1 fica no nível **Ruim** (X = 55,7%). Num computador comum sem ajuda da placa de vídeo, o avatar sinalizando sem parar usa mais da metade do processador.
+- A hipótese H2-E se confirma nesta condição, quanto ao uso de CPU: a média passou de 50% em todas as sessões. A outra parte da hipótese, a queda para menos de 20 FPS, não foi medida.
+- Julgamento: na simulação no D1, a ME2.1 fica no nível **Ruim** (X = 55,7%). Num computador comum sem ajuda da placa de vídeo, o avatar sinalizando sem parar usa mais da metade do processador.
 
 ## Evidências
 
@@ -176,11 +169,11 @@ Nos [critérios de pontuação](../../../fase-2/pontuacao-e-criterios.md), médi
 
 Os arquivos originais estão em [Dados brutos da ME2.1](../../dados-brutos/ME2.1/README.md).
 
-## Limitações e próximos passos
+## Limitações
 
 - A Fase 3 previa o DevTools tanto para simular o *hardware* limitado (*throttling* de 4x) quanto para medir o consumo (*Performance Monitor*). As duas ferramentas, porém, atuam apenas sobre o processo da página inspecionada e não alcançam os processos responsáveis pela renderização do avatar e pela GPU. Na preparação, o *Performance Monitor* chegou a registrar uso de CPU próximo de 0% com o avatar sinalizando. Por isso, o processador foi limitado pelo Windows e a medição passou a ser feita pelo script, que soma o tempo de CPU de todos os processos do navegador.
 - A simulação no D1 não reproduz tudo de um computador comum devido ao hardware.
-- Como o resultado depende do número de *threads* disponíveis, cada resultado deve vir com o seu N, para que as condições possam ser comparadas.
+- Como o resultado depende do número de *threads* disponíveis, ele vale para N = 8.
 
 ## Referências
 
@@ -191,3 +184,4 @@ Os arquivos originais estão em [Dados brutos da ME2.1](../../dados-brutos/ME2.1
 | Versão | Data       | Descrição da alteração                                   | Autor(a)       | Revisor(a) |
 | ------ | ---------- | -------------------------------------------------------- | -------------- | ---------- |
 | 0.1    | 16/11/2026 | Registro da coleta e do julgamento da ME2.1              | Amanda C. Lima |            |
+| 0.2    | 22/11/2026 | Tabela de medições, script de coleta e remoção da coleta prevista no D3 | Amanda C. Lima |            |
