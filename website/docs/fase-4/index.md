@@ -19,6 +19,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | Eficiência de Desempenho | [ME3.1 – Volume de dados e reuso do cache](./eficiencia-de-desempenho/me3-1/me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
 | Eficiência de Desempenho | [ME3.1 – Teste complementar no gov.br](./eficiencia-de-desempenho/me3-1/me3-1-govbr.md) | ME3.1 (complementar) | Coleta em portal real, fora do protocolo padronizado; consultar como evidência complementar. |
 | Flexibilidade | [MF1.1 – Adaptabilidade a navegadores](./flexibilidade/mf1-1-adaptabilidade-a-navegadores.md) | MF1.1 | Análise concluída com 20 verificações nos cinco ambientes, matriz de resultados e vídeos de evidência. |
+| Flexibilidade | [MF2.1 – Taxa de integração sem ajuste manual](./flexibilidade/mf2-1/mf2-1-integracao-sem-ajuste-manual.md) | MF2.1 | Coletada em 22/11/2026 nos 10 portais da amostra, com o código padrão injetado após o bloqueio da instalação de cada portal; ficha e prints na tabela de medições. |
 | Manutenibilidade | [MM1.1 – Reuso do Design System](./manutenibilidade/mm1-1/MM1-1.md) | MM1.1 | Análise concluída em 15/11/2026; inventário e evidências disponíveis na página. |
 | Manutenibilidade | [MM2.1 – Média de módulos impactados por alteração](./manutenibilidade/mm2-1-modularidade-e-desacoplamento.md) | MM2.1 | Medida em 17/11/2026 a partir do histórico de *commits*; CSV de alterações e resumo da análise disponíveis. |
 | Manutenibilidade | [MM3.1 – Tempo médio de correção de incompatibilidades](./manutenibilidade/mm3-1/mm3-1-tempo-medio-de-correcao-de-incompatibilidades.md) | MM3.1 | Coletada em 21/11/2026 nas *issues* do repositório; tabela de classificação disponível como subaba. |
@@ -40,3 +41,4 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | 0.4    | 16/11/2026 | Inclusão da ME2.1                                            | Amanda C. Lima     |                  |
 | 0.5    | 20/11/2026 | Inclusão da análise da ME1.1                                 | Rafael W. Schadt   |  Amanda C. Lima  |
 | 0.6    | 22/11/2026 | Organização das métricas por característica da ISO/IEC 25010:2023 e inclusão da MM2.1 e da MM3.1 na rastreabilidade | Amanda C. Lima | |
+| 0.7    | 22/11/2026 | Inclusão da MF2.1                                            | Amanda C. Lima     |            |

@@ -16,5 +16,6 @@ Os registros desta pasta preservam os arquivos usados para calcular e interpreta
 | [MM2.1](./MM2.1/README.md) | Script e arquivo gerados na análise das alterações por commit.                                                                   |
 | [MM3.1](./MM3.1/README.md) | Tabela compartilhada com dados brutos, prints e json das issues.                                                                  |
 | [MF1.1](./MF1.1/README.md) | Matriz CSV dos cinco ambientes, vídeos no YouTube e planilha publicada dos cálculos. |
+| [MF2.1](./MF2.1/README.md) | Prints das três etapas (sem o widget do portal, injeção e tradução) nos 10 portais da amostra. |
 
 Quando novas métricas forem coletadas, seus dados devem ser adicionados em uma pasta com o identificador correspondente, preservando arquivos brutos, planilhas, scripts e evidências.

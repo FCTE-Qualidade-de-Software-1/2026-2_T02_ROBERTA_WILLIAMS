@@ -179,15 +179,18 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### MF2.1: Taxa de Integração sem Ajuste Manual
 
-- **Ferramentas:** navegador, console do DevTools, código padrão de instalação do widget.
+- **Ferramentas:** navegador em janela anônima e sem extensões, console do DevTools, painel "Condições de solicitação" do DevTools, código padrão de instalação do widget.
+- **Retirada da instalação do portal:** os portais da amostra já trazem o VLibras instalado pelos próprios órgãos, que podem ter feito ajustes nessa instalação. Para testar só o código padrão, a instalação do portal é bloqueada antes da injeção. Sem isso, a página ficaria com duas instâncias do widget.
 - **Passos:**
-  1. Abrir cada portal da amostra de [Massa de dados](./massa-de-dados.md).
-  2. Injetar o código padrão de instalação do widget (script `vlibras-plugin.js` e chamada de `window.VLibras.Widget`) pelo console.
-  3. Verificar se o botão de acesso aparece, se o painel abre, se a seleção de texto aciona a tradução e se o avatar é exibido.
-  4. Registrar conflitos (ex.: sobreposição de *z-index*, bloqueio de scripts por política de segurança, estilos que quebram o painel).
-  5. Considerar o portal como "sem ajuste manual" quando nenhuma correção de CSS ou de script for necessária.
+  1. Abrir cada portal da amostra de [Massa de dados](./massa-de-dados.md) com o DevTools aberto.
+  2. No painel "Condições de solicitação", ativar o bloqueio dos padrões `*://vlibras*`, `*://vlibras.gov.br/*` e `*://*/*vlibras*` e recarregar a página. Conferir que o botão do VLibras não aparece e que o console registra a solicitação bloqueada.
+  3. Desativar o bloqueio, sem recarregar a página.
+  4. Injetar o código padrão de instalação do widget (script `vlibras-plugin.js` e chamada de `window.VLibras.Widget`) pelo console e aguardar a mensagem de carregamento.
+  5. Verificar se o botão de acesso aparece, se o painel abre, se a seleção de texto aciona a tradução e se o avatar é exibido. O texto selecionado é o primeiro texto comum do conteúdo principal (título ou parágrafo que não seja menu, botão, imagem, carrossel nem card com *hover*).
+  6. Registrar conflitos (ex.: sobreposição de *z-index*, bloqueio de scripts por política de segurança, estilos que quebram o painel).
+  7. Considerar o portal como "sem ajuste manual" quando nenhuma correção de CSS ou de script for necessária.
 - **Repetições:** uma vez por portal, em um mesmo navegador.
-- **Registro:** ficha de integração por portal, com prints e logs do console.
+- **Registro:** ficha de integração por portal e prints de cada etapa: página sem o widget do portal, injeção pelo console e tradução em andamento.
 - **Critério de parada:** os 10 portais testados.
 
 ---
@@ -250,3 +253,4 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | 0.3    | 16/11/2026 | Protocolo da ME2.1: coleta por script e fórmula normalizada pelo número de *threads*                         | Amanda C. Lima     |            |
 | 0.4    | 18/11/2026 | Correções MI1.1                                                                                              | Ludmila O. Nunes   |            |
 | 0.5    | 20/11/2026 | Alteração responsáveis MI1.1 e MI3.2                                                                         | Ludmila O. Nunes   |            |
+| 0.6    | 22/11/2026 | Protocolo da MF2.1: bloqueio da instalação do portal antes da injeção e critério de escolha do texto | Amanda C. Lima     |            |
