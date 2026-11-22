@@ -14,6 +14,7 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 
 | Característica | Página | Métrica | Situação |
 | -------------- | ------ | ------- | -------- |
+| Capacidade de Interação | [MI2.1 – Proporção de mensagens apenas em texto](./capacidade-de-interacao/mi2-1-proporcao-mensagens-apenas-texto.md) | MI2.1 | Resultado provisório de 60% em 10 apresentações observadas; tabela e capturas disponíveis nos dados brutos. |
 | Eficiência de Desempenho | [ME1.1 – Tempo médio de resposta da tradução](./eficiencia-de-desempenho/me1-1/me1-1-tempo-de-resposta.md) | ME1.1 | Tempos e estatísticas calculados a partir dos instantes informados, com gravações disponíveis para conferência. |
 | Eficiência de Desempenho | [ME2.1 – Utilização média de CPU](./eficiencia-de-desempenho/me2-1/me2-1-utilizacao-de-cpu.md) | ME2.1 | Coletada em 16/11/2026, na simulação de *hardware* limitado no D1. |
 | Eficiência de Desempenho | [ME3.1 – Volume de dados e reuso do cache](./eficiencia-de-desempenho/me3-1/me3-1-volume-de-dados-e-cache.md) | ME3.1 | Coletada em 15/11/2026 (página de teste). |
@@ -42,3 +43,4 @@ Cada página desta fase registra uma métrica da [Fase 2](../fase-2/metricas.md)
 | 0.5    | 20/11/2026 | Inclusão da análise da ME1.1                                 | Rafael W. Schadt   |  Amanda C. Lima  |
 | 0.6    | 22/11/2026 | Organização das métricas por característica da ISO/IEC 25010:2023 e inclusão da MM2.1 e da MM3.1 na rastreabilidade | Amanda C. Lima | |
 | 0.7    | 22/11/2026 | Inclusão da MF2.1                                            | Amanda C. Lima     |            |
+| 0.8    | 22/11/2026 | Inclusão da MI2.1 e de seus dados brutos na rastreabilidade | Rafael W. Schadt | |
