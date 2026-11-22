@@ -32,7 +32,7 @@ A tabela a seguir apresenta os limites numéricos para atribuição da pontuaç�
 | **MI1.1** (Conclusão de Tarefas)            | Capacidade de Interação  |    < 50%     |        50% a 79%        |            ≥ 80%             |
 | **MI2.1** (Mensagens Apenas em Texto)       | Capacidade de Interação  |    > 70%     |        31% a 70%        |            ≤ 30%             |
 | **MI3.1** (Contraste)                       | Capacidade de Interação  |    < 70%     |        70% a 89%        |            ≥ 90%             |
-| **MI3.1** (Seleção de texto)                | Capacidade de Interação  |    < 70%     |        70% a 89%        |            ≥ 90%             |
+| **MI3.2** (Seleção de texto)                | Capacidade de Interação  |    < 70%     |        70% a 89%        |            ≥ 90%             |
 | **ME1.1** (Tempo de Resposta em 3G)         | Eficiência de Desempenho |     > 6s     |        3.1s a 6s        |             ≤ 3s             |
 | **ME2.1** (Uso Médio de CPU)                | Eficiência de Desempenho |    > 50%     |        31% a 50%        |            ≤ 30%             |
 | **ME3.1** (Reuso de Cache)                  | Eficiência de Desempenho |    < 80%     |        80% a 94%        |            ≥ 95%             |

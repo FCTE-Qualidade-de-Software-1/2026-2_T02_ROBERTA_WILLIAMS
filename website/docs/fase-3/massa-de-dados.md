@@ -24,8 +24,8 @@ As 10 frases simulam textos de serviços públicos digitais e variam em tamanho 
 
 **Tabela 2.** Frases padronizadas.
 
-| ID  | Tamanho | Frase | Característica |
-| --- | ------- | ----- | -------------- |
+| ID  | Tamanho | Frase                                                                                                                                                | Característica                    |
+| --- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
 | F1  | Curta   | Bom dia, como posso ajudar?                                                                                                                          | Linguagem do dia a dia            |
 | F2  | Curta   | O atendimento começa às oito horas.                                                                                                                  | Horário                           |
 | F3  | Curta   | Faça o login com sua conta gov.br.                                                                                                                   | Termo de serviço digital          |

@@ -216,15 +216,16 @@ As métricas representam o nível quantitativo da abordagem *Goal-Question-Metri
 
 ## Referências
 
-* **FanJiang, Y.-Y. and Wu, C.-H. (2009).** *Towards a multi-agents architecture for gqm measurement system*. In 2009 Ninth International Conference on Hybrid Intelligent Systems, volume 1, pages 277-280[cite: 19].
+* **FanJiang, Y.-Y. and Wu, C.-H. (2009).** *Towards a multi-agents architecture for gqm measurement system*. In 2009 Ninth International Conference on Hybrid Intelligent Systems, volume 1, pages 277-280.
 * **Galin, D. (2018).** *Software Quality Factors (Attributes)*, pages 23–44.
-* **ISO/IEC (2005).** *ISO/IEC 25010:2005: Systems and software engineering — Systems and software quality requirements and evaluation (SQuaRE) — System and software quality models*[cite: 19].
-* **Washizaki, H. and Olszewska, J. I., editors (2024).** *Guide to the Software Engineering Body of Knowledge (SWEBOK Guide)*, Version 4.0. IEEE Computer Society, Piscataway, New Jersey[cite: 19].
+* **ISO/IEC (2005).** *ISO/IEC 25010:2005: Systems and software engineering — Systems and software quality requirements and evaluation (SQuaRE) — System and software quality models*.
+* **Washizaki, H. and Olszewska, J. I., editors (2024).** *Guide to the Software Engineering Body of Knowledge (SWEBOK Guide)*, Version 4.0. IEEE Computer Society, Piscataway, New Jersey.
 
 ## Histórico de Versões
 
-| Versão | Data       | Descrição da alteração        | Autor(a)         | Revisor(a) |
-| ------ | ---------- | ----------------------------- | ---------------- | ---------- |
-| 0.1    | 23/10/2026 | Adicionando métricas          | Mariana Pereira  |            |
-| 0.2    | 15/11/2026 | Divide MI3.1 em MI3.1 e MI3.2 | Ludmila O. Nunes |            |
-| 0.3    | 16/11/2026 | ME2.1: fórmula normalizada pelo número de *threads* (N) e fonte de dados | Amanda C. Lima |            |
+| Versão | Data       | Descrição da alteração                                                   | Autor(a)         | Revisor(a) |
+| ------ | ---------- | ------------------------------------------------------------------------ | ---------------- | ---------- |
+| 0.1    | 23/10/2026 | Adicionando métricas                                                     | Mariana Pereira  |            |
+| 0.2    | 15/11/2026 | Divide MI3.1 em MI3.1 e MI3.2                                            | Ludmila O. Nunes |            |
+| 0.3    | 16/11/2026 | ME2.1: fórmula normalizada pelo número de *threads* (N) e fonte de dados | Amanda C. Lima   |            |
+| 0.4    | 22/11/2026 | Atualiza informações referências                                         | Ludmila O. Nunes |            |

@@ -56,6 +56,7 @@ As versões são registradas no dia de cada teste, e nenhuma atualização é fe
 | DI4         | Safari          | Integrado ao iOS 26.6.2          |
 | DI5         | Google Chrome   | 157.0.8103.51 (64 bits)          |
 | DI6         | Opera GX Stable | 139.0.6053.63 (64 bits)          |
+| DI6         | Google Chrome   | 157.0.8103.79 (64 bits)          |
 | DI7         | Google Chrome   | 157.0.8103.51 (64 bits)          |
 
 ## Ambientes de teste da MF1.1
@@ -127,3 +128,4 @@ Nos testes de usabilidade (MI1.1 e MI3.2), as pessoas participantes são usuári
 | ------ | ---------- | ------------------------------------------------------------------------------- | ---------------- | ---------- |
 | 0.1    | 15/11/2026 | Inserção do produto, dos dispositivos, dos ambientes, da rede e das ferramentas | Ludmila O. Nunes |            |
 | 0.2    | 16/11/2026 | Ajusta siglas de dispositivos                                                   | Ludmila O. Nunes |            |
+| 0.3    | 22/11/2026 | Adiciona Chrome ao DI6                                                          | Ludmila O. Nunes |            |

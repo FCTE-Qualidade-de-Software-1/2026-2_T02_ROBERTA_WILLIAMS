@@ -65,16 +65,15 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 
 ### MI3.1: Taxa de Conformidade de Contraste
 
-- **Ferramentas:** axe-core (extensão do navegador), Lighthouse (DevTools), medidor de contraste.
+- **Ferramentas:** Lighthouse (DevTools, com *axe-core* embutido).
 - **Passos:**
-  1. Abrir o widget em uma página de teste simples, sem estilos próprios.
-  2. Para cada tela do widget (Tradutor, Dicionário, Configurações, Feedback, Guia Rápido e Sobre) e para os controles do player, executar o axe-core e o Lighthouse.
-  3. Registrar, na regra de contraste, os elementos aprovados e os reprovados.
-  4. Conferir manualmente, com o medidor de contraste, os casos que as ferramentas marcarem como "incompletos".
-  5. Calcular o percentual de elementos que atendem ao nível AA (4.5:1 para texto comum, 3:1 para texto grande e componentes de interface). O avatar 3D fica fora.
-- **Repetições:** uma execução por tela e por ferramenta.
-- **Registro:** relatórios exportados do axe-core e do Lighthouse e planilha com a verificação manual e prints.
-- **Critério de parada:** todas as telas do widget e os controles do player inspecionados.
+  1. Abrir o widget VLibras em uma página de teste simples, sem estilos próprios (ex.: `pagina-teste-crua.html`).
+  2. Executar o Lighthouse (categoria Acessibilidade, modo *snapshot*) para cada tela ou estado relevante do widget: Tradutor, Guia Rápido (por passo, quando aplicável), Configurações, Dicionário, Sobre, Feedback e Página inicial / controles do player.
+  3. Registrar, na auditoria de contraste (`color-contrast`), o resultado reportado pelo Lighthouse e os elementos reprovados listados no relatório (considerando que a ferramenta consolida a aprovação por execução sem enumerar individualmente cada elemento aprovado).
+  4. Calcular o percentual de conformidade a partir dos registros de contraste reportados pelo Lighthouse, desconsiderando o avatar 3D.
+- **Repetições:** uma execução (*snapshot*) do Lighthouse por tela ou estado avaliado.
+- **Registro:** relatórios JSON exportados do Lighthouse (e, quando houver inspeção complementar, registros manuais/prints correspondentes).
+- **Critério de parada:** todas as telas previstas do widget e os estados/controles relevantes inspecionados.
 
 ### MI3.2: Taxa de Eficácia na Seleção de Texto
 
@@ -253,4 +252,5 @@ Esta página descreve como cada métrica da [Fase 2](../fase-2/metricas.md) ser�
 | 0.4    | 18/11/2026 | Correções MI1.1                                                                                              | Ludmila O. Nunes   |            |
 | 0.5    | 20/11/2026 | Alteração responsáveis MI1.1 e MI3.2                                                                         | Ludmila O. Nunes   |            |
 | 0.6    | 22/11/2026 | Ajuste do protocolo da MI3.2 ao que foi coletado e alteração dos responsáveis                                | Ludmila O. Nunes   |            |
-| 0.7    | 22/11/2026 | Protocolo da MF2.1: bloqueio da instalação do portal antes da injeção e critério de escolha do texto | Amanda C. Lima     |            |
+| 0.7    | 22/11/2026 | Protocolo da MF2.1: bloqueio da instalação do portal antes da injeção e critério de escolha do texto         | Amanda C. Lima     |            |
+| 0.8    | 22/11/2026 | Ajusta Protocolo da MI3.1                                                                                    | Ludmila O. Nunes   |            |
