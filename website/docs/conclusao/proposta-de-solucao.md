@@ -5,7 +5,7 @@ sidebar_label: Proposta de Solução
 
 # Proposta de Solução
 
-Esta página descreve a solução escolhida na [matriz de priorização](./problemas-e-oportunidades.md), o **cursor dedicado à seleção e tradução**, e a primeira implementação feita pela equipe: um **modo de leitura**, acionado por botão, em que o cursor do widget deixa de disparar os *hovers* da página. Ela também reúne as evidências do comportamento antes e depois da alteração.
+Esta página descreve a solução escolhida na [matriz de priorização](./problemas-e-oportunidades-de-melhoria.md), o **cursor dedicado à seleção e tradução**, e a primeira implementação feita pela equipe: um **modo de leitura**, acionado por botão, em que o cursor do widget deixa de disparar os *hovers* da página. Ela também reúne as evidências do comportamento antes e depois da alteração.
 
 ## 1. Problema que a solução endereça
 
@@ -26,7 +26,7 @@ Fonte: elaborado pelos autores, a partir da MI3.2.
 
 ## 2. Solução proposta
 
-A solução candidata, descrita em [Problemas e Oportunidades](./problemas-e-oportunidades.md), é acionar por botão um modo dedicado à leitura e tradução, em que o cursor do widget não dispara os *hovers* da página. O conteúdo que só aparece ou só é substituído quando o mouse passa por cima deixa de mudar enquanto a pessoa seleciona o texto.
+A solução candidata, descrita em [Problemas e Oportunidades](./problemas-e-oportunidades-de-melhoria.md), é acionar por botão um modo dedicado à leitura e tradução, em que o cursor do widget não dispara os *hovers* da página. O conteúdo que só aparece ou só é substituído quando o mouse passa por cima deixa de mudar enquanto a pessoa seleciona o texto.
 
 ### 2.1. O que foi implementado
 
