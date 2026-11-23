@@ -27,3 +27,4 @@ A estrutura a seguir ilustra a rastreabilidade completa entre o objetivo estrat�
 | Versão | Data       | Descrição da alteração   | Autor(a)        | Revisor(a) |
 | ------ | ---------- | ------------------------ | --------------- | ---------- |
 | 0.1    | 23/10/2026 | Adicionado o gráfico GQM | Mariana Pereira |            |
+| 0.2    | 22/11/2026 | Atualização do gráfico GQM | Rodrigo Amaral |            |
