@@ -54,3 +54,8 @@ Com as faixas de pontuação atualmente definidas, a média global possível var
 
 O intervalo cruza o limite de 3,5, portanto os dados disponíveis não permitem afirmar de forma conclusiva se o critério da média global foi atingido. O limite superior só é alcançado se todas as pontuações ambíguas forem atribuídas ao topo de suas faixas. Também não é possível confirmar o critério de ausência de nota 1, pois quatro métricas estão classificadas em faixas que abrangem tanto 1 quanto 2.
 
+## Histórico de Versões
+
+| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
+| ------ | ---- | ---------------------- | -------- | ---------- |
+| 0.1 | 22/11/2026 | Organização dos dados fornecidos e pontuação geral | Rafael W. Schadt | |

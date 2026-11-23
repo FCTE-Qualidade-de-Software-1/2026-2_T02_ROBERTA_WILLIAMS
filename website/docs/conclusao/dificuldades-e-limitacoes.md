@@ -21,3 +21,9 @@ Algumas métricas também exigiram coletas extensas e trabalhosas, envolvendo a 
 - **Referências de análise nem sempre coincidentes com o escopo planejado.** Algumas medições têm ressalvas sobre a versão ou a fonte analisada. Na [MM2.1](../fase-4/manutenibilidade/mm2-1-modularidade-e-desacoplamento.md), por exemplo, a análise foi feita no `HEAD` da branch `dev`, e não na versão 7.12.2 definida no plano. Essas diferenças devem ser consideradas ao interpretar e reproduzir os resultados.
 
 Essas dificuldades e limitações não anulam os resultados obtidos, mas delimitam o alcance das conclusões e reforçam a necessidade de interpretá-las dentro das condições documentadas em cada métrica.
+
+## Histórico de Versões
+
+| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
+| ------ | ---- | ---------------------- | -------- | ---------- |
+| 0.1 | 22/11/2026 | Escrita das Dificuldades e Limitações | Rafael W. Schadt | |

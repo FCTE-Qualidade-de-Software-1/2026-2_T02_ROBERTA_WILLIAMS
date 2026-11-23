@@ -56,3 +56,9 @@ O índice resultante não fica restrito à escala de 1 a 5; a escala se aplica a
 **Solução vencedora:** cursor dedicado à seleção e tradução, com índice **5**.
 
 A solução vence pelo maior Impacto (5) e pela cobertura integral do conjunto de casos planejado (Confiabilidade 5), mesmo com Complexidade 3 e Qualidade Prévia 2. A ressalva sobre mensagens não classificáveis e a amostra de uma participante continua válida para limitar generalizações, mas não altera a avaliação de que os casos definidos para a coleta foram cobertos.
+
+## Histórico de Versões
+
+| Versão | Data | Descrição da alteração | Autor(a) | Revisor(a) |
+| ------ | ---- | ---------------------- | -------- | ---------- |
+| 0.1 | 22/11/2026 | Organização dos dados fornecidos, cálculo provisório e priorização das soluções | Rafael W. Schadt | |
