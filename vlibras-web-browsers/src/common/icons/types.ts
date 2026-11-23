@@ -45,6 +45,8 @@ const ICON_NAMES = [
 	"emotions/question",
 	"emotions/exclamation",
 	"emotions/upset",
+	'eye',
+	'eye-slash',
 	"chevron-down",
 	"chevron-left",
 	"chevron-up",

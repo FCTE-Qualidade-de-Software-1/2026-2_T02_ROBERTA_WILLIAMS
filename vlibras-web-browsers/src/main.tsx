@@ -10,6 +10,7 @@ import { useWidgetStore } from "@/widget/stores/use-widget.store";
 import { posthogg } from "./common/lib/posthog";
 import { Providers } from "./widget/providers";
 import { rootStore } from "./widget/stores/use-root.store";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 restorePristineStringMethods();
 
@@ -22,7 +23,7 @@ function App() {
 	const { path } = useConfig();
 
 	useEffect(() => rootStore.set({ root, shadowRoot }), [root, shadowRoot]);
-	useEffect(() => void (root?.dataset.auto !== "true" && posthogg.trackLoad()), [root]);
+	useEffect(() => void posthogg.trackLoad(), []);
 
 	useEffect(() => {
 		if (!path) return;

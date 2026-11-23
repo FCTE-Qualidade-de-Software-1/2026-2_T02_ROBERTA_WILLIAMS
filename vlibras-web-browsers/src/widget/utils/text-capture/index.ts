@@ -1,5 +1,6 @@
 import { $ } from "@/common/utils/dom";
 import { tooltipStore } from "@/widget/stores/use-tooltip.store";
+import { widgetStore } from "@/widget/stores/use-widget.store"; // novo
 import {
 	findInteractiveElement,
 	getTextContent,
@@ -59,6 +60,8 @@ export const textCapture = ({ callback, isWordByWord, hoverClss, activeClass }: 
 	};
 
 	const handleClick = (event: MouseEvent) => {
+		if (widgetStore.get().cursorMode === "read") return;
+		if ((event as unknown as Record<string, unknown>)[SYNTHETIC_CLICK_FLAG]) return;
 		if ((event as unknown as Record<string, unknown>)[SYNTHETIC_CLICK_FLAG]) return;
 
 		const element = event.target as HTMLElement;

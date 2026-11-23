@@ -9,6 +9,7 @@ import { ProgressBar } from "./progress-bar";
 import { SettingsOption } from "./settings-option";
 import { SpeedOption } from "./speed-option";
 import { SubtitlesOptions } from "./subtitles-option";
+import { ReadingModeButton } from "../reading-mode-button";
 
 export const WidgetControls = () => {
 	const isOpen = useWidgetStore((s) => s.isOpen);
@@ -29,7 +30,7 @@ export const WidgetControls = () => {
 			<div
 				inert={isGuideOpen}
 				className={cn(
-					"pointer-events-none grid w-full grid-cols-5 items-center gap-1 [&_button]:pointer-events-auto",
+					"pointer-events-none grid w-full grid-cols-6 items-center gap-1 [&_button]:pointer-events-auto",
 					"[&>div]:col-span-2 [&>div]:grid [&>div]:grid-cols-subgrid [&>div]:justify-items-center [&>div]:rounded",
 				)}
 			>
@@ -45,6 +46,10 @@ export const WidgetControls = () => {
 
 				<div id="settings-option" className="col-span-1!">
 					<SettingsOption />
+				</div>
+
+				<div id="reading-mode-option" className="col-span-1!">
+					<ReadingModeButton />
 				</div>
 			</div>
 

@@ -7,6 +7,8 @@ import { playerStore } from "@/player/stores/use-player.store";
 import type { WidgetPosition } from "@/widget/types";
 import { resolveValue } from "./utils";
 
+export type CursorMode = "navigate" | "read";
+
 export const defaultState: OnlyState<WidgetStoreState> = {
 	position: "right",
 	text: undefined,
@@ -16,6 +18,7 @@ export const defaultState: OnlyState<WidgetStoreState> = {
 	isTranslating: false,
 	isPausedByUser: undefined,
 	opacity: 1,
+	cursorMode: "navigate",
 };
 
 export interface WidgetStoreState {
@@ -30,6 +33,9 @@ export interface WidgetStoreState {
 	text?: string;
 	opacity: Number;
 	color?: string;
+	cursorMode: CursorMode;
+	setCursorMode: (cursorMode: CursorMode) => void;
+	toggleCursorMode: () => void;
 	setLoaded: (isLoaded: boolean) => void;
 	reset: () => void;
 }
@@ -42,6 +48,9 @@ export const useWidgetStore = create<WidgetStoreState>()(
 			setExpanded: (value) => set((state) => ({ isExpanded: resolveValue(value, state.isExpanded) })),
 			setOpen: (value) => set((state) => ({ isOpen: resolveValue(value, state.isOpen) })),
 			reset: () => set(defaultState),
+			setCursorMode: (cursorMode) => set({ cursorMode }),
+			toggleCursorMode: () =>
+			set((s) => ({ cursorMode: s.cursorMode === "read" ? "navigate" : "read" })),
 		}),
 		{
 			name: "@vlibras-widget",

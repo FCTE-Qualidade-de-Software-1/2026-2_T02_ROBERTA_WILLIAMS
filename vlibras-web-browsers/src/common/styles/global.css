@@ -94,11 +94,11 @@
 }
 
 :host {
-	--widget-width: 260px;
+	--widget-width: 280px;
 	--player-height: 328px;
 	
 	@media (min-width: 640px) {
- 		--widget-width: 300px;
+ 		--widget-width: 320px;
 		--player-height: 380px;
 	}
 }
