@@ -1,0 +1,85 @@
+import type { TargetedKeyboardEvent } from "preact";
+import { useMobile } from "@/common/hooks";
+import { posthogg } from "@/common/lib/posthog";
+import { cn } from "@/common/lib/utils";
+import { setSpeed } from "@/player/actions";
+import { usePlayerStore } from "@/player/stores/use-player.store";
+import { Button } from "@/widget/components/ui/button";
+import { Dropdown, DropdownContent, DropdownTrigger } from "@/widget/components/ui/dropdown";
+import { Tooltip } from "@/widget/components/ui/tooltip";
+
+const speeds = [2.5, 2, 1.5, 1, 0.5];
+
+export const SpeedOption = () => {
+	const isMobile = useMobile();
+	const currentSpeed = usePlayerStore((s) => s.speed);
+
+	const onKeyDown = (event: TargetedKeyboardEvent<HTMLButtonElement>, speed: number) => {
+		if (event.key === "Enter" || event.key === " ") {
+			event.preventDefault();
+			handleSpeedChange(speed);
+		}
+	};
+
+	const handleSpeedChange = (speed: number) => {
+		if (speed === currentSpeed) return;
+
+		setSpeed(speed);
+		posthogg.trackEvent("change_speed", { speed });
+	};
+
+	return (
+		<Dropdown className="dropdown-center dropdown-top">
+			<Tooltip offset={8} content="Velocidade" placement="top" arrow={{ position: "bottom" }} visualOnly>
+				<DropdownTrigger>
+					<Button
+						aria-label={`Alterar velocidade, atual ${currentSpeed}x`}
+						className="min-w-9 mobile:min-w-8 max-w-16 mobile:max-w-14 px-2"
+						variant="ghost-gov"
+						size={isMobile ? "sm" : "default"}
+					>
+						<div inert className="-mt-0.5 inline-flex truncate font-bold mobile:text-xs text-sm">
+							<span className="truncate">{currentSpeed}</span>
+							<span>x</span>
+						</div>
+					</Button>
+				</DropdownTrigger>
+			</Tooltip>
+
+			<DropdownContent className="mb-4 border bg-background drop-shadow-lg">
+				{/* biome-ignore lint/a11y/useSemanticElements: grupo de menuitemradio segue o padrão APG de menu com grupos; fieldset implicaria semântica de formulário */}
+				<div
+					role="group"
+					aria-label="Opções de velocidade"
+					className={cn(
+						"space-y-1 p-1 font-semibold text-primary text-sm",
+						"focus-within:pointer-events-auto focus-within:visible",
+					)}
+				>
+					{speeds.map((speed) => {
+						const isActive = speed === currentSpeed;
+
+						return (
+							<button
+								key={speed}
+								role="menuitemradio"
+								aria-checked={isActive}
+								aria-label={`Aplicar velocidade ${speed}x`}
+								type="button"
+								onClick={() => handleSpeedChange(speed)}
+								onKeyDown={(e) => onKeyDown(e, speed)}
+								className={cn(
+									"w-full cursor-pointer whitespace-nowrap rounded-md px-2 py-1 text-center mobile:text-xs text-sm hover:bg-primary/10",
+									isActive &&
+										"pointer-events-none bg-primary! text-primary-foreground! outline-1 outline-primary outline-solid",
+								)}
+							>
+								{speed}x
+							</button>
+						);
+					})}
+				</div>
+			</DropdownContent>
+		</Dropdown>
+	);
+};

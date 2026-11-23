@@ -1,0 +1,54 @@
+import { cn } from "@/common/lib/utils";
+import { AppOverlay } from "@/widget/components/app-overlay";
+import { DragHandle } from "@/widget/components/draggable";
+import { useGuideStore } from "@/widget/components/guide/store";
+import { useWidgetStore } from "@/widget/stores/use-widget.store";
+import { EmotionsOption } from "./emotions-option";
+import { MainAction } from "./main-action";
+import { ProgressBar } from "./progress-bar";
+import { SettingsOption } from "./settings-option";
+import { SpeedOption } from "./speed-option";
+import { SubtitlesOptions } from "./subtitles-option";
+
+export const WidgetControls = () => {
+	const isOpen = useWidgetStore((s) => s.isOpen);
+	const isGuideOpen = useGuideStore((s) => s.open);
+
+	return (
+		<div
+			className={cn(
+				!isOpen && "-bottom-20!",
+				"relative z-50 animate-move-up border-t bg-background px-2 py-1.5 transition-[bottom] ease-in-out",
+				"[&_button]:z-1 [&_button]:not-hover:bg-transparent [&_button]:dark:text-secondary-foreground **:[[role=button]]:not-hover:bg-transparent **:[[role=button]]:dark:text-secondary-foreground",
+				"-mt-13 **:data-[highlight=true]:animate-highlight-primary",
+			)}
+		>
+			<DragHandle focusable={false} />
+			<ProgressBar />
+
+			<div
+				inert={isGuideOpen}
+				className={cn(
+					"pointer-events-none grid w-full grid-cols-5 items-center gap-1 [&_button]:pointer-events-auto",
+					"[&>div]:col-span-2 [&>div]:grid [&>div]:grid-cols-subgrid [&>div]:justify-items-center [&>div]:rounded",
+				)}
+			>
+				<div id="main-action-speed-options">
+					<MainAction />
+					<SpeedOption />
+				</div>
+
+				<div id="emotions-subtitles-options">
+					<EmotionsOption />
+					<SubtitlesOptions />
+				</div>
+
+				<div id="settings-option" className="col-span-1!">
+					<SettingsOption />
+				</div>
+			</div>
+
+			<AppOverlay className="z-50" />
+		</div>
+	);
+};

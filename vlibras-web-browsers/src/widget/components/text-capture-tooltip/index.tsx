@@ -1,0 +1,90 @@
+import { useEffect, useRef, useState } from "preact/hooks";
+import { Fragment } from "preact/jsx-runtime";
+import { cn } from "@/common/lib/utils";
+import { Button } from "@/widget/components/ui/button";
+import { Icon } from "@/widget/components/ui/icon";
+import { tooltipStore, useTooltipStore } from "@/widget/stores/use-tooltip.store";
+import { type ArrowPosition, normalizePosition, type TooltipPlacement } from "./utils";
+
+export const TextCaptureTooltip = () => {
+	const tooltipRef = useRef<HTMLButtonElement>(null);
+
+	const { type, event, onClick, isActive, render, element } = useTooltipStore();
+	const [position, setPosition] = useState<{ x: number; y: number; arrow: ArrowPosition; placement: TooltipPlacement }>(
+		{
+			x: 0,
+			y: 0,
+			arrow: "bottom-left",
+			placement: "above",
+		},
+	);
+
+	useEffect(() => {
+		const handleClickOutside = (e: MouseEvent) => {
+			if (tooltipRef.current && !tooltipRef.current.contains(e.target as Node)) {
+				tooltipStore.set({ isActive: false });
+			}
+		};
+
+		const handleEscape = (e: KeyboardEvent) => {
+			if (e.key !== "Escape") return;
+			e.stopPropagation();
+			tooltipStore.set({ isActive: false });
+			if (element?.isConnected) element.focus({ preventScroll: true });
+		};
+
+		if (isActive) {
+			document.addEventListener("click", handleClickOutside);
+			document.addEventListener("keydown", handleEscape);
+			requestAnimationFrame(() => tooltipRef.current?.focus({ preventScroll: true }));
+		} else document.removeEventListener("click", handleClickOutside);
+
+		return () => {
+			document.removeEventListener("click", handleClickOutside);
+			document.removeEventListener("keydown", handleEscape);
+		};
+	}, [isActive, element]);
+
+	useEffect(() => {
+		if (event && isActive && tooltipRef.current) {
+			setPosition(normalizePosition({ event, tooltip: tooltipRef.current }));
+
+			const btn = tooltipRef.current;
+			if (btn) {
+				btn.classList.remove("animate-scale");
+				btn.offsetWidth;
+				btn.classList.add("animate-scale");
+			}
+		}
+	}, [event, isActive, type, render]);
+
+	return (
+		<Button
+			ref={tooltipRef}
+			onClick={onClick}
+			style={{ left: position.x, top: position.y }}
+			className={cn(
+				"group absolute z-2147483647 h-9 animate-scale rounded-xl px-3 text-primary-foreground shadow-lg",
+				!isActive && "hidden",
+			)}
+		>
+			{render || (
+				<Fragment>
+					<Icon name={type === "button" ? "touch" : "link"} className="size-5" />
+					<span className="relative bottom-0.5 whitespace-nowrap font-medium text-sm">
+						{type === "button" ? "Interagir" : "Acessar link"}
+					</span>
+				</Fragment>
+			)}
+
+			<span className="absolute inset-0 -z-1 rounded-xl bg-primary group-hover:brightness-85" />
+			<span
+				className={cn(
+					"absolute -z-2 size-4 -translate-x-1/2 rotate-45 rounded-sm bg-primary brightness-85",
+					position.placement === "above" ? "-bottom-1.5" : "-top-1.5",
+					position.arrow.endsWith("right") ? "right-2" : "left-5",
+				)}
+			/>
+		</Button>
+	);
+};

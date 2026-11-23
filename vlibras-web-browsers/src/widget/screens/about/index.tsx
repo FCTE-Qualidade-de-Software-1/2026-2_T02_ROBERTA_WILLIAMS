@@ -1,0 +1,112 @@
+import { Fragment } from "preact/jsx-runtime";
+import { camaraIcon, lavidIcon, mdhcIcon, mgispIcon, rnpIcon } from "@/assets";
+import { useConfig } from "@/common/hooks";
+import { cn } from "@/common/lib/utils";
+import { getAssetUrl } from "@/common/utils";
+import { InlineTranslatorButton } from "@/widget/components/inline-translator-button";
+import { Icon } from "@/widget/components/ui/icon";
+import { screenStore } from "@/widget/stores/use-screens.store";
+import { Screen, ScreenContent, ScreenHeader, ScreenTitle } from "../components";
+import { AboutField } from "./about-field";
+import { socialLinks } from "./social-links";
+
+export const AboutScreen = () => {
+	const { version } = useConfig();
+
+	const handleReopenScreen = () => {
+		screenStore.get().open("about");
+	};
+
+	return (
+		<Screen>
+			<ScreenHeader close>
+				<ScreenTitle>Sobre</ScreenTitle>
+			</ScreenHeader>
+
+			<ScreenContent className="flex flex-col text-sm">
+				<AboutField label="Sobre o VLibras">
+					<p>
+						A <strong>Suíte VLibras</strong> é um conjunto de ferramentas gratuitas de código aberto que traduz conteúdo
+						digital (texto, áudio e vídeo) em Português para Libras.
+						<InlineTranslatorButton
+							gloss="SUÍTE VLIBRAS CONJUNTO&GRUPO FERRAMENTA GRATUITO CÓDIGO&COMPUTAÇÃO ABRIR&AFASTAR TRADUZIR CONTEÚDO&ASSUNTO DIGITAL&COMPUTADOR TEXTO ÁUDIO VÍDEO PORTUGUÊS LIBRAS [PONTO]"
+							label="Sobre a Suíte VLibras"
+							onFinish={handleReopenScreen}
+						/>
+					</p>
+				</AboutField>
+
+				<AboutField
+					label={
+						<Fragment>
+							Realizadores
+							<InlineTranslatorButton gloss="REALIZAR" label="Realizadores" onFinish={handleReopenScreen} />
+						</Fragment>
+					}
+				>
+					<div className="flex w-full flex-col justify-between gap-2 rounded-lg bg-white p-2">
+						<div className="flex w-full items-center justify-between gap-2">
+							<div className="flex min-w-0 flex-1 justify-start">
+								<img src={getAssetUrl(mdhcIcon)} alt="logo do Ministério dos Direitos Humanos e da Cidadania" />
+							</div>
+							<div className="flex min-w-0 flex-1 justify-start">
+								<img
+									src={getAssetUrl(mgispIcon)}
+									alt={"logo do Ministério da Gestão e da Inovação em Serviços Públicos"}
+								/>
+							</div>
+						</div>
+						<div className="flex items-center justify-between gap-2">
+							<div className="flex min-w-0 flex-1 items-center justify-start">
+								<img src={getAssetUrl(lavidIcon)} alt={"logo do lavid"} className="max-w-15" />
+							</div>
+							<div className="flex min-w-0 flex-1 items-center justify-start">
+								<img src={getAssetUrl(rnpIcon)} alt={"logo da RNP"} />
+							</div>
+							<div className="flex min-w-0 flex-1 items-center justify-start">
+								<img src={getAssetUrl(camaraIcon)} alt={"logo da Câmara dos Deputados"} />
+							</div>
+						</div>
+					</div>
+				</AboutField>
+
+				<div className="relative mobile:-m-2 mt-auto! flex min-h-32 flex-col overflow-hidden rounded-lg border p-4 font-semibold text-primary-foreground dark:bg-muted">
+					<p className="mb-4 text-center mobile:text-sm text-base leading-none">
+						Nos acompanhe nas redes sociais
+						<InlineTranslatorButton
+							gloss="ACOMPANHAR REDE&GRUPO SOCIAL"
+							label="Redes sociais"
+							onFinish={handleReopenScreen}
+							className="text-primary-foreground! hover:opacity-80"
+						/>
+					</p>
+					<div
+						className={cn(
+							"z-999 mt-auto flex w-full items-center justify-between gap-2",
+							"[&_button]:w-full [&_button]:rounded-full [&_button]:bg-primary-foreground [&_button]:text-primary",
+						)}
+					>
+						{socialLinks.map((social) => (
+							<a
+								key={social.name}
+								href={social.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label={social.name}
+								className="grid place-content-center rounded-full bg-white p-2"
+							>
+								<Icon name={social.iconName} className="size-4 text-primary" />
+							</a>
+						))}
+					</div>
+					<Icon name="icaro" className="absolute top-4 left-0 z-1 size-32 opacity-15 dark:text-white dark:opacity-10" />
+					<div className="absolute inset-0 -z-10 bg-primary" />
+				</div>
+
+				<span className="mx-auto -mt-2 -mb-1 font-semibold text-[0.7em] text-muted-foreground">
+					VLibras Widget v{version}
+				</span>
+			</ScreenContent>
+		</Screen>
+	);
+};

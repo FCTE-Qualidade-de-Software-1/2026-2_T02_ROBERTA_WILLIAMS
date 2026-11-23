@@ -1,0 +1,60 @@
+import { useEffect, useId, useRef } from "preact/hooks";
+import { posthogg } from "@/common/lib/posthog";
+import { InlineTranslatorButton } from "@/widget/components/inline-translator-button";
+import { useWidgetStore, widgetStore } from "@/widget/stores/use-widget.store";
+import { useSettingsCtx } from "./context";
+
+export const SettingsOpacityField = () => {
+	const timeoutRef = useRef<NodeJS.Timeout>(null);
+	const opacity = useWidgetStore((s) => s.opacity);
+	const onOpen = useSettingsCtx((s) => s.onOpen);
+	const inputId = useId();
+	const progress = Number(opacity) * 100;
+	const rounded = Math.round(Number(opacity) * 100);
+
+	useEffect(() => {
+		return () => {
+			if (timeoutRef.current) clearTimeout(timeoutRef.current);
+		};
+	}, []);
+
+	const handleOpacityChange = (opacity: number) => {
+		widgetStore.set({ opacity: opacity / 100 });
+
+		if (timeoutRef.current) clearTimeout(timeoutRef.current);
+		timeoutRef.current = setTimeout(() => posthogg.trackEvent("opacity_change", { opacity }), 2000);
+	};
+
+	return (
+		<div>
+			<label
+				htmlFor={inputId}
+				className="flex w-full cursor-pointer items-center justify-between py-1 mobile:text-sm text-base"
+			>
+				<span className="mobile:text-sm text-base">
+					Opacidade
+					<InlineTranslatorButton gloss="OPACIDADE" label="Opacidade" onFinish={onOpen} />
+				</span>
+
+				<span className="font-semibold" aria-hidden="true">
+					{rounded}%
+				</span>
+			</label>
+			<input
+				type="range"
+				id={inputId}
+				aria-valuetext={`${rounded}%`}
+				min={0}
+				max={100}
+				step={5}
+				value={progress}
+				onChange={(e) => handleOpacityChange(Number(e.currentTarget.value))}
+				onPointerDown={(e) => e.stopPropagation()}
+				className="range-slider"
+				style={{
+					background: `linear-gradient(to right, var(--color-primary, #3b82f6) ${progress}%, var(--color-muted, #e2e8f0) ${progress}%)`,
+				}}
+			/>
+		</div>
+	);
+};

@@ -1,0 +1,71 @@
+import { Fragment } from "preact/jsx-runtime";
+import { useMobile } from "@/common/hooks";
+import { pause } from "@/player/actions";
+import { AppOverlay } from "@/widget/components/app-overlay";
+import { DragHandle } from "@/widget/components/draggable";
+import { useGuideStore } from "@/widget/components/guide/store";
+import { Button } from "@/widget/components/ui/button";
+import { Icon } from "@/widget/components/ui/icon";
+import { Spacer } from "@/widget/components/ui/spacer";
+import { useWidgetStore } from "@/widget/stores/use-widget.store";
+import { ExpandOption } from "./components/expand-option";
+import { WidgetMenu } from "./components/menu";
+
+export const WidgetHeader = () => {
+	const isMobile = useMobile();
+	const setOpen = useWidgetStore((s) => s.setOpen);
+	const isGuideOpen = useGuideStore((s) => s.open);
+
+	const handleClose = () => {
+		setOpen(false);
+		pause();
+	};
+
+	return (
+		<div className="relative bottom-auto z-50 bg-primary px-2 py-1.5">
+			<DragHandle />
+
+			<div
+				inert={isGuideOpen}
+				className="pointer-events-none flex w-full items-center justify-between gap-1 **:data-[highlight=true]:animate-highlight-primary-foreground [&_button]:pointer-events-auto"
+			>
+				<WidgetMenu />
+
+				{!__IS_EXTENSION__ && (
+					<div className="mr-2 ml-1">
+						<span className="absolute inset-y-0 w-px bg-primary-foreground/30" />
+					</div>
+				)}
+
+				<div className="mr-2 flex items-center gap-1.5">
+					<div className="flex size-5.5 items-end justify-center rounded-full bg-primary-foreground text-primary">
+						<Icon name="icaro" className="size-4.5" />
+					</div>
+					<span className="whitespace-nowrap font-semibold text-primary-foreground text-sm">VLibras</span>
+				</div>
+
+				{!__IS_EXTENSION__ && (
+					<Fragment>
+						<Spacer className="w-full" />
+
+						<div id="header-actions" className="flex items-center gap-1 [&_button]:not-hover:bg-transparent">
+							<ExpandOption />
+
+							<Button
+								onClick={handleClose}
+								aria-label="Fechar VLibras"
+								size={isMobile ? "icon-sm" : "icon"}
+								variant="default"
+								className="z-1"
+							>
+								<Icon name="x" />
+							</Button>
+						</div>
+					</Fragment>
+				)}
+			</div>
+
+			<AppOverlay className="z-50" />
+		</div>
+	);
+};
