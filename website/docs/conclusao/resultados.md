@@ -54,4 +54,3 @@ Com as faixas de pontuação atualmente definidas, a média global possível var
 
 O intervalo cruza o limite de 3,5, portanto os dados disponíveis não permitem afirmar de forma conclusiva se o critério da média global foi atingido. O limite superior só é alcançado se todas as pontuações ambíguas forem atribuídas ao topo de suas faixas. Também não é possível confirmar o critério de ausência de nota 1, pois quatro métricas estão classificadas em faixas que abrangem tanto 1 quanto 2.
 
-Para determinar uma aprovação ou reprovação global sem arbitrar notas, é necessário detalhar na matriz como os resultados dentro das faixas **1–2** e **4–5** são convertidos em notas individuais. Até essa regra ser definida, o julgamento adequado é **inconclusivo quanto ao aceite global**, mantendo explícitas as pontuações por faixa e os resultados observados.
