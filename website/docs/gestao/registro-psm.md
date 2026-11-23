@@ -219,6 +219,26 @@ Contagem de itens sem pai por coluna de Status. As contagens foram reconstituíd
 | 20/11/2026 |       0 |     0 |           6 |         0 |   37 |             0 |    43 |
 | 22/11/2026 |       0 |     0 |           3 |         0 |   39 |             2 |    44 |
 
+## Gráficos do GitHub Projects
+
+Gráficos do Insights do GitHub Projects em 22/11/2026, usados como apoio aos indicadores acima.
+
+![Gráfico de colunas com os itens por iteração, separados por Status](../../img/gestao/1_comprometido-x-concluido_por-iteracao.jpg)
+
+**Figura 1.** Comprometido × concluído por iteração (indicador 1). O gráfico conta também as *sub-issues*, por isso os totais são maiores que os das tabelas, que contam só os itens sem pai. As Iterações 3 e 4 não aparecem porque não tiveram itens. Fonte: GitHub Projects da equipe.
+
+![Gráfico de área com os itens do milestone E1 concluídos ao longo do tempo](../../img/gestao/2_burn-up_E1.jpg)
+
+**Figura 2.** *Burn-up* do *milestone* E1 (indicador 2): todos os itens concluídos até a entrega de 26/10. Fonte: GitHub Projects da equipe.
+
+![Gráfico de área com itens abertos e concluídos de outubro a novembro](../../img/gestao/3_abertos-x-concluidos_semestre.jpg)
+
+**Figura 3.** Itens abertos e concluídos no semestre. Os itens da E2 foram cadastrados em 16/11 e a maioria foi fechada no GitHub em 22/11, o que mostra o trabalho e a atualização do quadro concentrados no fim da Iteração 5. Fonte: GitHub Projects da equipe.
+
+![Gráfico de barras com o esforço real acumulado de cada membro](../../img/gestao/4_esforco-por-membro_acumulado.jpg)
+
+**Figura 4.** Esforço real acumulado por membro (indicador 4), em horas. Fonte: GitHub Projects da equipe.
+
 ## Mudanças nos indicadores
 
 O modelo de registro é mantido entre as iterações. Quando um indicador for incluído, alterado ou retirado, a mudança e o motivo ficam registrados aqui (CID, Parte 1, §2, p. 5).
@@ -238,3 +258,4 @@ O modelo de registro é mantido entre as iterações. Quando um indicador for in
 | ------ | ---------- | --------------------------------------------------------------------- | ------------------ | ---------- |
 | 0.1    | 20/10/2026 | Modelo de registro por iteração, com a Iteração 0 e a contagem do CFD | Geovane S. Freitas |            |
 | 0.2    | 22/11/2026 | Valores, interpretações e decisões das Iterações 0 a 5                | Geovane S. Freitas |            |
+| 0.3    | 22/11/2026 | Gráficos do Insights do GitHub Projects                               | Geovane S. Freitas |            |
