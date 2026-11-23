@@ -15,12 +15,12 @@ Na [MI3.2](../fase-4/capacidade-de-interacao/mi3-2-eficancia-selecao-texto.md), 
 
 **Tabela 1.** Falhas da MI3.2 e relação com esta solução.
 
-| Tarefa | Elemento                       | Causa registrada                                                       | Endereçada por esta implementação?                                                                         |
-| ------ | ------------------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| S4     | Carrossel (CGU)                | O gesto de arrastar move o carrossel; a leitura só funciona por clique | Esperado que sim, visto que ponteiro fica sobre a camada do widget, então o arrasto não chega ao carrossel |
-| S5     | Card de rede social (*iframe*) | Texto dentro de *iframe* não pode ser selecionado                      | Não. O navegador isola o conteúdo do *iframe*                                                              |
-| S6     | Card de categorias (gov.br)    | O *hover* exibe a descrição no lugar do título                         | Sim, é o caso-alvo                                                                                         |
-| S7     | Botão (Ministério da Saúde)    | O botão é lido, mas o texto dele não pode ser selecionado              | Esperado que sim, pois a seleção é feita pela posição do ponteiro, sem clicar no botão                     |
+| Tarefa | Elemento                       | Causa registrada                                                       | Endereçada por esta implementação?                                                                                                                |
+| ------ | ------------------------------ | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S4     | Carrossel (CGU)                | O gesto de arrastar move o carrossel; a leitura só funciona por clique | Parcialmente. A camada impede que o arrasto seja recebido pelo carrossel, mas a seleção de texto nesse cenário ainda precisa ser validada.        |
+| S5     | Card de rede social (*iframe*) | Texto dentro de *iframe* não pode ser selecionado                      | Não. O navegador isola o conteúdo do *iframe*                                                                                                     |
+| S6     | Card de categorias (gov.br)    | O *hover* exibe a descrição no lugar do título                         | Sim, é o caso-alvo                                                                                                                                |
+| S7     | Botão (Ministério da Saúde)    | O botão é lido, mas o texto dele não pode ser selecionado              | Potencialmente. A seleção por posição do ponteiro pode permitir selecionar o texto sem acionar o botão, mas o cenário ainda precisa ser validado. |
 
 Fonte: elaborado pelos autores, a partir da MI3.2.
 
@@ -91,11 +91,11 @@ Como as duas medições têm avaliadores diferentes, a comparação mostra se o 
 
 **Vídeo comparativo.**
 
-Inserir iframe
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OPnXlqWx6Bo?si=NUwG-vSCto9ecSBi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 4. Efeito esperado e alcance
 
-- **Efeito direto:** a tarefa S6 deve passar a ter sucesso, o que elevaria a taxa de 3 de 7 para 4 de 7, 57,1%, ainda na faixa Ruim (< 70%). A solução, sozinha, não leva a MI3.2 à faixa Satisfatória se apenas S6 for resolvida, mas representa uma solução importante para uma barreira de navegação existente.
+- **Efeito esperado:** caso o comportamento observado na réplica do card se reproduza no Portal Gov.br durante uma nova avaliação, a tarefa S6 poderá passar a ter sucesso. Nesse cenário, considerando a manutenção dos demais resultados da MI3.2, a taxa de sucesso subiria de 3/7 (42,9%) para 4/7 (57,1%), permanecendo na faixa Ruim (< 70%). Portanto, a implementação apresenta potencial de melhoria, mas seu efeito sobre o resultado da MI3.2 ainda precisa ser validado com o público-alvo.
 - **Fora do alcance:** conteúdo dentro de *iframes* cross-origin (S5) continua limitado pelas regras do navegador, e a consulta de posição de texto retorna o próprio *iframe*.
 
 ## 5. Riscos e efeitos colaterais
@@ -103,7 +103,7 @@ Inserir iframe
 - **Página sem reação ao mouse.** Enquanto o modo está ativo, a camada intercepta todos os cliques: links, menus e botões da página não respondem. É o comportamento pretendido, mas exige saída fácil. Por isso o modo não é persistido, encerra com **L** e é desligado ao fechar o painel.
 - **Menus que só abrem com *hover*.** Ficam inacessíveis com o modo ativo; a pessoa precisa abri-los no modo de navegação e, se o conteúdo permanecer visível, ativar o modo de leitura em seguida.
 - **Rolagem.** A roda do mouse sobre a camada rola o documento, mas pode não rolar contêineres internos com `overflow`. Não verificado.
-- **Vazamento de *hover* na consulta de posição.** A camada é desativada por um instante para descobrir o texto sob o ponteiro. Em teoria o navegador não recalcula o *hover* nesse intervalo, mas navegadores baseados em Chromium podem emitir movimentos sintéticos do mouse. Não verificado.
+- **Possível reativação de `:hover` durante a consulta de posição.** A camada tem seu pointer-events desativado temporariamente para permitir a consulta de posição do texto. Embora essa operação seja síncrona, ainda é necessário verificar se a alteração provoca mudanças no estado de `:hover` em diferentes navegadores.
 - **Shadow DOM da página.** A consulta de posição tem suporte limitado a textos dentro de *shadow roots* da página hospedeira, principalmente no Chrome.
 - **Estado do foco do teclado.** Efeitos que dependem de foco, e não de *hover*, não são afetados.
 - **Compatibilidade.** Testado em Chrome 157 e Opera GX 139. A seleção por toque no celular não foi avaliada, e os problemas conhecidos de Safari e Chrome móvel (MF1.1) podem afetar a solução.
@@ -136,3 +136,4 @@ Inserir iframe
 | Versão | Data       | Descrição da alteração                                                                                                                | Autor(a)         | Revisor(a) |
 | ------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------- |
 | 0.1    | 23/11/2026 | Descrição da proposta, implementação e evidências antes e depois, além da descrição técnica do mecanismo, arquivos alterados e riscos | Ludmila O. Nunes |            |
+| 0.2    | 23/11/2026 | Ajustes de texto e adição do video em iframe                                                                                          | Ludmila O. Nunes |            |
