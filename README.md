@@ -8,7 +8,7 @@ Projeto final de FGA0315 - Qualidade de Software 1 (2026/2, T02).
 
 Este repositório reúne a documentação, os artefatos de planejamento, os dados de coleta e os resultados da avaliação de qualidade do software **VLibras** (componente *widget* para navegadores web), conduzida com base na família de normas ISO/IEC 25000 (SQuaRE) e na abordagem *Goal-Question-Metric* (GQM). 
 
-A análise concentra-se nas características de **Usabilidade**, **Eficiência de Desempenho**, **Manutenibilidade** e **Portabilidade**, avaliando o uso da ferramenta por pessoas surdas em serviços digitais do Governo Federal.
+A análise concentra-se nas características de **Capacidade de Interação**, **Eficiência de Desempenho**, **Manutenibilidade** e **Flexibilidade**, avaliando o uso da ferramenta por pessoas surdas em serviços digitais do Governo Federal.
 
 <br clear="right"/>
 
