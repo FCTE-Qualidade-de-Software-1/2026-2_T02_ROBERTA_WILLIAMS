@@ -25,10 +25,9 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 
 - **[Fase 1 - Requisitos da Avaliação](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-1):** Definição do propósito, escopo, partes interessadas, adaptação do modelo de qualidade (ISO/IEC 25010) e priorização das características.
 - **[Fase 2 - Especificação da Avaliação](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-2):** Definição dos objetivos de medição (GQM), questões, hipóteses, *Abstraction Sheets*, métricas e critérios de julgamento.
-<!-- 
-- **Fase 3 - Projeto da Avaliação:** *(Entrega 2)*
-- **Fase 4 - Execução da Avaliação:** *(Entrega 2)*
--->
+- **[Fase 3 - Método Avaliativo](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-3/):** Definição dos método avaliativo, massa de dados, cronograma e ambiente utilizado.
+- **[Fase 4 - Coleta das Métricas](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/fase-4/):** Coleta e Resultado das métricas decididas pelo grupo.
+- **[Conclusão - Julgamento e Proposta](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/conclusao/):** Resultados analisados, avaliação da qualidade e proposta de melhoria.
 - **[Gestão do Projeto (PSM/CID)](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_ROBERTA_WILLIAMS/docs/gestao):** Indicadores de Calendário e Progresso, Recursos e Custos e Desempenho dos Processos.
 
 ## Equipe
@@ -69,4 +68,4 @@ A análise concentra-se nas características de **Usabilidade**, **Eficiência d
 </table>
 
 ---
-*Versão 1.0 - Última atualização: 20/10/2026*
+*Versão 3.0 - Última atualização: 24/11/2026*
